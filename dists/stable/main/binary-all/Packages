@@ -1,0 +1,59 @@
+Package: ca-certificates-java
+Architecture: all
+Installed-Size: 208
+Maintainer: @termux
+Version: 1:2025.12.02
+Homepage: https://curl.se/docs/caextract.html
+Depends: ca-certificates (= 1:2025.12.02)
+Description: Common CA certificates (java keystore format)
+Filename: dists/stable/main/binary-all/ca-certificates-java_1:2025.12.02_all.deb
+Size: 113832
+MD5Sum: 22351548357f50f1dbfaecd469f2530a
+SHA1: 1a495c0048e5bc35bb286afde8ce0fde3b31e216
+SHA256: 84a65f620c5dfa2cd12dbc316a7008c1cb4cdb231a8a7ebecf74b6effa77ab08
+SHA512: 1f6e987aa702314e81d678465667a80740eed8704be03a4a9d090f9c1659dbbc46bbef30caf9840c7d550ba9670e285bbe14525b13f6a72e5ac0f64dd8a872fe
+
+Package: ca-certificates
+Architecture: all
+Installed-Size: 264
+Maintainer: @termux
+Version: 1:2025.12.02
+Homepage: https://curl.se/docs/caextract.html
+Description: Common CA certificates
+Filename: dists/stable/main/binary-all/ca-certificates_1:2025.12.02_all.deb
+Size: 124260
+MD5Sum: 322f5b526fbf1ae5fda3f8433f559c87
+SHA1: 857573451359233b4d9d5fc483403b662521d945
+SHA256: afce3b52148205ac5f1490d9fc2e1b3431a3b09d720841cac9cdd6b74992ac90
+SHA512: f58164c15582f7ce8cb683266670e525b525aa12cbd94768dd634ccc124e9643307f1646713549560f6812d0c8e0749a950784a9d2696ca165cf47e4c59ffdc0
+
+Package: termux-am
+Architecture: all
+Installed-Size: 620
+Maintainer: Michal Bednarski @michalbednarski
+Version: 0.8.0-2
+Homepage: https://github.com/termux/TermuxAm
+Conflicts: termux-tools (<< 0.51)
+Description: Android Oreo-compatible am command reimplementation
+Filename: dists/stable/main/binary-all/termux-am_0.8.0-2_all.deb
+Size: 577264
+MD5Sum: 9f0ddf09eea7671383c0a160d39038cd
+SHA1: 5a5a92422eef2409380a05cad4652ddd22caa502
+SHA256: 44ffccd9c4f450b673c4ef4b1fbdc5ea395f3a9d02dfd27ede0c632e0a1cb53d
+SHA512: 4bc8b708c7dd7a142d6d35f9ccaa79626b9595d06ed8d382f597e3a48a0cb4f883f28fe993cf86b2df10b493b2144a37b83bf8fe957007cf44f63b8373444996
+
+Package: termux-keyring
+Architecture: all
+Installed-Size: 204
+Maintainer: @termux
+Version: 3.13
+Homepage: https://github.com/termux
+Essential: yes
+Description: GPG public keys for the official Termux repositories
+Filename: dists/stable/main/binary-all/termux-keyring_3.13_all.deb
+Size: 42036
+MD5Sum: 559a1427a2276fb9f0e6e6624bd09089
+SHA1: 6f17ca334dd4564f9aa2d79cae71d3af6d316b91
+SHA256: 63352ac50ae26de0ab31b5ede1b8f98e14cd8175d085ff176043e4b30ef10fb3
+SHA512: b04e8b17959735a53fab9691b6756a51f8df3d03b6f51ade41463cfbed587a132530f44a04c292a727cbee475a5f0323b20f372b06db02a424ae21b6312879d1
+
