@@ -1,3 +1,38 @@
+Package: apt-ftparchive
+Architecture: arm
+Installed-Size: 232
+Maintainer: @termux
+Version: 2.8.1-2
+Homepage: https://packages.debian.org/apt
+Depends: libdb, apt (= 2.8.1-2)
+Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Filename: dists/stable/main/binary-arm/apt-ftparchive_2.8.1-2_arm.deb
+Size: 88428
+MD5Sum: 156894ebf7c14a0ee2a34f48f1caf0ca
+SHA1: a7f804fd3737f79f038c1319eb96ddb8c3ce41ee
+SHA256: 9046b358e3d835cbc872f40d5a1c55c3d649c515fff75d06ed1301652b5d7e33
+SHA512: a4f1c0bbb09b4f4706187b3ada2336789c810a6d0f13c16fcb62b49afa96e070905abe4fe95160e2f7a8ca177e6a310ca4c49deda9d920cf9841a48d92f7b697
+
+Package: apt
+Architecture: arm
+Installed-Size: 2848
+Maintainer: @termux
+Version: 2.8.1-2
+Homepage: https://packages.debian.org/apt
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libiconv, libgcrypt, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
+Essential: yes
+Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Provides: unstable-repo, game-repo, science-repo
+Suggests: gnupg
+Description: Front-end for the dpkg package manager
+Filename: dists/stable/main/binary-arm/apt_2.8.1-2_arm.deb
+Size: 1000700
+MD5Sum: 826801bb24c275113027691f85b2b1d5
+SHA1: b5ed60623ebed6531864ab3e81abbd968613ac9e
+SHA256: 1328c708326830e64ff46100fd62397b05e80284d1d803cbfd6f3c710b30115b
+SHA512: b9a71bcbd3edb7173577865bccf73f0c68841cee97aff3f2be2f5318bed3b0480d4c6ae8b84b40f456a0bac1bbbf1e6a4bf077dd4d03e60846a24b45ed95192a
+
 Package: attr-static
 Architecture: arm
 Installed-Size: 52
@@ -7,11 +42,11 @@ Homepage: http://savannah.nongnu.org/projects/attr/
 Depends: attr (= 2.5.2-1)
 Description: Static libraries for attr
 Filename: dists/stable/main/binary-arm/attr-static_2.5.2-1_arm.deb
-Size: 6532
-MD5Sum: 9992356334d130319977f9d87d6ee805
-SHA1: b6c3d033939a7e74cfaea2c51fe7f0a3bf9949a0
-SHA256: f0d0d12b39caf912a536bb8dc7d6ab56cf8c927c28b58c506193513f74ce1e51
-SHA512: b3b60247fbb5aeb8af3b7670796f29398345ceb38fd9b0c780d1bdf56a31dafabc24e5d6e5d9ce4025676064f439f26dddb2cb5a3466828d98543871ebed15ea
+Size: 6544
+MD5Sum: 1c17847a4048a47c8a2943abfd998dc0
+SHA1: 9861599d141ff51bc5669913b45fab3e632b03c2
+SHA256: a76d6ddec7966802b80e659fdb5923c6980dec2b348a1f817512583a84bd30f2
+SHA512: b1bae6ff6c5ed7a8cdca187b5c71ca4733817dfed67283334987dc7108bf390383a6be487a70167f150b73ae9db20fb074c9fd764fc6dc6ea8736de262b66e07
 
 Package: attr
 Architecture: arm
@@ -23,11 +58,11 @@ Breaks: attr-dev
 Replaces: attr-dev
 Description: Utilities for manipulating filesystem extended attributes
 Filename: dists/stable/main/binary-arm/attr_2.5.2-1_arm.deb
-Size: 51152
-MD5Sum: a06a4064eb02f281bf9d4dca0e243569
-SHA1: 05aa586d1ad560f91dbdf35088b036842bf1c2c3
-SHA256: 8446956d885fe0b87ee30bf64627664d4eeaa0dcfb37d21d93cfa4cf7feee706
-SHA512: 7620aaf3f994995c0df4dc07e196bc85e2ed903a7e602d99571f7908772ed83920c18b098636a002ca23c74bbccf670a7134652fc1093dfd72f5371325fd971b
+Size: 51156
+MD5Sum: b913a7415bb104dc13be20d44d7a84b8
+SHA1: 513c10f714a6010e83db302227ca1231b627ffcd
+SHA256: 61baefaa63619ebac7a83ad9b616d166dd31a6f297b0ffedf3ed79c0c49be94a
+SHA512: 4762beebf91fadca38177394ca405bb1e0af2e355f80d79e1ef879e50b78fe0afe0e48941eec1d6fd0d1759eb6dccb6b128acbcf2b2950e5223d10cbfb656de6
 
 Package: bash
 Architecture: arm
@@ -65,6 +100,22 @@ SHA1: 8757f13efdc7f371ff7a97fe6cfed002037cafc5
 SHA256: b91d36f9fa717e8a120ee9741fd6f58085f3a5a06a5e66e77ba581c2a31d402f
 SHA512: 4dcea752d954811da182b081ac862890a198eaaa34d7ef71941ced2f53980f5f92915c80fc89ce74b3787100b2c7207240cfb99f23173caf97bec74f5f10d75c
 
+Package: brotli
+Architecture: arm
+Installed-Size: 916
+Maintainer: @termux
+Version: 1.2.0
+Homepage: https://github.com/google/brotli
+Breaks: brotli-dev
+Replaces: brotli-dev
+Description: lossless compression algorithm and format (command line utility)
+Filename: dists/stable/main/binary-arm/brotli_1.2.0_arm.deb
+Size: 330436
+MD5Sum: 020a006470ec46fbc656ce92acea7817
+SHA1: 4f3b8b8b7b621cf9aa79d12a56ccbc13280543e9
+SHA256: 7bc3653c1b79137f15898eaf15bf88e8bc10a7e94e03474f359b23bd8e3248a0
+SHA512: 8056321b7a4ee40e01fc27f6687a5427b9d9f8675ddc3c97916e058d5c18f1751e563bf6fdef23539ec7519ac9e12b233ef2af1f89c2f142ea51635d498955df
+
 Package: bzip2
 Architecture: arm
 Installed-Size: 116
@@ -75,11 +126,11 @@ Essential: yes
 Depends: libbz2 (= 1.0.8-8)
 Description: Tools for working with bzip2 compression
 Filename: dists/stable/main/binary-arm/bzip2_1.0.8-8_arm.deb
-Size: 25776
-MD5Sum: 5baeb0669c36076e88304f76cc0b0c11
-SHA1: 1ea275d593fc939e8b21d173c8b4b95e927b1a93
-SHA256: d9b1c3c5b92d74ca6c947c42328396c1e8272a45df8fe2ff0d9f2f391692b67c
-SHA512: 83bb8597ef46329f2cb8cea5f2e90ea98fc29c0e63cac436deccf8c38f3f0250b98c692505b3c2695945982d3eadf2d377cbcc418dceb55366ce1524a972d47e
+Size: 25788
+MD5Sum: a9e937dee099bf8f1f3aa4612ad455ea
+SHA1: 45649afbce4fbad57ceae58e06f1e6c2321aaf3e
+SHA256: db2cac32fa0fb2e748dfe77f02678e8a49c9af55f0ed5446764f9470ddbc6ab2
+SHA512: b62eef765a724b6877d186758c6306e70d5cade2c03561a855618dace055bd42d556d9dcd54ebaec8b6d59cc80fd652fcdacc2925d67dae67cdfea1368157e8a
 
 Package: command-not-found
 Architecture: arm
@@ -108,11 +159,11 @@ Essential: yes
 Replaces: chroot, busybox (<< 1.30.1-4)
 Description: Basic file, shell and text manipulation utilities from the GNU project
 Filename: dists/stable/main/binary-arm/coreutils_9.9_arm.deb
-Size: 751060
-MD5Sum: c573c36217c6cd9e3d4c39ef1dc4ece2
-SHA1: d3eae07ff8a831ff89c3cf94e4521dfc4fe3157c
-SHA256: acbbfc90ede89637cf812539265583d39c483043294f0b451d03190e981c96a2
-SHA512: 85e1dadfe5bf8d77b573dbbd7e3b3328772ec673538e632c3faf72efe69f446513d923b8ca2c85ee0b50fda4806c7116ae6bda33d82995af1622f0d45c3788d3
+Size: 751048
+MD5Sum: bef889779a90ae3f8be1e017cce9a3e6
+SHA1: a83c6ec0c20aed6333c7de57f743de6be0d524af
+SHA256: 645d930233e14f3ce7c5bd8b901e22e36ee9541fcd12043e734b07f9efacde7a
+SHA512: e2219cedc374b1c96191ba4d6e76e5da0b945131ca4931fde70245815919186fbf613f9078a42bcfb9393d548c2ee8580f0b8b1f288854203c4f794b5532b6af
 
 Package: curl
 Architecture: arm
@@ -144,6 +195,21 @@ MD5Sum: 6dcb92e4351ffa6d79bb8dcd5b8838f5
 SHA1: e9688167be0b71256264018ecd4ca366e8e1cc41
 SHA256: 2884ed8b738970723926cc3fb85057ce112d8f3e602962793879a69d8f17980d
 SHA512: 1ad3ad1cf859c5933614ca3959b5a84439e88f02d2fc5f0dfcdc7646087d3590cef2a93c4bb6446998e36d25e708966e4ef5f0c55b5bd0ddf83f7cd82cef4d2d
+
+Package: db
+Architecture: arm
+Installed-Size: 196
+Maintainer: @termux
+Version: 18.1.40-5
+Homepage: https://www.oracle.com/database/berkeley-db
+Depends: libdb (= 18.1.40-5)
+Description: The Berkeley DB embedded database system
+Filename: dists/stable/main/binary-arm/db_18.1.40-5_arm.deb
+Size: 35660
+MD5Sum: 111185d08d35ca42729c2f5df960a7ca
+SHA1: f06562a02fcc3ebe2f4633ba1411b4237fc8299b
+SHA256: aaec39dfe72f8334d6267189292a17c26f65b410dd134aa34651e185c0f4ba2b
+SHA512: d915fde7b7f73eb26ebcdddeb3c269bd91e17510a60659623363eb7155a1700b928e4fb4ac656cc82f040fdc4c0ed1f9c159fb20efabf465aae9b12675b0b3a3
 
 Package: debianutils
 Architecture: arm
@@ -199,11 +265,11 @@ Depends: libiconv
 Essential: yes
 Description: Programs (cmp, diff, diff3 and sdiff) related to finding differences between files
 Filename: dists/stable/main/binary-arm/diffutils_3.12-2_arm.deb
-Size: 152348
-MD5Sum: 3107b4e1b505e087a3c7fedf01d400b2
-SHA1: ba9d142fddf872e04cf462252cb801905cf90d75
-SHA256: afb204b28cd38f96e5b891a85914f06d6a11910987561f3922d003617823b3f8
-SHA512: 44eac926bc6b7b9a43d4a4b4763912dd5c8565e21ad04f114fc1c6109642ca1f49f1cecec3ff6a4dc9bf6f16196106aec77ee9b5c26eb9426144e81aba5e7bb2
+Size: 152224
+MD5Sum: f28b65444820e61b85d592e59e9c0cf3
+SHA1: 4d40c102502efb5b4c0b280779abae57297f47b9
+SHA256: 0845473a162e7a9245817f2d9507babeeb99b54aada09d04b634b44cbd2ee9a3
+SHA512: 71d980051097faf195bb60748c66c13381cfd1bcfcef0c3cf3f1c9a52038004ca72339bee17af8a0e524509bc133d0b7bd527e1d5c188e9c8325539db1d008c8
 
 Package: dos2unix
 Architecture: arm
@@ -219,6 +285,24 @@ MD5Sum: ade959712cb543be92ece6b63cb64e8d
 SHA1: d7c4634fc71666e8dff522af6df409aea6f034d1
 SHA256: dc862da09495e9ee000c6114ead99bf147f0c9cf35000ba5f72ddef922396b0c
 SHA512: e806f9ceb4862909a01c7db8bff0710dadb43d6809a6b260eb854617fa988f991afb7ce579272255f22ec302d58331e5edb4f72d9496f828bfea17418729facf
+
+Package: dpkg
+Architecture: arm
+Installed-Size: 1016
+Maintainer: @termux
+Version: 1.22.6-5
+Homepage: https://packages.debian.org/dpkg
+Breaks: dpkg-dev
+Depends: bzip2, coreutils, diffutils, gzip, less, libbz2, liblzma, libmd, tar, xz-utils, zlib, zstd
+Essential: yes
+Replaces: dpkg-dev
+Description: Debian package management system
+Filename: dists/stable/main/binary-arm/dpkg_1.22.6-5_arm.deb
+Size: 273900
+MD5Sum: 356ef29c2bf7a9536e0217a370106c3c
+SHA1: cdc8a7e9d77fbb6d2d6818d8cc16829313fcd623
+SHA256: dd31509c132a05b30b3868dcc8d0103268e4ad57d6998963a3e4b488988acc38
+SHA512: 38c43d786cdd25ca7d374e08d6cea78a176a521380873d1cad0ca278339ebc52d510416688a0357b0aeba211438f33f1fcd4d31346c766ce640ec89fb91579c6
 
 Package: ed
 Architecture: arm
@@ -259,11 +343,90 @@ Depends: libandroid-support
 Essential: yes
 Description: Utilities to find files meeting specified criteria and perform various actions on the files which are found
 Filename: dists/stable/main/binary-arm/findutils_4.10.0-1_arm.deb
-Size: 238036
-MD5Sum: a9f51890d7a054fd0eee5f919a4f1d37
-SHA1: 1ce964ef3cef139252e94c80a736972b028c755b
-SHA256: 3f4733bacfe64fb8f0f1a42b973aa716251eda69eeb1ba6109b354b3eb66bb92
-SHA512: c2fa22b5fab75076a09c9613415bc5155a5610811af473fce5722cf9b4029b80a415850a5f7631e954a231d682820a96d49c9581aa250c6e7fe401a977880a92
+Size: 238044
+MD5Sum: 3919e3c003f47a3a58f9102e89507518
+SHA1: ed12692090f76c4b296201fcbf8ad2062a2274bd
+SHA256: a7fbe5ab3bb80fcb1215a71643f9d6c1c8dd052a720a9dff265bffa23e1727b6
+SHA512: f9bff1ea4e07d879441ed4bf635444657dc2028885b532c0e7ecc9f66461639eb4f9744e4a073a48e7fa7529774e776a5a39538a9624d19f4133d435a2a75bd9
+
+Package: fontconfig-static
+Architecture: arm
+Installed-Size: 356
+Maintainer: @termux
+Version: 2.17.1-1
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Depends: fontconfig (= 2.17.1-1)
+Description: Static libraries for fontconfig
+Filename: dists/stable/main/binary-arm/fontconfig-static_2.17.1-1_arm.deb
+Size: 110304
+MD5Sum: 2f506bd00b12d9344ec15005c4089d26
+SHA1: 4215fb2a4788952ff16e9f300648696e90ce96eb
+SHA256: 3d75f81d00446787c5c0679063f21f9185225223ddc2619be6d5e0d12003cc25
+SHA512: a0c3f4b69908f5163d3142d504751c7ba900ee9aca8f5d32b633b577a93c8881a146f43228440b40b3d8914387c9daf0f0d93145e2a9fef40cfbe6f82b34a2a1
+
+Package: fontconfig-utils
+Architecture: arm
+Installed-Size: 104
+Maintainer: @termux
+Version: 2.17.1-1
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Depends: fontconfig (= 2.17.1-1)
+Description: Fontconfig binaries
+Filename: dists/stable/main/binary-arm/fontconfig-utils_2.17.1-1_arm.deb
+Size: 13036
+MD5Sum: 01852c879b4e27a4b6a54d5fbf0157f0
+SHA1: 715568990437c3b3fc81febdbafb0aa08d5473c6
+SHA256: d8766e3f44ebe6147a6680946cac5f632a28fc7e0fa575730788a0a6f248b861
+SHA512: 6dbad54ec35a6317fef4897f4f53bfe484fd1fbe19f4a1b8b5b11b0c69621ccb29f100eb79b8e7dfd94381e02993a2df59dd7b26999ed0005512e6b4bd59884c
+
+Package: fontconfig
+Architecture: arm
+Installed-Size: 628
+Maintainer: @termux
+Version: 2.17.1-1
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Breaks: fontconfig-dev
+Depends: freetype, libexpat, ttf-dejavu
+Replaces: fontconfig-dev
+Description: Library for configuring and customizing font access
+Filename: dists/stable/main/binary-arm/fontconfig_2.17.1-1_arm.deb
+Size: 112328
+MD5Sum: 50c69231fc8c9faac310a994886e2cdb
+SHA1: 6937e5d28c5941fd2e2b34a11587dcc06042d71e
+SHA256: c6a3695cb08a5245bd79cdd927baa159cde75053fe0800fda6f25968cc588ccd
+SHA512: e7c74191edadefa07ed215b44b3178f4043c8acadef8bb2c54ead59d838cc8f64f9436178eaa7f688335372abf9d89ccfb841363416b222b860e72ccf1a2f877
+
+Package: freetype-static
+Architecture: arm
+Installed-Size: 660
+Maintainer: @termux
+Version: 2.14.1
+Homepage: https://www.freetype.org
+Depends: freetype (= 2.14.1)
+Description: Static libraries for freetype
+Filename: dists/stable/main/binary-arm/freetype-static_2.14.1_arm.deb
+Size: 275304
+MD5Sum: 9afe8772800a2fe84d7687dda6b1df0f
+SHA1: 22657ec302b29500a6558d33465c45539594c7be
+SHA256: b8f8dd53bcae0ce27935ccb848be10841dd8691adf42c29497ef9e555b303789
+SHA512: fd518234915e2b7fc34e7701823069a648afe0fc0cf9b6e65a0b51db3a9e2ca53b5672a85b696322dffa061f8b15072798b60d95c0fa750e128f58126d92185f
+
+Package: freetype
+Architecture: arm
+Installed-Size: 1504
+Maintainer: @termux
+Version: 2.14.1
+Homepage: https://www.freetype.org
+Breaks: freetype-dev
+Depends: brotli, libbz2, libpng, zlib
+Replaces: freetype-dev
+Description: Software font engine capable of producing high-quality output
+Filename: dists/stable/main/binary-arm/freetype_2.14.1_arm.deb
+Size: 386940
+MD5Sum: c78ce23879b08d15ffabedb402a3768a
+SHA1: 770134788fda30b557db010945df292121dba000
+SHA256: 1a07e809773e4c8230f78684e06b21a408a2e7cb466babb5d527bcad9699f721
+SHA512: 50d9b5f5dfa55f6e223872a875b5591239e75d1c5ced15376d5dfebb7724c84f96f2f416fc42cccfd07c17eba3d2df86a4553d93fe6f48421837b31be48edf4c
 
 Package: gawk-static
 Architecture: arm
@@ -298,6 +461,86 @@ SHA1: 1eac0fd0990ec973bc05b10b9943077adb101053
 SHA256: b675d1d810b91792fc7bfb37fc8896840b3a9ba1ba7bd888f6791e6c38f7a672
 SHA512: bef8b4e49dbc5edfb4c351a8b949e256a84214f910613dfef22f09d76d68a1b9d6ebdb60b2009032788c2177cd6aaa7643701bd1c1871c8b05f18d98225e4ff4
 
+Package: gdbm-static
+Architecture: arm
+Installed-Size: 140
+Maintainer: @termux
+Version: 1.26-1
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Depends: gdbm (= 1.26-1)
+Description: Static libraries for gdbm
+Filename: dists/stable/main/binary-arm/gdbm-static_1.26-1_arm.deb
+Size: 29756
+MD5Sum: 0bc0e9756e4e19b4240c26488510cd36
+SHA1: 2776e45c4946312dd5ce1ac51219fe5671c6dba1
+SHA256: 79ff776d674c5079e49b990540ef011e7b47ca31f596b51e4728a6c1f994c7d9
+SHA512: 8a7f88bb892d7e59eec6d8b8b6199ff77ac185ce4ee4c6cf9d93b8eef83b88ac61933de4825794e66be1dc26b43b11a1dce46fd90526c5ae13f94d575986603f
+
+Package: gdbm
+Architecture: arm
+Installed-Size: 500
+Maintainer: @termux
+Version: 1.26-1
+Homepage: https://www.gnu.org.ua/software/gdbm/
+Breaks: gdbm-dev
+Depends: readline
+Replaces: gdbm-dev
+Description: Library of database functions that use extensible hashing
+Filename: dists/stable/main/binary-arm/gdbm_1.26-1_arm.deb
+Size: 141560
+MD5Sum: 139c1e97b6ee9a643e2cec2e3d7afe77
+SHA1: 69a2c21ff70c17bb780f73297d154796e9dac360
+SHA256: 6645df121189721b1dca29827a4e88d163583c2260d6b470709d2946c23d4a47
+SHA512: 7f103c87de632903df2f6a8ed61ec114afcd8f5f18a9033fff12962050edb27f016e4cbf68ae740cd19e507c66bd8c2f09fe453d73df87c08125d6d037f790ea
+
+Package: gnupg
+Architecture: arm
+Installed-Size: 4084
+Maintainer: @termux
+Version: 2.5.11
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgnutls, libgpg-error, libksba, libnpth, libsqlite, readline, pinentry, resolv-conf, zlib
+Conflicts: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Suggests: scdaemon
+Description: Implementation of the OpenPGP standard for encrypting and signing data and communication
+Filename: dists/stable/main/binary-arm/gnupg_2.5.11_arm.deb
+Size: 1291404
+MD5Sum: 66999413e1056ebbafa6365a963abf5f
+SHA1: ee696c57760d31286d5b68278d2db254ae299fe5
+SHA256: 2aed0692d2afbef3f8c53134ed05e4d0addd0ad6b6a85a83b38ff6603fd71eb3
+SHA512: 76cd5ad9b64c9b0061665ad11ce514a4f1572dadaae34f58ad60f2737b4b25fc6ca22daaa3e93763989c6dfeb7b707b83462918243725d919182fe3e96d1ccbf
+
+Package: gnutls
+Architecture: arm
+Installed-Size: 684
+Maintainer: @termux
+Version: 3.8.11
+Homepage: https://www.gnutls.org/
+Depends: libgnutls (= 3.8.11)
+Description: Commandline utilities for interfacing with the gnutls library
+Filename: dists/stable/main/binary-arm/gnutls_3.8.11_arm.deb
+Size: 162052
+MD5Sum: 2a027d3bf4547253bc95bcf6fcbb600e
+SHA1: 17c72e02045596d9a5652293ed2971fa1065e3f2
+SHA256: 4ddc79d2b195951977d774c7a8a56f4d4018892b554e0e7d6302e410fa1c5a14
+SHA512: 6993b44440f19b447f2ea5beeb5517f6b5d8fb135035d148b55e517669ed77668a1860f9195775618e28d8fbd9ddc93c5728a334173cdde5b2f8822f8ced1d34
+
+Package: gpgv
+Architecture: arm
+Installed-Size: 352
+Maintainer: @termux
+Version: 2.5.11
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
+Description: GNU privacy guard - signature verification tool
+Filename: dists/stable/main/binary-arm/gpgv_2.5.11_arm.deb
+Size: 172868
+MD5Sum: ed1ba9a2f6fb3271e7e9e6080967f8e1
+SHA1: 9266c8eaca430840d02bf724f2bc6af3e2c6b1cb
+SHA256: ea5e35b7778b6db2a8abdf28d76b3ab88a9057f667ee06c38ba67e51d39f0c0d
+SHA512: 33ae5147daac0a5b7b598ccd5cb2566aefb2807ef03076451f8fa3188b59dc46b1eac2c998a2e78560f3b19ffae00a28b7cbdafb2f32d7209bdff44c91acb59e
+
 Package: grep
 Architecture: arm
 Installed-Size: 392
@@ -308,11 +551,11 @@ Depends: libandroid-support, pcre2
 Essential: yes
 Description: Command which searches one or more input files for lines containing a match to a specified pattern
 Filename: dists/stable/main/binary-arm/grep_3.12-2_arm.deb
-Size: 121012
-MD5Sum: f5fee7db4616c3cd475c7d7ea0106a93
-SHA1: 1791061bce9e6cad9610a55bed3a45e6f10840b7
-SHA256: 7b162acfd3bfdc5913c4653bc4d3200fff62357a4cfa7a6b5e387e4ac84fd2b5
-SHA512: f5238eacbb16ddf04c4cafa67a66331c6d10eed46809c341265baadd48ca43805db169423486e412cb3ca2e72dd67019c37b8d0a3ece96859bd2f0b7c8ac7a9c
+Size: 120980
+MD5Sum: 5071db7c9785585bd99ccf28702f7af9
+SHA1: 6ae8035f560a99798c66d4fcc2dbc5a8d29d3ae3
+SHA256: aa43c8e4b8db54d59df02fa212bf8f8e4ad1b165495beaf6f33a7fe6497e015c
+SHA512: 77df447efefc1761c8ae2a43674f2bf023187223c07ea17babaa14f8d0f9e89dd00c2b3effc527bd873a58a672152e3cc243f02d47525ae7e8929686f536e6b3
 
 Package: gzip
 Architecture: arm
@@ -323,11 +566,11 @@ Homepage: https://www.gnu.org/software/gzip/
 Essential: yes
 Description: Standard GNU file compression utilities
 Filename: dists/stable/main/binary-arm/gzip_1.14-1_arm.deb
-Size: 79836
-MD5Sum: 5bb3b53e7e057344026776555c6711b7
-SHA1: 2f5e357cd9bf02c128eeece23aca70e4acd380d4
-SHA256: 3a7ff1c1626c6e4beaefb539c9574c3d1b9d7d54811dd5ea790ec66ba5a5097d
-SHA512: a61c6984a84ce1eedecbacbd7a601355c08d95c94e8acfae93da44fcdbf4f3988873902bcdca5570ff6f32aef227dccd64639887cebbc09c612371a309bb9e41
+Size: 79832
+MD5Sum: 0d45c64673647535b0cb6eba91307dda
+SHA1: f23e74f3914f621a3b9e75955d18bc92c4e4fffb
+SHA256: feb94888d6478bee391417d65843b42adde70c4cca12bc1414952f34e8fc1085
+SHA512: a0f9d687d746f9460f6233b0fce64122c29996d4e48bf88cde10f7419b652ccbbe02a8fd7365f026e93f56d893530aded497ea5f807926dba63de5689c369443
 
 Package: iconv
 Architecture: arm
@@ -338,11 +581,26 @@ Homepage: https://www.gnu.org/software/libiconv/
 Depends: libiconv (= 1.18-1)
 Description: Utility converting between different character encodings
 Filename: dists/stable/main/binary-arm/iconv_1.18-1_arm.deb
-Size: 8988
-MD5Sum: 02d03b8db316bf1238f833750430a36c
-SHA1: ce2200c6b583cca70174fbd9c5095bf6a1c6c102
-SHA256: e3cba0b6cdabf9f617fe8fe4627397d81163200af2f36555e863ea8fbd748ff3
-SHA512: 515106987ce57f5d72b7b9b40d4e6e2464851ccab1e5ce2473ce7b2d8f9050efa38b774db3c48a3110b19cd8291b64e5bcd9628e833af51b19ca573007c41e2c
+Size: 9000
+MD5Sum: a73c0ea45df0db6bbbbb5c25f41d4fa2
+SHA1: 0faf47ccc74c5bbafd2ae7b8273740cc2d4a4e2d
+SHA256: b6e52c910388caaf820051bc047d436a93374c2ca383d974da2ee8553fb07a5b
+SHA512: 9254cc80159ab25d01cbdf41e4ff4e7acda22821051fa8318f7a673f715d600061b935be9cf8788c229ab801e414d4373723aa23ad18664398e463a97c4b93e0
+
+Package: icu-devtools
+Architecture: arm
+Installed-Size: 536
+Maintainer: @termux
+Version: 78.2
+Homepage: http://site.icu-project.org/home
+Depends: libicu (= 78.2)
+Description: Development utilities for International Components for Unicode
+Filename: dists/stable/main/binary-arm/icu-devtools_78.2_arm.deb
+Size: 166464
+MD5Sum: ef3e8701efde75468c400e936e6c376c
+SHA1: c273a64325c8370b1d75f754300ed1c0517c5543
+SHA256: 5d05ff7ca2c63e6a585c33f7857371b4186a6460429300921a52bc09ba680e6e
+SHA512: d581c99b91702a57f75df0e8e739a983bc9459c10bdd7c49a4986e0c7e9aa2fe6d247b0887d8858efe47ca611829492d1885cee00a733836c566c6cc99d50bd4
 
 Package: inetutils
 Architecture: arm
@@ -362,7 +620,7 @@ SHA512: 1f02e6a0fd37dac0e51037d7d6cd1ba3dfdf3e1ecffe0c915be1c0b9b305815f9386f4d6
 
 Package: less
 Architecture: arm
-Installed-Size: 400
+Installed-Size: 296
 Maintainer: Joshua Kahn @TomJo2000
 Version: 685
 Homepage: https://www.greenwoodsoftware.com/less/
@@ -371,11 +629,11 @@ Essential: yes
 Replaces: lazyread
 Description: Terminal pager program used to view the contents of a text file one screen at a time
 Filename: dists/stable/main/binary-arm/less_685_arm.deb
-Size: 172232
-MD5Sum: bbb7736dd3d2fbc2855b9fddea15d023
-SHA1: 937d02e2539b1e53f76cb5dde15898815f2ddcbb
-SHA256: 1b2aab6318409c6679779bae31f2aefdafd1904f99c273df7b43825e55bc4be0
-SHA512: ca0860a15c322693d976252757c43061104de4ce16feebc8fcd0e31eeed5dda15f207bd8734eea094e4c6155c6254cc44e6d40518b8fa608942d00e60be80480
+Size: 126716
+MD5Sum: 7e53d5a8604cd07ca2a8289cd76371b3
+SHA1: 34a836222944348162f0c29c3618f9100a2afd57
+SHA256: 5034cc077afc024a036b1c7ceefaddc69384fa5135ca78d7d8912de0b3146dc3
+SHA512: 0d99ea7b3ea5ed2937ee7b861c9478589ce399296f5f3e3520d4e8c2143cdbb724ad6f754595aaad9738d508d1962af69d0e6fad58e4b2101eff61b0a96e18c3
 
 Package: libacl-static
 Architecture: arm
@@ -386,11 +644,11 @@ Homepage: http://savannah.nongnu.org/projects/acl
 Depends: libacl (= 2.3.2)
 Description: Static libraries for libacl
 Filename: dists/stable/main/binary-arm/libacl-static_2.3.2_arm.deb
-Size: 14432
-MD5Sum: c8a546a67d506d71c47ffa052341b01c
-SHA1: 2989e304aa698547cc69ab8ebae6aa9e906e24a4
-SHA256: 3d60eed163cda42ee263241f95e7ffe3c469c8434f2b027d0add382877a87e67
-SHA512: 4e2f87f7c1e7926fdd5b532596817c165a5c2c11ba121072b1b3be0711209923bbc99db077b720012c110dcd15266a6955566899bfcc998f2b1f4b7370f473b3
+Size: 14444
+MD5Sum: f9bef117f17f6f8786fa162ee48a369b
+SHA1: 7a2c1067093e129b213cb17dd2a7b524a5b942a9
+SHA256: 7481c52f0f959deb18f772f0f7fadfe743efedad79076280a78d1505ae14e760
+SHA512: 580f923b37fcaada9eac57c4e5c315149ca6b0a106a5ceff811128f9d9fb558cf3123f59c3dc491b751dfe9024fc95fd7cf542a8af2589718ccf0da389c4d59e
 
 Package: libacl
 Architecture: arm
@@ -401,11 +659,11 @@ Homepage: http://savannah.nongnu.org/projects/acl
 Depends: attr
 Description: Access control list shared library
 Filename: dists/stable/main/binary-arm/libacl_2.3.2_arm.deb
-Size: 112444
-MD5Sum: 74b73f4c743d741793eadee8badf77fa
-SHA1: 3f275be723c556aa59783cc6741924182a74aed6
-SHA256: 248a6d89d602b7948e4d1c4ff98fab2181e7dfadb3b5e30541ede6a13cff5211
-SHA512: cf02c47f80c8aca7e188671b86005f014f166e4319f02c4360d78abb19d6d13d2459cca555387abc06871afb57664a80b22661c383dc11d684987ab8f2a5b82c
+Size: 112436
+MD5Sum: 39012e949d0628335ab65169d983ce05
+SHA1: 27cd5e376733b792bdea6125a4b8b6f1b40c1f76
+SHA256: 4083c767b0c42ce64164b92c01047f1aae06f6e65aee0035d58f82ae7de8b943
+SHA512: eebf6ec7b87aa86d1012e5dfbb8d44c5b7a944651f4aaf07f08e0a81d0911453cb74fe810dc021ba8f451258373abe1973ba02be4704448c8786fbe99aedb1ff
 
 Package: libandroid-glob-static
 Architecture: arm
@@ -416,11 +674,11 @@ Homepage: https://man7.org/linux/man-pages/man3/glob.3.html
 Depends: libandroid-glob (= 0.6-3)
 Description: Static libraries for libandroid-glob
 Filename: dists/stable/main/binary-arm/libandroid-glob-static_0.6-3_arm.deb
-Size: 4384
-MD5Sum: 959a4f6539b6e8050c2a1138ab604c18
-SHA1: b0339b08b620b99a5b3bace06866c3ec210ef890
-SHA256: 7a7ff2f66474a6367e866223663d5f3384b99a3339968d9e685a2e08eb6c2482
-SHA512: d9ea73663b9a9d6e47ef77bdae5f840e68bfc23c6abfa5745ad2010eeb14ca3ef02e225c812d4793e2f7ed3df3487800f18c125d5e955acec4fd22636589cdca
+Size: 4388
+MD5Sum: fab77e665caf450e4874284df2fbb494
+SHA1: da9a5d060251e2e649d133ec6246ea4611887506
+SHA256: c240526c07fa03258bbc111eaff5d272d1af98da782c1180f2c137b4901bb880
+SHA512: c563f20f394e7db277b8dd76f37d99150b949568c7d6c83511fb94de623b6d671a1853e63829bd3c5abf47004d224b1d99913b4813cbccc7efe0e172f674d99d
 
 Package: libandroid-glob
 Architecture: arm
@@ -432,11 +690,11 @@ Breaks: libandroid-glob-dev
 Replaces: libandroid-glob-dev
 Description: Shared library for the glob(3) system function
 Filename: dists/stable/main/binary-arm/libandroid-glob_0.6-3_arm.deb
-Size: 6676
-MD5Sum: d7795b89fe40f750958ecd4e8e196d64
-SHA1: 3795409a388a4fc8ddc86c8304f39e0d8151ec99
-SHA256: 5d380f66276038acdda4035e117158bce16fbcc01a4d2b15c37c2770f9d1355c
-SHA512: 147f84f3437d24775cc4c799a1c274b28144117a611f43297ebcbc0836631113d9ced881cf13be026711e502aa004e8aa695772b015219209ed91dc69788754c
+Size: 6684
+MD5Sum: bcf6b55421286361416b68c10bcf65ce
+SHA1: d574324a5231bfade2bced274f2901fdc5e069ae
+SHA256: 38354dff6512a619baba6e45409a74b044bd9e21c66b2e5a34a0d4f2fade6272
+SHA512: 31cb5d81e64871de0871937cc2393df3230b7b85a1ec500688bacfd1f7e54392479887d82cf82cc1e5639343ac270ef23474f08c7771ba8870d5c32d5bad24e3
 
 Package: libandroid-posix-semaphore-static
 Architecture: arm
@@ -447,11 +705,11 @@ Homepage: https://man7.org/linux/man-pages/man7/sem_overview.7.html
 Depends: libandroid-posix-semaphore (= 0.1-4)
 Description: Static libraries for libandroid-posix-semaphore
 Filename: dists/stable/main/binary-arm/libandroid-posix-semaphore-static_0.1-4_arm.deb
-Size: 2436
-MD5Sum: 28d740701eff2372daabc439d5a0cbd8
-SHA1: 49812a62a47a986ee0549fad0f316ad95614f319
-SHA256: 65cf44b2252455d08ca65f722ab13f301071ed84fe42a65638817928e21fd732
-SHA512: acaadbcf9e8262a70eab48b3ee86a0ac43d04211d1670cd401f7073815761220b0538e1ab2747a32227e87346327aea0792ca63872c59982df4590c949e3e297
+Size: 2440
+MD5Sum: cc82aa3c1da16a798ee7278c4b63c7c1
+SHA1: 32d6ffe127158916e6ecd9176d56fbab0f16d1e9
+SHA256: 351b9648857845fb4760bd9f59b391ff2ced8090bd24348ffd1a43fa52a95884
+SHA512: c82faf2be8bf2b5ea5851ecb6a2dd519accab39cb110c2b5eabf247a0805f831d47ce05ee06bf8d16380077b9b08bc7b9341af438c3a749cad05264161d37a0c
 
 Package: libandroid-posix-semaphore
 Architecture: arm
@@ -461,11 +719,11 @@ Version: 0.1-4
 Homepage: https://man7.org/linux/man-pages/man7/sem_overview.7.html
 Description: Shared library for the posix semaphore system function
 Filename: dists/stable/main/binary-arm/libandroid-posix-semaphore_0.1-4_arm.deb
-Size: 3644
-MD5Sum: 083501cab75c9c7ba441552d17406fb4
-SHA1: b0957206a8c8583694bac088f31faf5d6ecc0aa3
-SHA256: f9b6cfd04a6cbf0771a2e5b4eec5816ec1c8dd64d7585a641862585342f58a24
-SHA512: 8921e31bd1e25a95c438c36f72e3199df1043b9d53c83af2ab3f1c770e382e2c63419995fc7ed9f682efacce756d4a6e6fdb66a013070634e1f57edd1c18fc62
+Size: 3648
+MD5Sum: c708e6e6553719c81660d2df27e67df0
+SHA1: cea655419c4307fd0681285156a5e8cb9fc67ba8
+SHA256: 278580c8f2e70721a531801fb03c9b0cc98593e474ccd432a9d07e5be140d104
+SHA512: dc22db7dda4dea08dbd18ac0c1589fa3d3eb5395a5be9144b3eaba6fcdd3e98409247b19bfd834a48ee87b1fe8cdb7081eae0bfcefc9ed6174e4246af7420ec2
 
 Package: libandroid-selinux
 Architecture: arm
@@ -476,11 +734,11 @@ Homepage: https://selinuxproject.org
 Depends: pcre2
 Description: Android fork of libselinux, an SELinux userland library
 Filename: dists/stable/main/binary-arm/libandroid-selinux_14.0.0.11-1_arm.deb
-Size: 54380
-MD5Sum: ca708e38f4689a12e08d0b87b0ce7a2f
-SHA1: b21945b01e7fdc72f46b1c7f48cd5dd5160ff526
-SHA256: 441b605e7f69231de8646ce83b7cd312542e09e70dc851100295988eb4052ce2
-SHA512: 10b34f787cd8059745a35361bf6235db824cad2393bd3dad0f81fd42cb61a3a964d79d2a4debdf69d04489952ac3fd7ea92e284d02b2a03672348cf15df35721
+Size: 54416
+MD5Sum: 8128d8b854be9fb62e93c7dae95c21a5
+SHA1: a423f9a4467a57463bed3fd6825a9cef2247b3ca
+SHA256: 2163226d9e0de2849e7a3b337b334f81844674f67cebc111ad400d2f4e7902ba
+SHA512: 216e8cdd315c1503b09989bba1a2e595d57d4a99fd4de9ee177572435aa983ecc9080c49aa1661f83c97dd095a5ec7b4e9f1606c147cf6e5e5a00d24850c66e6
 
 Package: libandroid-support-static
 Architecture: arm
@@ -491,11 +749,11 @@ Homepage: https://github.com/termux/libandroid-support
 Depends: libandroid-support (= 29-1)
 Description: Static libraries for libandroid-support
 Filename: dists/stable/main/binary-arm/libandroid-support-static_29-1_arm.deb
-Size: 8152
-MD5Sum: 64f87938abe0f5ee4301732e607566d0
-SHA1: 097a3fb2110065d6f289eecd0712389897eeced9
-SHA256: c8e165e9e3e3d06f3b866031b5283a739f159886c8a926d5b291a717f19d4067
-SHA512: 814bb13c15b76343fd44546b9c0cb9f4afa594889c9c4c85849e3666962f009f108b794395844a7b0d3d57d2606efd476f3037e98b1d3d6ee4120d143dcba122
+Size: 8144
+MD5Sum: d4542d8d3783cb0c35ef6fec9b15b809
+SHA1: 5f1d59d33d6235aca324beeb78596870005c9db8
+SHA256: 228e1cf341bc1849d26537fd2387daeeda821d517de4c918c72859cbb11a5d41
+SHA512: ea3959c055ed84f77be32e91d4f8d5b5ca929a328a18c0bc32600495ad96abef91e664f1032662134bb4682d95c4871ebbb87ac467c52639a4812024e1be6b41
 
 Package: libandroid-support
 Architecture: arm
@@ -506,11 +764,72 @@ Homepage: https://github.com/termux/libandroid-support
 Essential: yes
 Description: Library extending the Android C library (Bionic) for additional multibyte, locale and math support
 Filename: dists/stable/main/binary-arm/libandroid-support_29-1_arm.deb
-Size: 10384
-MD5Sum: 8a0621803000f2eb1fa7168d47b2be2b
-SHA1: 0423582211b6b3f78065b27e54d512990e230ce7
-SHA256: 36a62c0c82cc4d5a210d85f0e2e7472920dfd47ca933e6dd341555e5bd80a5a5
-SHA512: 0b8f9c3d37293ca715886790d6585f328e565e7e271c8f956158851d2217c54a364291f33438b75630259d8accefac94ae63bc0b17c999ba8d40849840bb7a46
+Size: 10388
+MD5Sum: 8774374c23860abc8cf4987fc4b6d371
+SHA1: d36a053f9d25c2e283b12299ccf165454d2dc4aa
+SHA256: 31efd07480a8080bcee8615907917246007f732b8e5d6eb53a6cdd97c396de05
+SHA512: 85b80028efc1750d571b8b951eae62e9285eeca27dccad776c7a12c4398b211c090dde9687795d031696dd30cd58e55ca945f3335210763999a5616122f7cf86
+
+Package: libandroid-utimes-static
+Architecture: arm
+Installed-Size: 32
+Maintainer: @termux
+Version: 0.4
+Homepage: https://github.com/termux/libandroid-utimes
+Depends: libandroid-utimes (= 0.4)
+Description: Static libraries for libandroid-utimes
+Filename: dists/stable/main/binary-arm/libandroid-utimes-static_0.4_arm.deb
+Size: 1652
+MD5Sum: 0605826030a1804cfd097b2c29d82a35
+SHA1: fc6d48d0a0ad0f04e852c9337c92c0112e5f8cd8
+SHA256: b37aff2d68e2de3bf0842b3fa7ac45738c1ee84be47d24e240e9e7bff5ed60fb
+SHA512: a6b61bff9cd637fc1f3ad1c1eb293ebe730dd57b121629126fa9514f2682e3391dd15faec8e3a48da42d1a20e5323ae5d17d935ebf12c4e4b4120cc4dae0b687
+
+Package: libandroid-utimes
+Architecture: arm
+Installed-Size: 48
+Maintainer: @termux
+Version: 0.4
+Homepage: https://github.com/termux/libandroid-utimes
+Description: futimes, futimesat and lutimes from bionic
+Filename: dists/stable/main/binary-arm/libandroid-utimes_0.4_arm.deb
+Size: 2932
+MD5Sum: 47937151932ecfdb2c8f54a36d65719a
+SHA1: 7645233c5577252f71a36f702f6a4144f9048b7a
+SHA256: fc6cbaca93b222d9683aa5fc84f396913f7538abab1074e8106d139f0dffc423
+SHA512: f71d2eb2d8d42af4618070086dd99ef0c2d2307c6e91e15aad6dd36f33c7a786be24b14ceff5c7fca7f5094b60fd260b02be42f807f6eef064ed16469e100cf5
+
+Package: libassuan-static
+Architecture: arm
+Installed-Size: 128
+Maintainer: @termux
+Version: 3.0.2-1
+Homepage: https://www.gnupg.org/related_software/libassuan/
+Depends: libassuan (= 3.0.2-1)
+Description: Static libraries for libassuan
+Filename: dists/stable/main/binary-arm/libassuan-static_3.0.2-1_arm.deb
+Size: 30312
+MD5Sum: 1bc47827636a0d7acce43e8dfa38e864
+SHA1: 40abc77dd1cddaba70052abfc4a1aa9be19f0d7e
+SHA256: 84278f7eb733671ce93ffdeda9fe7c121e66c8e8db5f5dea5c3a1091f516f0a3
+SHA512: 90a811a3c411db4eff388b0a1ead450f5cbd1335be1adb7db57d2d30d3bf9cb825acee9c8645d0d8881f7fbff92df30755d24304f267a64ff0887c64aaaaf5e9
+
+Package: libassuan
+Architecture: arm
+Installed-Size: 308
+Maintainer: @termux
+Version: 3.0.2-1
+Homepage: https://www.gnupg.org/related_software/libassuan/
+Breaks: gnupg (<< 2.4.5-3), gpgv (<< 2.4.5-3), gpgme (<< 1.23.2-3), pinentry (<< 1.3.1-1), pinentry-gtk (<< 1.3.1), profanity (<< 0.14.0-3)
+Depends: libgpg-error
+Replaces: libassuan-dev
+Description: Library implementing the Assuan IPC protocol used between most newer GnuPG components
+Filename: dists/stable/main/binary-arm/libassuan_3.0.2-1_arm.deb
+Size: 70592
+MD5Sum: d80d990094df63dc79ec342e329b50e0
+SHA1: eceb9261a3ff255c881bb832d0e81ba209ade268
+SHA256: 8648854d3d37befa1f0ccc8398bb2bebc93cdebf6694ef2caec586fcf839e814
+SHA512: 7226bfee3d48d1ebe48b5337a09aebbfd3f3b4708fe26bedc48c8980c5ea96d7256bf70ef50887e2d3f2e774925d3c1adbb044586e0c465bab889b64734731b2
 
 Package: libblkid
 Architecture: arm
@@ -540,10 +859,10 @@ Replaces: libbz2-dev
 Description: BZ2 format compression library
 Filename: dists/stable/main/binary-arm/libbz2_1.0.8-8_arm.deb
 Size: 24104
-MD5Sum: 6e87b2f272f318fc63e448c3550bc9ab
-SHA1: b20dd40abac5f2f96aa34021b5a44642fba46cd9
-SHA256: 1adf100ad2c25061bbf84848c8c60cc5a3deb0e147d60c8c0e28c47b2f0abf89
-SHA512: 2e5ae06c97d863d6886609f918adbad9f9bbdb769fb5dbb29015ccaa78fabf29cc8f194e77edf32272d2a19936ca0a28482ac836d20a1c87a7083cdadbac8209
+MD5Sum: 3af62ec0fb4263e35896a50cf7f35407
+SHA1: 22972a088c07756d31a5726e486913b912c66da1
+SHA256: 310bdb3e3b76492126ed564f9419eb106ce3aadba30618921d03a54b2d731ff4
+SHA512: af4479c59a5a02f0b6f52e6188bfdc47294cba40cbcf14b74f5e1acec9fd334ad13f8659600f455397f9b24bef2376ea41bf7744bfb9b1df641e1b95879df80d
 
 Package: libc++
 Architecture: arm
@@ -554,11 +873,11 @@ Homepage: https://libcxx.llvm.org/
 Essential: yes
 Description: C++ Standard Library
 Filename: dists/stable/main/binary-arm/libc++_29_arm.deb
-Size: 318016
-MD5Sum: 6174d0cd7409746ab9533a8dc416935c
-SHA1: 2dcaf2ac10ac253f5b242aac1fc6a4ee6ced80fc
-SHA256: 07a2e1cff29898fb868448c26ff9e7d2a882558adfbb7022a851da2729071b38
-SHA512: f7d5fc83c2c8cb42685375a3cc3a78e1459caa474c6d60bf0bf25bf7b5498b0761c231636db30e2593680d0b4b13c214fa61b110c982a04e784122e5e75377d4
+Size: 318044
+MD5Sum: a1fa23d20dcbd0ad291f79873b3ca452
+SHA1: 5578a29f17615902d152ab67bb5f83e9e6dbe7cc
+SHA256: ca99325377b11e94f91203bb1ebbe764c37cd8305ed0f8419decb3eef9328c6c
+SHA512: c4249f23111179d331d3999f20d0e6f1ab47334cabe7a17bae383b5f4779f033a7babd64bd0b8152345755e5dfa426866a71d8f4efa3bf2c3a336123b436fe6e
 
 Package: libcap-ng-static
 Architecture: arm
@@ -588,6 +907,23 @@ MD5Sum: 7fe65276928ec42e209b433258aa2861
 SHA1: 29298df0ae4796e12ddf1d924720d24816180e76
 SHA256: 39afbf3a3fa749674cfbb8468488ac5dd9a3a8ad70f1414d4728c0b1bc0ce2cc
 SHA512: d659eddb2ce9c9211170e52b18d4b70997267217305915133eec9a73182eb47d647a585df43afff5e6c078a116fb93665fdf4f5aa7b622c6178da92fad3031ce
+
+Package: libcrypt
+Architecture: arm
+Installed-Size: 68
+Maintainer: @termux
+Version: 0.2-6
+Homepage: http://michael.dipperstein.com/crypt/
+Breaks: libcrypt-dev
+Depends: openssl
+Replaces: libcrypt-dev
+Description: A crypt(3) implementation
+Filename: dists/stable/main/binary-arm/libcrypt_0.2-6_arm.deb
+Size: 8256
+MD5Sum: 747440f4683b2c47b6924fa44176c981
+SHA1: 77a90ef48d3b9a68df84552da7b961bd89bbd761
+SHA256: ec93322dc6e031d8f83b2d01f860b5630f5203137a3e715025730b2d2e4d5fe9
+SHA512: 01d3a5982fc69042f3a0c712d477d44286d281bd5f992a949da3086e430b8348cb970cf283e1190065dbc7b4a4758082e5495176b5d2f6c54b2bb48cf23f9c73
 
 Package: libcurl-static
 Architecture: arm
@@ -623,6 +959,85 @@ SHA1: f74a86edbbbb5764f3598890339aa3e7fcb27cc3
 SHA256: 489a1530f234934cfb1f5606e6cf35ce5bc94c68136daa7d0490df86ef7af68f
 SHA512: d684ab47055c0a5a42af13932840f1f00186acd09b02a36342b5099ac7ba053f0e8ed5cb6d400e7a3aaa3556fc39f9d138bd8af2313dd8358c14fca93566e32d
 
+Package: libdb-static
+Architecture: arm
+Installed-Size: 5852
+Maintainer: @termux
+Version: 18.1.40-5
+Homepage: https://www.oracle.com/database/berkeley-db
+Depends: libdb (= 18.1.40-5)
+Description: Static libraries for libdb
+Filename: dists/stable/main/binary-arm/libdb-static_18.1.40-5_arm.deb
+Size: 445444
+MD5Sum: 366226854512c682790b4be855e4d18b
+SHA1: 1a4109dd16947cd36785fd0e288ab2665c305d48
+SHA256: b53799943f3f328c11a444b25cbe3fdb0e5715b3684c410b3b5a66427b8616f0
+SHA512: 86a55c4d94c26409aa780a9bf28b01924be1a39149bda7303f5b516debf224e28688e53b0987540ce77889950b8b7ecc5b36aef897d7dbc0d01893bd0c520dfa
+
+Package: libdb
+Architecture: arm
+Installed-Size: 1652
+Maintainer: @termux
+Version: 18.1.40-5
+Homepage: https://www.oracle.com/database/berkeley-db
+Breaks: libdb-dev
+Depends: libc++
+Replaces: libdb-dev
+Description: The Berkeley DB embedded database system (library)
+Filename: dists/stable/main/binary-arm/libdb_18.1.40-5_arm.deb
+Size: 459292
+MD5Sum: af74880f599de91636deb07c81f3d2c5
+SHA1: c32a1a7338a38c8d0591da15e031292abe821e9d
+SHA256: ae4a018f5e1124a1b7683fe7cf0cab9731e21d93d7da74627bbc13a62307c85d
+SHA512: e05e4d289b580755cd4a2649dcd94a1dee934e5b40cdf8bea68a62ac4c898bdf8e4a43b54fb684e968cde90781f3964e48d7c56388654fb0b79e5a2cc76f78e5
+
+Package: libevent
+Architecture: arm
+Installed-Size: 940
+Maintainer: @termux
+Version: 2.1.12-3
+Homepage: https://libevent.org/
+Breaks: libevent-dev
+Replaces: libevent-dev
+Description: Library that provides asynchronous event notification
+Filename: dists/stable/main/binary-arm/libevent_2.1.12-3_arm.deb
+Size: 189164
+MD5Sum: a89a60f03a6898c1dc6e1072eac2d943
+SHA1: 37607a1eb10f0f5630e5a52304147f206be70c0d
+SHA256: c09d107682a1318b2d609469905c02b47331292df50b437c6991a3a1523968e5
+SHA512: f855c4c3e8dc1a4a620df734c5445f3eb74d458d8658a1ba3437f5a6bf6918ce3edf3573a1a45fe300c9199b94479b22a7d0291d4ce121895f21713d7da2e023
+
+Package: libexpat-static
+Architecture: arm
+Installed-Size: 160
+Maintainer: @termux
+Version: 2.7.3
+Homepage: https://libexpat.github.io/
+Depends: libexpat (= 2.7.3)
+Description: Static libraries for libexpat
+Filename: dists/stable/main/binary-arm/libexpat-static_2.7.3_arm.deb
+Size: 51496
+MD5Sum: 919e61861ecb178b7e11d122a0817d1e
+SHA1: 493e7c48648b72999d8a2baacd9f4a5b734dc0da
+SHA256: 31881b6543350e74cd35b55928ec4082bc8ed7dce295312c4e97df4da10684f3
+SHA512: 65a0a1d8d7303bb3679a7252923e52aa7d12d5b2207577306f00fc13541d6501583f29df0673f4ea84b746b4ee7461bfa60b94a4f7fbfbceaba4d32fb8069e2a
+
+Package: libexpat
+Architecture: arm
+Installed-Size: 340
+Maintainer: @termux
+Version: 2.7.3
+Homepage: https://libexpat.github.io/
+Breaks: libexpat-dev
+Replaces: libexpat-dev
+Description: XML parsing C library
+Filename: dists/stable/main/binary-arm/libexpat_2.7.3_arm.deb
+Size: 86028
+MD5Sum: fd935afa6ff9e38e727739bb4e12db67
+SHA1: 9299f9281719bb1b68b3b2c01c18338e7a44a637
+SHA256: 9ec96e3aba1724f13af06a7711c5bb33b262fa88e4f583400a7d3c3c425749cc
+SHA512: 551d00530ad006c4fb56a2f7bce908ca24128603a38c53444a5a1d28ac90b658d6e441b0d692f94c92b6a2acf9898b85512d728c3637bcc8f3edea614af74047
+
 Package: libfdisk
 Architecture: arm
 Installed-Size: 380
@@ -638,6 +1053,69 @@ SHA1: 05558ee0799db1f9bae72feeb2be3a12e13d0051
 SHA256: e68d28ffc106ce84fcaa1b0f7caa12ba25ea7781e116992105b7d8c63c84c035
 SHA512: 4a80f35c53fa5a82aff91d99b2d862662eca3b334dcc3f8a27cda07c2ba1970d7eabfd26478a3540967b1740cf97d20150f0ba08a7d6a0773aa5e5361637d9b4
 
+Package: libffi-static
+Architecture: arm
+Installed-Size: 76
+Maintainer: @termux
+Version: 3.4.7-1
+Homepage: https://sourceware.org/libffi/
+Depends: libffi (= 3.4.7-1)
+Description: Static libraries for libffi
+Filename: dists/stable/main/binary-arm/libffi-static_3.4.7-1_arm.deb
+Size: 14048
+MD5Sum: 662257a3fc067d57096ddb6f5af61fb3
+SHA1: 1b320ea9ffd68ef835e59c3dd527a0c463965734
+SHA256: e13cef5809b97fa14b9e3e1191cd90483d18ce5bf5f2ee7a795e083f6d9b23a7
+SHA512: 33a3929c4d6f98891d3fa3a31cbf1cc6ff0f79e360489691dbf45a3c74b5367aa1252cab63c03395d145097b51bcd7158e4878e679c37bc52752af15f74b1bf0
+
+Package: libffi
+Architecture: arm
+Installed-Size: 176
+Maintainer: @termux
+Version: 3.4.7-1
+Homepage: https://sourceware.org/libffi/
+Breaks: libffi-dev
+Replaces: libffi-dev
+Description: Library providing a portable, high level programming interface to various calling conventions
+Filename: dists/stable/main/binary-arm/libffi_3.4.7-1_arm.deb
+Size: 28952
+MD5Sum: cf2c3281167a2461322da984674bf271
+SHA1: c34fb7bbb8e3a1fc2263d4a428a06b5010f7ed02
+SHA256: e6fab3c226d74f73776a99347146e460a89861f85d8111dec661834d82a31695
+SHA512: 8913049fa53e07529dca17708347432c46b152dfe16678686c1557fc0e2e73ca253d2822c51f36536e0a0c6fa0a5ccb92d68ac27b64562a9ebc5b40f6491ed2c
+
+Package: libgcrypt-static
+Architecture: arm
+Installed-Size: 1268
+Maintainer: @termux
+Version: 1.11.2-1
+Homepage: https://www.gnu.org/software/libgcrypt/
+Depends: libgcrypt (= 1.11.2-1)
+Description: Static libraries for libgcrypt
+Filename: dists/stable/main/binary-arm/libgcrypt-static_1.11.2-1_arm.deb
+Size: 433648
+MD5Sum: 67a171954bf8bbd2c4f899b8048570a7
+SHA1: 1c18d67665c5e8355fdbd57d0c2a8d36d9833828
+SHA256: 8b4db1179b3f3d5e0b1c7c2bc5e3cb18a61e5f56aa7020d521b4c9db10dcb847
+SHA512: 36d114837f72417f707b80435b13b2dc2e8a8d860f76bf1cf90fecb88e67ad825623f36d7c6c56cf63331fb3e3b110771562db9e7510af9f1477057f2d4445a8
+
+Package: libgcrypt
+Architecture: arm
+Installed-Size: 1392
+Maintainer: @termux
+Version: 1.11.2-1
+Homepage: https://www.gnu.org/software/libgcrypt/
+Breaks: libgcrypt-dev
+Depends: libgpg-error
+Replaces: libgcrypt-dev
+Description: General purpose cryptographic library based on the code from GnuPG
+Filename: dists/stable/main/binary-arm/libgcrypt_1.11.2-1_arm.deb
+Size: 469068
+MD5Sum: 969aca2c65654a1a8c2a006ebc86ad2f
+SHA1: 7513db4b38a1aa586197abe92f7d74013b7f41f1
+SHA256: 7f241f515a400ec7c9737e4ac088a6ed904475dd2eeacd5cb3b589635b16b38c
+SHA512: ea3f86a8263bfe09b8bd469714f10d2ec2c8d85da0460c5d54df02ac28a23fd2c7cef414f0fe84ef9a7a892647aa6c4334396610fda76835f234174e5050ec51
+
 Package: libgmp-static
 Architecture: arm
 Installed-Size: 948
@@ -647,11 +1125,11 @@ Homepage: https://gmplib.org/
 Depends: libgmp (= 6.3.0-2)
 Description: Static libraries for libgmp
 Filename: dists/stable/main/binary-arm/libgmp-static_6.3.0-2_arm.deb
-Size: 202844
-MD5Sum: 29ffecdd699851ece7db167533d1da40
-SHA1: e1cc03fb9f125daf7248fee07253ede0b2af130d
-SHA256: 37b30e48e61528251f21458d349d816922cf667f0209fee6fb9345401abdf71e
-SHA512: 6f5d8a970ff6cb1d9012bf18a90ef10c5a68920310b7ce75992fa7614c4be4c06de9e923abaca1f9bd2674f755259e12152cd993ce06c03cf22b2804cb91feb5
+Size: 202928
+MD5Sum: ed4484694459509555706f425287ae90
+SHA1: 6b1524dcba5372edbfc91094d5a5dc2442e49a18
+SHA256: ebdfbd01da390902b1bd007e4366165aaa0fd6454f2355b604911bf59fd77239
+SHA512: 2e473df3f98bdda37f3f10c7f04d1ab6c914893f6199a9edf95bd343dae8d9ccd4ec1c9c1f911ddec5c2baaa3df6fd528b8636bedd32a92321f82c46344151a9
 
 Package: libgmp
 Architecture: arm
@@ -664,11 +1142,74 @@ Depends: libc++
 Replaces: libgmp-dev
 Description: Library for arbitrary precision arithmetic
 Filename: dists/stable/main/binary-arm/libgmp_6.3.0-2_arm.deb
-Size: 299704
-MD5Sum: 4564b121b5fd62fa33883a1c986f8e53
-SHA1: 63e7ce8075b0dea1b35399671443697101b1556f
-SHA256: dc715dbe50d2b4505512eba0c4eac1e9bbe2ba94a5c4ff09791e68203bd02e74
-SHA512: 0b732f902f0778ed530834ef6b93a5d3df91b4ef8d396b2c972fd89768361298cce2a5c4e13a9563b455b304a88baa0e57bf7182659ddeaae8938c9726652e7e
+Size: 299572
+MD5Sum: 77d6a47bcba02e68001c6bbd81fd3558
+SHA1: a336e7634ee9e32dc772a0012d0c310347962fb6
+SHA256: cf55e5db7e5e976fe9bcab580e45a986d3c720b9e461da1221f3b42739878382
+SHA512: a99da49ab2338fa2ae6f8a7965bfd71fea675e790d244b113699ac00590d3c7abcf8e686a560f5e5a9c3fbaebe25068633b3da21d357c64c4d736f55ef132bed
+
+Package: libgnutls-static
+Architecture: arm
+Installed-Size: 2604
+Maintainer: @termux
+Version: 3.8.11
+Homepage: https://www.gnutls.org/
+Depends: libgnutls (= 3.8.11)
+Description: Static libraries for libgnutls
+Filename: dists/stable/main/binary-arm/libgnutls-static_3.8.11_arm.deb
+Size: 764344
+MD5Sum: 92b62b5d75cb81b4f528bc2090346f19
+SHA1: 6b79c722ed1f7202b9c7ae70b6112825d9747a15
+SHA256: b2b544f648eb243a1eef2a6220da75a8b5ad01d495cef2d1e1b72fed240dc441
+SHA512: 75d5bdefebf885f2a0fb0204bee8375c81aecbe33fb2e08cdb2b916f6a3abad4c6649c2462deaec8afc2b19a4359b5b632301e45c2999c6ef7fed963b54a4932
+
+Package: libgnutls
+Architecture: arm
+Installed-Size: 1900
+Maintainer: @termux
+Version: 3.8.11
+Homepage: https://www.gnutls.org/
+Breaks: libgnutls-dev
+Depends: libc++, libgmp, libnettle, ca-certificates, libidn2, libunbound, libunistring, zlib
+Replaces: libgnutls-dev
+Description: Secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them
+Filename: dists/stable/main/binary-arm/libgnutls_3.8.11_arm.deb
+Size: 700744
+MD5Sum: 6f84e971e02feeb760317ff3905cc7c0
+SHA1: 21ef7c4e5f0d3ebe6518fb50d0d7148c58903fe4
+SHA256: 16b1c8d49a715305dafd5666f4b3d9f8437719e946950443811548e4a3fe4c3b
+SHA512: 6f95098aff13d43651ff69eb1d8a0ec16071489d0cd0f63c8b28e8e3ff67cc1b472e52fa596827197a8c36a71bb5407a8ee82b26520674ec0f35a8769df2eee8
+
+Package: libgpg-error-static
+Architecture: arm
+Installed-Size: 204
+Maintainer: @termux
+Version: 1.55-1
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Depends: libgpg-error (= 1.55-1)
+Description: Static libraries for libgpg-error
+Filename: dists/stable/main/binary-arm/libgpg-error-static_1.55-1_arm.deb
+Size: 58816
+MD5Sum: 97a195a3ce1f800e4fb5c825981a6375
+SHA1: 1b6c4f04ef94c2617e85939b78927456c38add04
+SHA256: 64ec3a2a70b6c05a4b5cb52e3bf656eeb09f53faf0464802fc04db29b3050139
+SHA512: 91c841bf3c23d2ac692609d1da97caa36621728a467fcb44f67e453e60c035e2100c7166bd55e14dc11bb2680b4539bd9866cbd2dcee6c2f863462021baee8d4
+
+Package: libgpg-error
+Architecture: arm
+Installed-Size: 532
+Maintainer: @termux
+Version: 1.55-1
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Breaks: libgpg-error-dev
+Replaces: libgpg-error-dev
+Description: Small library that defines common error values for all GnuPG components
+Filename: dists/stable/main/binary-arm/libgpg-error_1.55-1_arm.deb
+Size: 111656
+MD5Sum: 8f0f5496a5c02ae1f253ab82efcfbf92
+SHA1: 07d339a11849c3936f0cf7e5dcad6a27b2e46155
+SHA256: f39412b1dd5ee624d3513434cdf7679d44678109b1f088a6919a9c80db082ac7
+SHA512: 55dea245c2a6a99910e4dd61baa7209d12b5faacb0025e417bd8a7ba887b24055cafda6773ba8cd77dc2cf2d9eb7041633ea049f6b48ff2de27402c87ec904ab
 
 Package: libiconv-static
 Architecture: arm
@@ -679,11 +1220,11 @@ Homepage: https://www.gnu.org/software/libiconv/
 Depends: libiconv (= 1.18-1)
 Description: Static libraries for libiconv
 Filename: dists/stable/main/binary-arm/libiconv-static_1.18-1_arm.deb
-Size: 548580
-MD5Sum: 95e1fab726f5e8f7b51de410f9af4d65
-SHA1: a20a02b1dba6ac6f3c15c9d6717153ec7a018a46
-SHA256: 3c6e9e3e1faf4f74eaea1ac2415391637833d56158026aed44568fe65fc1bfef
-SHA512: 1e56775a159324ca274a6b51299794fff0821c0494cd44f3818040b6b65b8911f26fe3e4bc96373de7f70233938d583c1a61f46a103f5eead8ea5c3536fc35e6
+Size: 550120
+MD5Sum: 388d9e65367ea8a735d0d8c3c065ac29
+SHA1: fac95e39609a6a860765df00537080806841fa83
+SHA256: 1995eb312f82b2add136013e6320143abeaee8593f3d649af4fe98ac76c5b207
+SHA512: 89e5561bce3d0b8627ea91204546d538ebf9f37d0cdf80176c0750fe534add1e281e3079892b5a4a1bbe98a1e3b4cdc5b689947a0f185b0b3f45a3153a792e65
 
 Package: libiconv
 Architecture: arm
@@ -695,11 +1236,123 @@ Breaks: libandroid-support (<= 24), libiconv-dev, libandroid-support-dev
 Replaces: libandroid-support (<= 24), libiconv-dev, libandroid-support-dev
 Description: An implementation of iconv()
 Filename: dists/stable/main/binary-arm/libiconv_1.18-1_arm.deb
-Size: 555680
-MD5Sum: c5adcc233f07004ae56aabd70fe82faa
-SHA1: aed92f6e139fe4e10ab641e1e27fca13b3a1f9c9
-SHA256: d618ab367ae444b8527b0929a70a59d01add1b5e9fb4f33c560a55e3ebd34c5d
-SHA512: 77caee96aa8545fadb4cb9adcd5dcafa3383ecf484e9ce89c9371080bb459fee5cf11e155ccb1c60647cb724f16a62c12fd996a50192b0453020645cc11c9c91
+Size: 554272
+MD5Sum: 57c7fb7e7df622e016dadea7d91afcc2
+SHA1: bd7742e54014dfda49d4d8ce72c7405b3a596a43
+SHA256: 6ff581e460b9e3c4c74a1137f7d9c8d4e75e56077e62ae5152e3b758d0eea562
+SHA512: cc72d967ead3c0e4b9b1bd38f12dc4b9e11c48f643d5ec93a5704665887d85a6980104709aa7b01396ce3d754fb2dc3fe65885e1e1b9a147bbf198d9102df189
+
+Package: libicu-static
+Architecture: arm
+Installed-Size: 42060
+Maintainer: @termux
+Version: 78.2
+Homepage: http://site.icu-project.org/home
+Depends: libicu (= 78.2)
+Description: Static libraries for libicu
+Filename: dists/stable/main/binary-arm/libicu-static_78.2_arm.deb
+Size: 9889464
+MD5Sum: 58dd4aed731c35c520616a09245a280a
+SHA1: a3bdf46761a14f1c040dc725f628d8964076d1e5
+SHA256: f0751d1e11911b83e3fad48602801bdddbf2d153641936335e8b98e107da8c5c
+SHA512: b300494c8c2f52b982b765252980862b5e3096ac14806cb9076b844af3275be63c808a1a7c368a19f4b9c21b543d56a097a2c6feeaecf35448fead13ec1d4b67
+
+Package: libicu
+Architecture: arm
+Installed-Size: 41824
+Maintainer: @termux
+Version: 78.2
+Homepage: http://site.icu-project.org/home
+Breaks: libicu-dev
+Depends: libc++
+Replaces: libicu-dev
+Description: International Components for Unicode library
+Filename: dists/stable/main/binary-arm/libicu_78.2_arm.deb
+Size: 10043848
+MD5Sum: de79df625c188e3f7b6fa74ff658aeea
+SHA1: ab349a587c339dde3ad44fe8162d597369e0e24b
+SHA256: d6ee5b4ecca2ff47026f442f242991372fc5d0838ddeba22cba0b9c0f188a41a
+SHA512: b8af262169dfa2fb89e7bd56a327f3debe770b80f8ba66091a1b02eaee5300cda2f6758d3fc0a361e5ff8ab509f4304d5b7e2d59cc6132b7e2615833f62677a9
+
+Package: libidn2-static
+Architecture: arm
+Installed-Size: 260
+Maintainer: @termux
+Version: 2.3.8-1
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Depends: libidn2 (= 2.3.8-1)
+Description: Static libraries for libidn2
+Filename: dists/stable/main/binary-arm/libidn2-static_2.3.8-1_arm.deb
+Size: 70292
+MD5Sum: c45535c4197a5e6504ca700cd5ca3324
+SHA1: abc91ad17360b36979964f706a638daa5dd86eca
+SHA256: 015b8135c5e72c8d51a96e6b7e9ba06b20287fb5d4d12b27e262d9ba3dbb226d
+SHA512: b176b72cc3387088a2936abf95a58a55b738b7dde83247a746323445bb92582fbf7b25d33654929c0e23e6910730dc5ebb6e261d0b04d4f1c54db71be2637374
+
+Package: libidn2
+Architecture: arm
+Installed-Size: 404
+Maintainer: @termux
+Version: 2.3.8-1
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Breaks: libidn2-dev
+Depends: libandroid-support, libiconv, libunistring
+Replaces: libidn2-dev
+Description: Free software implementation of IDNA2008, Punycode and TR46
+Filename: dists/stable/main/binary-arm/libidn2_2.3.8-1_arm.deb
+Size: 101456
+MD5Sum: 1ec864eef504d4cb6d7e785fa42d745f
+SHA1: 77417c71c821e15b524cea9f3cbbc454138d6acc
+SHA256: dfc3710c1eb9f3870cf41fb025f7420cb48f4a606db81928f9a7c24fe5c56110
+SHA512: 9c4ecbdaca8d2be71ab7a9376c1a4505383a1b4976fbc2db6b0105e23980f145d45bfb1226de003b91c529dc9d3e46f608fe7415cb9897197dca067bba4d9323
+
+Package: libksba-static
+Architecture: arm
+Installed-Size: 288
+Maintainer: @termux
+Version: 1.6.7-2
+Homepage: https://gnupg.org/related_software/libksba/
+Depends: libksba (= 1.6.7-2)
+Description: Static libraries for libksba
+Filename: dists/stable/main/binary-arm/libksba-static_1.6.7-2_arm.deb
+Size: 86012
+MD5Sum: 2430bcf29cdadb64dc229be883d21b3b
+SHA1: 5bd3b621162da792c13dbe646497c9c19a211184
+SHA256: c5dea12b45451168548b5b74c40f59e5b2355341505df59076f16ab2c915f489
+SHA512: 95fc62e6e20dd47d0e25b5daedb4650c7ce9ac5cc2603b064434bf30297fb4f640b4d91417872eb2efdaa436037ed7e9830590b2db35c3bf2f262a1543d32667
+
+Package: libksba
+Architecture: arm
+Installed-Size: 336
+Maintainer: @termux
+Version: 1.6.7-2
+Homepage: https://gnupg.org/related_software/libksba/
+Breaks: libksba-dev
+Depends: libgpg-error
+Replaces: libksba-dev
+Description: Library for using X.509 certificates and CMS (Cryptographic Message Syntax) easily accessible
+Filename: dists/stable/main/binary-arm/libksba_1.6.7-2_arm.deb
+Size: 99480
+MD5Sum: 6ab929ded0bf6a41ba99ac99deddad74
+SHA1: 7b967a502df3b4f9199eadc30598c69e218418a8
+SHA256: c5f8fe74b4552b0f9ca85450e715c8f8a1098e1f2fe7638e123e53a8ec0b7444
+SHA512: 54fcacdba53122615a0c121b0ace3bfd7c651b4b34f5ce06f36cd4c3f2f78a6d24209172d270f37ff80609a3d6d282c7982889b467c241a82a7cc7b179481faf
+
+Package: liblz4
+Architecture: arm
+Installed-Size: 296
+Maintainer: @termux
+Version: 1.10.0-1
+Homepage: https://lz4.github.io/lz4/
+Breaks: liblz4-dev
+Replaces: liblz4-dev
+Description: Fast LZ compression algorithm library
+Filename: dists/stable/main/binary-arm/liblz4_1.10.0-1_arm.deb
+Size: 87168
+MD5Sum: d0200fbfa7d56ed72cb3daf3d1a23973
+SHA1: 1b6ba529b83207d7e08fe9051c52bccc36b671ec
+SHA256: 2cf3770d088f9d9473d9f10e4306c405b7979071601f31cfb4064f9e3b793f08
+SHA512: 5b39486cab01b74069fad0fe55dbc6e7f6626d84a45db8a0952130ec73a533f039030fcd26a334c45587498f279f5f44377c4d6d8ff372b554740eb6c44f766f
 
 Package: liblzma-static
 Architecture: arm
@@ -710,11 +1363,11 @@ Homepage: https://tukaani.org/xz/
 Depends: liblzma (= 5.8.2)
 Description: Static libraries for liblzma
 Filename: dists/stable/main/binary-arm/liblzma-static_5.8.2_arm.deb
-Size: 85356
-MD5Sum: d101f193f5b0ce5a7c4feaa7c1366605
-SHA1: 6eb2bf2666fa0a1b5f5d0c8ae95ba131bd128ac4
-SHA256: 310f98c238facce102fa6826e475879a98a65405b3b1bf3d925546802d4d14a0
-SHA512: 9b93643928f470e64309b955ba2488bdbb15b47d4ae26bf4ffd935cbd6aa8b06d82aa89143931920e12e9c1cd41bf2ac0ece0601115b8abfd08c808640170fb6
+Size: 85292
+MD5Sum: 60fe9321cb0bf1eef2c34a648e6cb2fa
+SHA1: 2138874a4f7d94bf7dbfe45b872a1a786866d8df
+SHA256: c41d316b6e710de3c67ce43b4564b58d250b99ebe2bed45637a59f08f90b3a7c
+SHA512: f1ecdea69dba6343d33d9e4ef284287eebccba5408e3879ce02979553fa66560cdf687b28533275e1881bcbf4019a09e5b2077b508d838bd5a25fa4ff683e2ae
 
 Package: liblzma
 Architecture: arm
@@ -727,11 +1380,40 @@ Essential: yes
 Replaces: liblzma-dev
 Description: XZ-format compression library
 Filename: dists/stable/main/binary-arm/liblzma_5.8.2_arm.deb
-Size: 188576
-MD5Sum: 04d21fe9ee14df358383a145d01a7a23
-SHA1: 3d03fe8f02945976cd89511b06b30dc846c337bc
-SHA256: fb0ef5605d89d8abe0a7729f7e522f49b07fe7a6699a5f903175de6ea6ab98b8
-SHA512: bf9bb8d4eaed153a4e6c6d41fb85956bb26c9db43f164c4940f93fd264e1ca272db604814b0bf80a2623fe29d40b67b7f960db4d81d83509f7006433de891f1a
+Size: 188604
+MD5Sum: e31d82947c5de2c95e306936385468a0
+SHA1: b256aeddf84a938ccd57bfcc51a363649898d4e2
+SHA256: ab4097a570b64f8c4ac6fd43b5cf10bc2cd05e27d88ec9de4493b981a66596b1
+SHA512: ba01070c83b3613e450e369e3f45f94fc0bb0fc53c27669f3c657ed6ae611219209ac8a2f740894e4e5ca6a186b17d9137c7da3b3b267af6196070ac2d3c6164
+
+Package: libmd-static
+Architecture: arm
+Installed-Size: 88
+Maintainer: @termux
+Version: 1.1.0-1
+Homepage: https://www.hadrons.org/software/libmd/
+Depends: libmd (= 1.1.0-1)
+Description: Static libraries for libmd
+Filename: dists/stable/main/binary-arm/libmd-static_1.1.0-1_arm.deb
+Size: 16288
+MD5Sum: e0f1e74c8e6af9abf870d06993b21037
+SHA1: 441f13acd226ac739e06b9fe64a7cbc681416472
+SHA256: 8060f306e58f74489829787cc833ca7f640e86e4dd7b5c0b1f82d2bdb00d37ac
+SHA512: b7467f3451fd0d1bd731035642b5e72c5298ff43b4cbd7bcdb31b94cdbed3261a436669455e108873a07b182099627cd700129c22b629db64b89f65891c560d7
+
+Package: libmd
+Architecture: arm
+Installed-Size: 176
+Maintainer: @termux
+Version: 1.1.0-1
+Homepage: https://www.hadrons.org/software/libmd/
+Description: Message Digest functions from BSD systems
+Filename: dists/stable/main/binary-arm/libmd_1.1.0-1_arm.deb
+Size: 38972
+MD5Sum: de74a8a9211e3d2dd7c2ecfb441d595b
+SHA1: 7231282973c2ad751f738a789b97e42d647333b2
+SHA256: e6cb52377d1e5118be613b5cedf5292e7992ea072ba5d3efa7233d31a0164d35
+SHA512: 104e1ff7c4f31a480349b99423631c278475481748f63dc4ebc52cc14ebff9568cbd60e87dd0599d6edd8876e9a6812c625c804df1b59fb775cb08e8c7edc768
 
 Package: libmount
 Architecture: arm
@@ -780,6 +1462,38 @@ SHA1: 7d117582c194a9d4f4f40ef21cf4b58d39924d49
 SHA256: ed20290588619921e89efb8570e446a09b82b0cb3a76dea93c0675590c6be423
 SHA512: eb59498603eee24ffa5156f26ad7ee99490bc0de9eb789edaacf8515d1809acdeae447d0c9e5aa1f948a67bef2392c6625dbe2618471d75f3151302232a7fbd2
 
+Package: libnettle-static
+Architecture: arm
+Installed-Size: 2620
+Maintainer: @termux
+Version: 3.10.2-1
+Homepage: https://www.lysator.liu.se/~nisse/nettle/
+Depends: libnettle (= 3.10.2-1)
+Description: Static libraries for libnettle
+Filename: dists/stable/main/binary-arm/libnettle-static_3.10.2-1_arm.deb
+Size: 621872
+MD5Sum: a487d13062c58daf01ac98c679f45145
+SHA1: 7d6bced2281c1a1ab10f5e9e50e7bfec7c9c5202
+SHA256: f349b4dd7554522be10b96618f514bd65f9abe21a627adcc1e6b404b01b0195f
+SHA512: 087a9eb80404e1bbfcd5a8353f8ac5b27c744e87f54edd67dc08a257f2203fdc58afec5d9aeb9e004d67f736f220112c1ce071a6e074ba37fa8716a4949b493c
+
+Package: libnettle
+Architecture: arm
+Installed-Size: 1316
+Maintainer: @termux
+Version: 3.10.2-1
+Homepage: https://www.lysator.liu.se/~nisse/nettle/
+Breaks: libnettle-dev
+Depends: libgmp
+Replaces: libnettle-dev
+Description: Cryptographic library that is designed to fit easily in more or less any context
+Filename: dists/stable/main/binary-arm/libnettle_3.10.2-1_arm.deb
+Size: 398948
+MD5Sum: 4261d28d91b7158039c0a9ea9546c2b9
+SHA1: fe6e8593926427af3673f7b8db2bca035634d1d5
+SHA256: fe847b1da553a48256202273d3ba0acf7231fe6052217250fcced904845ad2e3
+SHA512: 0e369d00cb1e1bd423d826a9d1710a321ead9b3a1c0988a8685039fca56d089a30a5230349d2ff1d607409d3eaab71b4bf7aefb61ca1b16cae688ef5cf4a0bd4
+
 Package: libnghttp2-static
 Architecture: arm
 Installed-Size: 236
@@ -789,11 +1503,11 @@ Homepage: https://nghttp2.org/
 Depends: libnghttp2 (= 1.68.0)
 Description: Static libraries for libnghttp2
 Filename: dists/stable/main/binary-arm/libnghttp2-static_1.68.0_arm.deb
-Size: 58988
-MD5Sum: e1648c0d4fa58dbddf598c42ab6a430b
-SHA1: 1ffbb0220b78ff19d908b40162484fa0c2ab355b
-SHA256: d79a998e488a5bf4eb1d1db99f1adb67548c9d7f8d863b17fa800d4b08a0b981
-SHA512: 0460c132302624c1558a8dd17d62471b64d117d743b1117ac6146f635eb745586db2d57ed23f284343baf099dada3d35053d029d44e43195e13db882892ec1d8
+Size: 58864
+MD5Sum: 8fd42ca6438e5d58e77d25c8f871bedb
+SHA1: da69ea21bab849523f3398246b92274c4b048cd6
+SHA256: ad307e1cd2ac52d04337c6cc3eef9c32d84db16f8b463e4c011db88f2fc73fbf
+SHA512: 33961e7b98ae91c3e2e8f7862550e0d24ef307e763e28c09cf9400f79e3d02e8aa5e28462894fc7a877e9da18c50eedbefe83b7483630c8f0e8c92a6aa470afa
 
 Package: libnghttp2
 Architecture: arm
@@ -805,11 +1519,11 @@ Breaks: libnghttp2-dev
 Replaces: libnghttp2-dev
 Description: nghttp HTTP 2.0 library
 Filename: dists/stable/main/binary-arm/libnghttp2_1.68.0_arm.deb
-Size: 89832
-MD5Sum: 9b96002c458aedfb2ed4815721fec7e1
-SHA1: 1423178a7c2f34c7ca71edf9220c953ae6d68d19
-SHA256: 52bf57a76ad89b2d93de054e5e49cd08ec15ab8c328e0c0d3df57b05a3e1909a
-SHA512: 1110ec7b7f22d2b51232515b7fb2b4978bfc683e3a75c32ff25948fab2d8d06afe404c8281ee17b2123050f4f6ea90f014b1004757950521fccab686968491ad
+Size: 89696
+MD5Sum: dd2637111ffacb0d0bc41afa02fc6114
+SHA1: 156ed7c769dcf3332d490ab5a8955584bb4e1cb9
+SHA256: d9e99b089f4884dd7037a5f24f516ee339b1a7047849f7158462d6f3011d377f
+SHA512: 2bf60abd34c49ea0acdf7d1aa0b6ba3db2f0f714ab26716b904d143f1c0ef52b221b4c5632cff142d46ff818a0b13af6a062c81f835885565238d923c6d59012
 
 Package: libnghttp3-static
 Architecture: arm
@@ -841,6 +1555,69 @@ SHA1: f840a896740b23a87791ec2ac2d0a6118d61c6a6
 SHA256: cd82cb65cd7d7e5acf6d5fbb5124096867bc81bbbec757314f581346535b21dc
 SHA512: 217c0fb3eb387456ea1923c58ac6743e397b97e496af09f77e9e338c7246ccbe92f7a6b8d1e81925c591003d5c132c80133c85455ae2876150f72d3d5ddc394d
 
+Package: libnpth-static
+Architecture: arm
+Installed-Size: 44
+Maintainer: @termux
+Version: 1.6-3
+Homepage: https://www.gnupg.org/related_software/npth/
+Depends: libnpth (= 1.6-3)
+Description: Static libraries for libnpth
+Filename: dists/stable/main/binary-arm/libnpth-static_1.6-3_arm.deb
+Size: 4204
+MD5Sum: 6a445f3107d15b81f93b9da901e80ffe
+SHA1: 80d258aabc4dd1322b6642e987402b29afe5214e
+SHA256: 822c68317f649d0ea0edbbe9c773f2ab4ac6363940b908b74e1a049730747f2f
+SHA512: 1424b0fd503d03a1661872d3ac2b9919fc1be3a975e81cd381654b2647f01ad10667e47649b7569a4fb3d51768ff6306afde0a4713534615957d2d0f0444dea7
+
+Package: libnpth
+Architecture: arm
+Installed-Size: 88
+Maintainer: @termux
+Version: 1.6-3
+Homepage: https://www.gnupg.org/related_software/npth/
+Breaks: libnpth-dev
+Replaces: libnpth-dev
+Description: New GNU Portable Threads Library
+Filename: dists/stable/main/binary-arm/libnpth_1.6-3_arm.deb
+Size: 10544
+MD5Sum: 91f6ef30ad615f11339fce4e85cdd673
+SHA1: d137bdfce824bd344297257ee11cbf365fa0b6d0
+SHA256: e1da4bca06eb471c7ec155ca3bc3c9bcd58e2bd40df5c311ee8ae689a1bc3c49
+SHA512: aa5ab78542b4bbccedfcf0fcff04c6e40962f0ad7f8d480b8ffcb739413074a141a116e2cab1a720a07150ef063e6542603c0ea385c3fdc7f4816a2c71f28e1a
+
+Package: libpng-static
+Architecture: arm
+Installed-Size: 236
+Maintainer: @termux
+Version: 1.6.53
+Homepage: http://www.libpng.org/pub/png/libpng.html
+Depends: libpng (= 1.6.53)
+Description: Static libraries for libpng
+Filename: dists/stable/main/binary-arm/libpng-static_1.6.53_arm.deb
+Size: 79352
+MD5Sum: c3c6edbefea2b15f8d67fbb2a06da91a
+SHA1: 52a7849eff424c1183f475d3a2dee826ae3fd7fc
+SHA256: b8c14f67824ee8692787db0e91bf98274fba36e652385780857c94996a40ed13
+SHA512: c1010e3f9c80b775aaeea0617fa6d7daa0d0b1e9a9225c3e55589890da545d2f72e3e91c0494a82ddd01e8f929dd35554a0782c7b787045ed3878d1fc4ac5e46
+
+Package: libpng
+Architecture: arm
+Installed-Size: 468
+Maintainer: @termux
+Version: 1.6.53
+Homepage: http://www.libpng.org/pub/png/libpng.html
+Breaks: libpng-dev
+Depends: zlib
+Replaces: libpng-dev
+Description: Official PNG reference library
+Filename: dists/stable/main/binary-arm/libpng_1.6.53_arm.deb
+Size: 187144
+MD5Sum: ff12130316304d5a451d32664a1651e7
+SHA1: 803df64db9d60153ad08d0226b236780dbedcb6d
+SHA256: 61c3cf483645f1790cae7fa9728769c1e17a2a11f34f0225cb823ec6fc71e956
+SHA512: 19b1ba6da8632d937c121e68de3b893e3b4e386951c77ce0de413720bdc1dd75d6d07760436d3bdcd7f4db019d6c06b052da7e398f24d3e72fa65b3175d733bb
+
 Package: libsmartcols
 Architecture: arm
 Installed-Size: 236
@@ -856,6 +1633,54 @@ MD5Sum: 9f575e4b62aff6433631e8357fa4563e
 SHA1: 7aebe370a2a73c1a10e4d68d0a674ef4d614afc7
 SHA256: b19c81c89ba24ce2af1c6ffcdda4a17516e3e5668d9e122ff841337f66a44f41
 SHA512: 11af44b53781596faa39b3ce10b4d67bfb386d09bea4e609b5011c7788adb17f99d4f38d9e5f7d0e03012a5494ee8130cf758ba7bec4e4b455a52074a59a26e8
+
+Package: libsqlite-static
+Architecture: arm
+Installed-Size: 1044
+Maintainer: @termux
+Version: 3.51.2
+Homepage: https://www.sqlite.org
+Depends: libsqlite (= 3.51.2)
+Description: Static libraries for libsqlite
+Filename: dists/stable/main/binary-arm/libsqlite-static_3.51.2_arm.deb
+Size: 507960
+MD5Sum: 64c289b2cef7a096e4e583e0e0639ad6
+SHA1: 35426c78c7a6b8b785915b942bbfb119e3020ec9
+SHA256: 3d083b38a9ece6a03ad44c17c0371069bff3a10aeb354ccd794b928ea5895cae
+SHA512: 5fcc7ffb9977005d2c6a88bf3cdf4c32ba57057e967325a16a51c3f45f64ce4ef146e2a14b16f9e92ac6ec5537709fe4a11f4ba1e4a3b15bb14d3a1501007fbe
+
+Package: libsqlite-tcl
+Architecture: arm
+Installed-Size: 796
+Maintainer: @termux
+Version: 3.51.2
+Homepage: https://www.sqlite.org
+Depends: tcl, libsqlite (= 3.51.2)
+Breaks: sqlcipher (<< 4.4.2-1), tcl (<< 8.6.10-4)
+Description: tcl bindings for SQLite
+Filename: dists/stable/main/binary-arm/libsqlite-tcl_3.51.2_arm.deb
+Size: 468660
+MD5Sum: e2ee2ead2d321d4843b59ad9b8a56d5e
+SHA1: fca1bd9d0e9abd0c53970e11aa5bbe899eda7259
+SHA256: 719f866562f2492a71723c265d8bd4d77e40e8b9634954a9b26df4ee8db4b1fe
+SHA512: 4a306356a0905bd695e18b8fa918096944e9e2111229a01be06f52a6b0a3667353cbcc6114a928cc4bf632e699c425ab934f5921efc7457340a69a31eebf9081
+
+Package: libsqlite
+Architecture: arm
+Installed-Size: 2256
+Maintainer: @termux
+Version: 3.51.2
+Homepage: https://www.sqlite.org
+Breaks: libsqlite-dev
+Depends: zlib
+Replaces: libsqlite-dev
+Description: Library implementing a self-contained and transactional SQL database engine
+Filename: dists/stable/main/binary-arm/libsqlite_3.51.2_arm.deb
+Size: 643924
+MD5Sum: 08efc7f6fc0bb5ee719fe45a4bf0522d
+SHA1: bd32ca2818d6f3582113c23f6f02f6b2a18e74bc
+SHA256: 3fda6c9669a37190972d6d7dabb56d4154c3973643aa16720d847cafb6bad6e9
+SHA512: 6d1c51cf16ce8127d16ece8b54f835406bff93c695652b2dac4e6fb4871a5e67b5895884e08be3a17716192b992e633786e93caf72f69375f58ce97ff60440a1
 
 Package: libssh2-static
 Architecture: arm
@@ -949,6 +1774,101 @@ SHA1: b7f19084be7ef81652d393b39041ef7328ce7609
 SHA256: b1d27ef0b760dc8ab84ae3242ce6f9669991f648ac5fec252f5471797d14ebfb
 SHA512: 66663988a583a23ef7c4966e92c9fac0949490d187bb3d8c7a7983fea24e9c4748c1a525cf11ee6317ff527e429f7ade848f6c1513920acd4d4483b338fca7cc
 
+Package: libunbound-static
+Architecture: arm
+Installed-Size: 1372
+Maintainer: @termux
+Version: 1.24.2
+Homepage: https://unbound.net/
+Depends: libunbound (= 1.24.2)
+Description: Static libraries for libunbound
+Filename: dists/stable/main/binary-arm/libunbound-static_1.24.2_arm.deb
+Size: 428524
+MD5Sum: 64240386098403f66c82afe22eefc63d
+SHA1: 5e386fc4c36181731dc5b4b332de0cd009ec3eef
+SHA256: 0cf2ccc163d6ff45e14f8b900f3cb0bd2a9bc36fe9a59c8d9cba905f985fd063
+SHA512: 29241437a8be23be2e09099354da0b40c6b67d28565a614f98cfd93e554a9bbf09b0f03551be83a0511472b5f50d5f3636322696c5d57e1a13515c6805e90e3f
+
+Package: libunbound
+Architecture: arm
+Installed-Size: 948
+Maintainer: @termux
+Version: 1.24.2
+Homepage: https://unbound.net/
+Breaks: unbound (<< 1.17.1-1)
+Depends: libevent, libnghttp2, openssl, resolv-conf
+Replaces: unbound (<< 1.17.1-1)
+Description: A validating, recursive, caching DNS resolver
+Filename: dists/stable/main/binary-arm/libunbound_1.24.2_arm.deb
+Size: 346708
+MD5Sum: 144ac531c6326728655bf7ae2fbf9d10
+SHA1: 64d580ac456ce5856a2e801553ca10bf22c6eb51
+SHA256: 43f4610ccb1c745816aca2ef6d9bb146c14ac94eb3ca0b9dceae756644d68edd
+SHA512: 0758009ded00f018d7c7b216accaaece028ae1309f6668b124f0a196fe09368a6351dde58616947903351c55295f595727fde6cc7900af3f633529da68488a3b
+
+Package: libunistring-static
+Architecture: arm
+Installed-Size: 2564
+Maintainer: @termux
+Version: 1.3-1
+Homepage: https://www.gnu.org/software/libunistring/
+Depends: libunistring (= 1.3-1)
+Description: Static libraries for libunistring
+Filename: dists/stable/main/binary-arm/libunistring-static_1.3-1_arm.deb
+Size: 465604
+MD5Sum: 01c233c2e1c8276c0de069b01f025bb3
+SHA1: 113c88606455603ad6b154d8a1326d9a27d52189
+SHA256: 15c92e52125c61045b9e516c9139c1234105fc589169c01fe31ed9bd33dc1e94
+SHA512: e2d54475cdab910e117e058857472d1357038399da43b780b0815712034b8da1fee5bc69092fded1399b07f7e4fef66ef1810d27ae3f9fbc91f3888578704e5c
+
+Package: libunistring
+Architecture: arm
+Installed-Size: 3068
+Maintainer: @termux
+Version: 1.3-1
+Homepage: https://www.gnu.org/software/libunistring/
+Breaks: libunistring-dev
+Depends: libandroid-support, libiconv
+Replaces: libunistring-dev
+Description: Library providing functions for manipulating Unicode strings
+Filename: dists/stable/main/binary-arm/libunistring_1.3-1_arm.deb
+Size: 538388
+MD5Sum: caa203d109fb729333bf56bc0074a28c
+SHA1: 0bb60a7c4e8ecd7300da36b011d50e38b80a80b3
+SHA256: 92d6bbd751da9bc042c43286b301353c3710fe4ef5443a10ed96b08bfb507afe
+SHA512: 726923cdca5897539f9e347dbb315f2cfc453d83fb66353e8ed3dc011866053c1cf1bca5139c2aee6a3ccaa2f86f45c966b112b02defada7afcd020075df22e7
+
+Package: libusb-static
+Architecture: arm
+Installed-Size: 168
+Maintainer: @termux
+Version: 1.0.29-1
+Homepage: https://libusb.info/
+Depends: libusb (= 1.0.29-1)
+Description: Static libraries for libusb
+Filename: dists/stable/main/binary-arm/libusb-static_1.0.29-1_arm.deb
+Size: 46024
+MD5Sum: bc4bbcca11e12e6a9974f6e0f4f89016
+SHA1: 86384daaec573284a029adcb6da7b4cd99314765
+SHA256: 15604a391a381318992255154b2bf0fff43931f869f0cfcedf313bb5e216b9e2
+SHA512: 6f3e90cd65a49510f99d25695e64fdf7953ee93e55e4ca47941fcaac6830df8b9b459c4853f625b0e2a63508332eb369c63119d270a5e30bf32ba8c45fabd14c
+
+Package: libusb
+Architecture: arm
+Installed-Size: 220
+Maintainer: @termux
+Version: 1.0.29-1
+Homepage: https://libusb.info/
+Breaks: libusb-dev
+Replaces: libusb-dev
+Description: A C library that provides generic access to USB devices
+Filename: dists/stable/main/binary-arm/libusb_1.0.29-1_arm.deb
+Size: 53744
+MD5Sum: 3d5dcfe07d4f740c41f5f6e3771a5351
+SHA1: bae2376351c12ccdbcbbc595531f6f972fae5692
+SHA256: 381ec7c5059de8c2eea8c0dc4f925e6a66492af6717759e5f6b75a12f5de52cd
+SHA512: a4a85b558b25b6f2a862481a849332e2f7d4fd09cfd4b4422274599ed690acd08d348b85ab94e3142018d66a0a092b490f79e48c642ba4a88199c81bb4ecd0eb
+
 Package: libuuid
 Architecture: arm
 Installed-Size: 76
@@ -964,6 +1884,281 @@ MD5Sum: 02c4e90d6939df17eef5c321915ad713
 SHA1: 81da88b5b6e78bcfe5a239b79046f1ab13458b51
 SHA256: d1ca09cf50d18f95602e63748a732e6ed2a25521299d2b28461ec9a9f7a6a9b2
 SHA512: 55cb30857476bafd21b6552e9ae779f581767e3b423961d1ad9a0adc6bc5ac159a38aaeea979b0a25af894ba4d4bb4add98734fb8420f484c48b271cd1b0a2f3
+
+Package: libx11-static
+Architecture: arm
+Installed-Size: 1568
+Maintainer: @termux
+Version: 1.8.12-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libx11 (= 1.8.12-1)
+Description: Static libraries for libx11
+Filename: dists/stable/main/binary-arm/libx11-static_1.8.12-1_arm.deb
+Size: 532200
+MD5Sum: edd43a646c5c410d5fd7ebb003990491
+SHA1: 635835c918c2e312e1491024fed6c0f0dcb0c85e
+SHA256: 07bf812aec33931b2cee557366f604fb7c0e60d4659793bae2fa775cc5dac177
+SHA512: 315dfc5b0dc7abfe927529c221ffcc5a84f471752b4a8b1827bc691f24a8ebcfae79583ddf376af50fa2740ec8e35055cc0a95864310d0e34743ec304fa7bfac
+
+Package: libx11
+Architecture: arm
+Installed-Size: 13436
+Maintainer: @termux
+Version: 1.8.12-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libandroid-support, libxcb
+Recommends: xorg-xauth
+Description: X11 client-side library
+Filename: dists/stable/main/binary-arm/libx11_1.8.12-1_arm.deb
+Size: 1881024
+MD5Sum: 8e6eda3f33f515ce750858ae9f013c41
+SHA1: fc01296c7cf3ac4a90713ca136b2cea6d91b616b
+SHA256: 73ed4b4becc025734492ec0d211d38f16abd8a37b98651785a1a972d14212056
+SHA512: 4cf43d65e1b8e358e0e3ac90f56e980849d9297d84d6b54010c9f970b1a967d6f0e72ca53cb11cf2113fd368ee3850d0d262ec913f9afd01a34f87cd9c824158
+
+Package: libxau
+Architecture: arm
+Installed-Size: 124
+Maintainer: @termux
+Version: 1.0.12-2
+Homepage: https://xorg.freedesktop.org/
+Description: X11 authorisation library
+Filename: dists/stable/main/binary-arm/libxau_1.0.12-2_arm.deb
+Size: 8648
+MD5Sum: 849a1010a8a53233014abe676505e006
+SHA1: 2c9c31fde799f1ad3f51740a31ccc39e3c14476b
+SHA256: fc16356b21d9707244d6d15c0de74ccfea9f31cd9835e72b500ef17235cd2094
+SHA512: 67f5b20571f31124de49eddcd2950aaeb2a177719d6fc26e6e47e7f956d48d3f3d02bf9d0a47b69def457608c4d130ef2e3865cbe9dd34027cac601f80166bbe
+
+Package: libxcb-static
+Architecture: arm
+Installed-Size: 1012
+Maintainer: @termux
+Version: 1.17.0-1
+Homepage: https://xcb.freedesktop.org/
+Depends: libxcb (= 1.17.0-1)
+Description: Static libraries for libxcb
+Filename: dists/stable/main/binary-arm/libxcb-static_1.17.0-1_arm.deb
+Size: 125560
+MD5Sum: 988715ebd65144e5b0fd4e8247580bca
+SHA1: 95eefe6060d9e3d5fe1dda0b38e9e91f93601a2c
+SHA256: f0cdf1b0eb52b8332e22f41d213c3f493d40af8cffb471b42230b383cfce11b1
+SHA512: 282d4f3d4892062326bfeefbd8a32dd775a16d55480198f06b56590da2d5fccd481b2d789fe360d1b7385f8f189d929c7416cebf2ebb9de4540f2bdf551bdb7f
+
+Package: libxcb
+Architecture: arm
+Installed-Size: 12540
+Maintainer: @termux
+Version: 1.17.0-1
+Homepage: https://xcb.freedesktop.org/
+Depends: libxau, libxdmcp
+Recommends: xorg-xauth
+Description: X11 client-side library
+Filename: dists/stable/main/binary-arm/libxcb_1.17.0-1_arm.deb
+Size: 880264
+MD5Sum: 38a1c5cd17a5f84a538b092316dec65a
+SHA1: 217aede3a68fed73adfdac97624b7f12ab3ffc01
+SHA256: 289aaf14da26e0538a51b19adf25ab48897adc3edd6ce496de431a1b5200b27f
+SHA512: 5a64aedbbda0d1c99a982a3a1d75362949407b1d1e52d25eec956be4d601b4213b1c07d5c3b1f65dfcd9735f096f10f88480e777d8da46dcb37f5247ba94a524
+
+Package: libxdmcp-static
+Architecture: arm
+Installed-Size: 56
+Maintainer: @termux
+Version: 1.1.5-2
+Homepage: https://xorg.freedesktop.org/
+Depends: libxdmcp (= 1.1.5-2)
+Description: Static libraries for libxdmcp
+Filename: dists/stable/main/binary-arm/libxdmcp-static_1.1.5-2_arm.deb
+Size: 6844
+MD5Sum: 8dbfceb532eacf884bb26f34c95fe967
+SHA1: a20ff250c266ed32e74596497c87122f01f75f92
+SHA256: 4a51e07736d8367dd6bf3d39a3207e71972aa6c0d0eb4851bad69f5deb71aeb1
+SHA512: 92e27b37e7b96f8e79b0c05a6942ea88640a0a8e5aaf572bfd6a83a2a799dacfbdf1b57f72f540fa9624953c902f1f820a3cb2cfc250840c793902976cdc1365
+
+Package: libxdmcp
+Architecture: arm
+Installed-Size: 192
+Maintainer: @termux
+Version: 1.1.5-2
+Homepage: https://xorg.freedesktop.org/
+Description: X11 Display Manager Control Protocol library
+Filename: dists/stable/main/binary-arm/libxdmcp_1.1.5-2_arm.deb
+Size: 23308
+MD5Sum: f05146d1072b0567bf1a69581878e9b5
+SHA1: 6849f90e6a034186722b6cc79f591a1970c3853c
+SHA256: e16786bdd0ff9df6975ffa756d0cb881c238bf23a951bd64123d3e82a14f97f9
+SHA512: 155151fa604653a0ea58dbdb76a1b6dd516d149e355ce5397075ddd53e1384d16ad8b74783be270ac980aac5ee5f25deea777f9975eb13608570b6d584b5621d
+
+Package: libxext-static
+Architecture: arm
+Installed-Size: 112
+Maintainer: @termux
+Version: 1.3.6-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libxext (= 1.3.6-1)
+Description: Static libraries for libxext
+Filename: dists/stable/main/binary-arm/libxext-static_1.3.6-1_arm.deb
+Size: 20856
+MD5Sum: 3b0299743231c5ba87578e54c51a03c0
+SHA1: d2708f18291ea421a732809df70caf9b6a3ff44b
+SHA256: a62819d735261e0198ca26f6287b6b960ad4edb3f17c12aff352c06aae227db1
+SHA512: 4d1e0cb0a3b4a4a62d5fdf07d7138caa886362d7ebffd1bfb158e7748a8b150191a05dc7ad1f955a635205d374d06e4e45a100c58275171c9d54f56753d23918
+
+Package: libxext
+Architecture: arm
+Installed-Size: 588
+Maintainer: @termux
+Version: 1.3.6-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libx11
+Description: X11 miscellaneous extensions library
+Filename: dists/stable/main/binary-arm/libxext_1.3.6-1_arm.deb
+Size: 93040
+MD5Sum: f1061dced05e1603c7088beb655931ca
+SHA1: 0b21f375830611f9ac2af259c1f1c6716ec76a21
+SHA256: 10d15fd74a262419b5f0fb99610d8007c8c83a5c254f6b5c1e7c2dcda3349815
+SHA512: 442ee0b08d30cff394fa5e4350454a871d15050c71ac25316aeebe6869b7bcad462c65868b3bb931b05ab112329aaa795659194b3bf54856bc0c8cb77ba90508
+
+Package: libxft-static
+Architecture: arm
+Installed-Size: 116
+Maintainer: @termux
+Version: 2.3.9-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libxft (= 2.3.9-1)
+Description: Static libraries for libxft
+Filename: dists/stable/main/binary-arm/libxft-static_2.3.9-1_arm.deb
+Size: 32352
+MD5Sum: add13339f3d77865b19d876ef73d04d9
+SHA1: 776111360a35a1f76fd974377f8ae7f830f6d8bb
+SHA256: 8aecedb4f1b1772a00605d23aad56720da2f3432e411e48101cdbe5785d7bd0b
+SHA512: 252276aa6c639a5ce570849aafef1d7cfcf5de9b8c70a0cf332831a7188fb0d5d58a40543d22f2b19e9aa1dbae5c5d2ff67e4a7bd16497e994330d147bb6769a
+
+Package: libxft
+Architecture: arm
+Installed-Size: 468
+Maintainer: @termux
+Version: 2.3.9-1
+Homepage: https://xorg.freedesktop.org/
+Depends: fontconfig, freetype, libx11, libxrender
+Description: FreeType-based font drawing library for X
+Filename: dists/stable/main/binary-arm/libxft_2.3.9-1_arm.deb
+Size: 43968
+MD5Sum: f1bba16f928c4b4108dfba8290d3a401
+SHA1: 0786213de423dabca737ffe99875943b27ea847f
+SHA256: f2f4339fce928b3615a7a5b2b16b1b47fc6b72698ce49b27397ce6b535363e18
+SHA512: c8a9875acc7cdcda03975b5b7a2d2671c9158aff4cf0ecba796135251ec0cf00fa9a96bdb30b942da8b56b2e8eb853f2876e1ae412fed2506e44ce74254fd093
+
+Package: libxml2-python
+Architecture: arm
+Installed-Size: 228
+Maintainer: @termux
+Version: 2.15.1-1
+Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
+Depends: python, libxml2 (= 2.15.1-1)
+Description: Python bindings for libxml2
+Filename: dists/stable/main/binary-arm/libxml2-python_2.15.1-1_arm.deb
+Size: 44024
+MD5Sum: eb07f1d6dfe3f8ff8dc69a707891706a
+SHA1: f83e0c2380d39de58e915f229fbf875f2e2f4283
+SHA256: cc4cd9af67134bf748fd3e9615c3212177972945bfe1a42833b8022a60e36e0a
+SHA512: 1e3ef94ec80084d7bdcf57566dc11802598fb2a741a914a7c6596250a97779d8dec0a1c2aeb2c1c169ff6f486a9fb01c76fb54107477afa246d297e0b0a5c7b8
+
+Package: libxml2-utils
+Architecture: arm
+Installed-Size: 116
+Maintainer: @termux
+Version: 2.15.1-1
+Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
+Depends: readline, libxml2 (= 2.15.1-1)
+Provides: xmllint
+Description: XML utilities
+Filename: dists/stable/main/binary-arm/libxml2-utils_2.15.1-1_arm.deb
+Size: 31728
+MD5Sum: 3af812d3fbf0fbed9c2ce78e86b281e3
+SHA1: c21ef4be380be88febcde3c64eb9b24ca08074e2
+SHA256: ad7e2aae12c2bc11f9d693b82912eea30a2de767de568e6a67b604cf3ecd8c83
+SHA512: fbd5126c0b38e7a4669614e83c42af67df8a75438ecd7cbe3b7d97d9f28fe15ee52dbb2eb2d662ae6fc90c678104a42f4e692145d7e8253c0602f38d95124871
+
+Package: libxml2
+Architecture: arm
+Installed-Size: 1276
+Maintainer: @termux
+Version: 2.15.1-1
+Homepage: https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
+Breaks: libxml2-dev
+Depends: libandroid-glob, libiconv, libicu, zlib
+Replaces: libxml2-dev
+Description: Library for parsing XML documents
+Filename: dists/stable/main/binary-arm/libxml2_2.15.1-1_arm.deb
+Size: 404968
+MD5Sum: f7fcd1c47543a577d5e723baa522252d
+SHA1: 5a258fdd3708cbd834fa1a67fb22999a50657cce
+SHA256: 4e8fc52883a182820cfad66459f9c68c5013807b7fcbf793027be21e7ddbfba2
+SHA512: 15a95fded47dd408174d97862ed1f7ed83590a05715d01d0983ebd25f259075a8ceb078f9b66c93666b07530a0455624f01a14349b2a7c14a6bbd53bdd671453
+
+Package: libxrender
+Architecture: arm
+Installed-Size: 152
+Maintainer: @termux
+Version: 0.9.12-1
+Homepage: https://xorg.freedesktop.org/
+Depends: libx11
+Description: X Rendering Extension client library
+Filename: dists/stable/main/binary-arm/libxrender_0.9.12-1_arm.deb
+Size: 22716
+MD5Sum: ec7fd07d47a79465aa62db9f31e41283
+SHA1: 547ced9fece7e01add617c44011279897db0aab3
+SHA256: 3181bfebbf195063e06b3229a0f7df7a8016f315379ce7de7adf8c7d2b531ba0
+SHA512: 553017c05f1a859514ca91ff7189209a3298418a2cb8e2b0dae840a262a13a9badcb963267eb5d51080c85a5549c067436a4d4a54f9dde3842e49c693b9ed891
+
+Package: libxslt
+Architecture: arm
+Installed-Size: 1828
+Maintainer: @termux
+Version: 1.1.45
+Homepage: http://xmlsoft.org/libxslt/
+Breaks: libxslt-dev
+Depends: libgcrypt, libgpg-error, libxml2, libandroid-glob
+Replaces: libxslt-dev
+Description: XSLT processing library
+Filename: dists/stable/main/binary-arm/libxslt_1.1.45_arm.deb
+Size: 243680
+MD5Sum: ee0346f58f3f95caf1215a19f63a92df
+SHA1: 431316778d64ac9c88a6a25766528cd81c2f4a14
+SHA256: dd856944c9e762fa83a443592c2e2b07ba59d23fe9665146c0f7290728ad2303
+SHA512: cf5b60fcb24dd5a91bc73b776571d9fa7c12eb9f72118d647e7d77df697c631f9e2cec7b8eb57c9a99226bcf9153eec171515c040450e8cc20a2913e6ddddaa8
+
+Package: libxss-static
+Architecture: arm
+Installed-Size: 40
+Maintainer: @termux
+Version: 1.2.5
+Homepage: https://xorg.freedesktop.org/
+Depends: libxss (= 1.2.5)
+Description: Static libraries for libxss
+Filename: dists/stable/main/binary-arm/libxss-static_1.2.5_arm.deb
+Size: 3848
+MD5Sum: c66145cebf139860a5ba25c24a52549c
+SHA1: 0ba7bc891df93dda61f89435c9131f71ef9a1c39
+SHA256: c1e33f35c795632357cdcc0c0c84d221200ccc65c2292a02f8d72c9d08273dc9
+SHA512: 5330ecee4b7effe850d0f327de36bd9a2d997d638402fc0a8282e2d8b55238e94c1f9f8b97944b85516dbfb5fa1820b2f65e7c3b875ed2a484409c3c6e7503fc
+
+Package: libxss
+Architecture: arm
+Installed-Size: 140
+Maintainer: @termux
+Version: 1.2.5
+Homepage: https://xorg.freedesktop.org/
+Depends: libx11, libxau, libxcb, libxdmcp, libxext
+Description: X11 Screen Saver extension library
+Filename: dists/stable/main/binary-arm/libxss_1.2.5_arm.deb
+Size: 11376
+MD5Sum: e3f9efd7738641bb6ec1e430af1801b8
+SHA1: 9cf426fd4b066dbb50a5f4b300412d5ecc079619
+SHA256: 8e2a336ded8788eb1dcc38579c0abac8e1a3948f24d816e735c65f68ddc53057
+SHA512: f07991e8f85b484b80e1374e7e1416f984f424dfa4685e90c00702e2945bd4603726885f93badc89234ab4b174dbd4964138a4f35936f737bebf68d08dfff26e
 
 Package: lsof-static
 Architecture: arm
@@ -994,6 +2189,38 @@ MD5Sum: fef1d30657d330f78f772947e6c80cb5
 SHA1: 90b4d482d0bf6e63ee9975f0f1455ac7db614590
 SHA256: 07a1f35fe4c03fc80a87a0066eb154a65506bc0047010f9ac4d3544b1baebec7
 SHA512: f4a68b75ce00d2f0af30f046829a3de99d8012edb6a22631195d84e0973c3f5f9a010c83d110560b14045d895821589a08549716789afeb500f310d420cb82ca
+
+Package: lz4
+Architecture: arm
+Installed-Size: 216
+Maintainer: @termux
+Version: 1.10.0-1
+Homepage: https://lz4.github.io/lz4/
+Depends: liblz4 (= 1.10.0-1)
+Description: Fast LZ compression algorithm tool
+Filename: dists/stable/main/binary-arm/lz4_1.10.0-1_arm.deb
+Size: 93444
+MD5Sum: aaa6d1d4e09ffbc389722385e5298ef0
+SHA1: 9bf27592c25eac325a4652627b313dcb9e59d9af
+SHA256: d54a45d1a3498ff568e6c5e4d96589a602c60e203aab499a30ba94570ca1db93
+SHA512: 33f817dc0ae984d6fbc4a6892575bbf9dcc0cb8462c6b3baf1848a05b3f8b4be13d89813359b42f4e74a2c81d3e24ac68f3adf275e11f341218b4f401e76d8c7
+
+Package: make
+Architecture: arm
+Installed-Size: 872
+Maintainer: @termux
+Version: 4.4.1-1
+Homepage: https://www.gnu.org/software/make/
+Breaks: make-dev
+Conflicts: make-guile
+Replaces: make-dev
+Description: Tool to control the generation of non-source files from source files
+Filename: dists/stable/main/binary-arm/make_4.4.1-1_arm.deb
+Size: 235316
+MD5Sum: 53fa3c3ead2590ee4a4f7d9984fc5377
+SHA1: 95f4ba9ec18da02c1e0786cacdcd397643ac4a23
+SHA256: c5ca4825b33c437ee23b0d8fbb5a6efd03d99a5d22a49a7312f50873f2c139e1
+SHA512: 0fd133cc2796d96cb9c9255af7c964075056ba2c580604be3f3487a17565baf3deae6c72df2886cd0f3f5224557dbd560eea36ef60cd78620891b024a21e35f5
 
 Package: mount-utils
 Architecture: arm
@@ -1035,11 +2262,11 @@ Homepage: https://invisible-island.net/ncurses/
 Depends: ncurses (= 6.5.20240831-3)
 Description: Static libraries for ncurses
 Filename: dists/stable/main/binary-arm/ncurses-static_6.5.20240831-3_arm.deb
-Size: 139372
-MD5Sum: 892d02e74f96cbd2ab293c1ce4aae9c5
-SHA1: 2dc4e3000e911ae799ffa6b025d9c92f86b78875
-SHA256: d543e2e999b289294454c0cace5f8a1226521dcd394b6bdb0cb4d29997cdc6c3
-SHA512: 42a488f7c3d9a31b9fe7a2f47499925759c5991b4d082a62cfb31778f2cac34f21ab2f976453c9b4786736cc49c82a789b9d2e2edcacee2408a027208d1b79a1
+Size: 139352
+MD5Sum: 1addce1fe83a78e0bf441accca4fa08f
+SHA1: 800bb6f5fdb17a9e0bba2a49e64ba2b09df36dbc
+SHA256: 506c904e63230a04d6190fb9c0d7a533f551b1b7840192549ad566a8f32bde2b
+SHA512: 2bed04ebedd7f4738013213996e9308a0e1efc3e9a6d4f0cd5ede45ae820cf173ee665e57d5f9a475da4dbcc1caa04f06e9fcdd260c0f574d3ba22ea7a2de1ee
 
 Package: ncurses-ui-libs-static
 Architecture: arm
@@ -1051,10 +2278,10 @@ Depends: ncurses-ui-libs, ncurses (= 6.5.20240831-3)
 Description: Static libraries for terminal user interfaces based on ncurses
 Filename: dists/stable/main/binary-arm/ncurses-ui-libs-static_6.5.20240831-3_arm.deb
 Size: 34468
-MD5Sum: 78e40a6554672ed58641c3690bb98ed2
-SHA1: e1e86a75fee88ac6301e29aea8fd3119c373fd4c
-SHA256: 10b8446b9f0a109d64db9f4851ae6bce03712cc77cc965325070131f6285f559
-SHA512: bef77fe980ae82e3da42082fa97ed6deb2a24b381941f1811a848f691d9c1a641937c3c449c51cbce7d828f303731e7284f75fc87212e2588bb50ef7bf1fadc0
+MD5Sum: 091b6f73c56500722a13638a7207be99
+SHA1: b9c68875f5a1432e33f499b0d3bba811960bf8cd
+SHA256: 8f0695198639d6d260e00d2108bc9b1469cfe189fea3028e5b485b6fe54a234c
+SHA512: d65f4b45f77af9503da2fcc651d24b6fa559b684cf30fa35fc8767c49ac8c20463003b7af02931970f1d86a006cb2c42126216a62de661ee227710893be88c42
 
 Package: ncurses-ui-libs
 Architecture: arm
@@ -1067,11 +2294,11 @@ Breaks: ncurses (<< 6.4)
 Replaces: ncurses (<< 6.4)
 Description: Libraries for terminal user interfaces based on ncurses
 Filename: dists/stable/main/binary-arm/ncurses-ui-libs_6.5.20240831-3_arm.deb
-Size: 28320
-MD5Sum: 13dc954100bf889c64a7022f76f8de39
-SHA1: b280e29c113e968e3a2d718d0d2c165e02268aa8
-SHA256: 928ad69371d24bf72121163cb77f9d3355dcffb2d72d0a79710a5ac59d6d824f
-SHA512: 47b6cfc36d10bd1f85338f912150284d40ed6ea5f041688c6b047ba961ad0a1179f97a4c40b2ff51108710eea42a6472b2dbe8db0e93458d83d8d0ff9b60db6b
+Size: 28332
+MD5Sum: 80bfe151e6e4b0831719b89d42a413c9
+SHA1: f94f2fd5161f229dcb7ff01d41a93ffcc957fb81
+SHA256: 42767d4e1982c64e4942398a683c1f982f440f45dfb0336060dd77c668af0330
+SHA512: 8ec14d338b44e959099229d3ff47b12a850983c89f9cccc1ce4abb1603438a77a89200d13d41839bb4b354499d52d6bcf3af552ac376fa0dc2c676877e8af55e
 
 Package: ncurses-utils
 Architecture: arm
@@ -1082,15 +2309,15 @@ Homepage: https://invisible-island.net/ncurses/
 Depends: ncurses (= 6.5.20240831-3)
 Description: Tools for working with terminals
 Filename: dists/stable/main/binary-arm/ncurses-utils_6.5.20240831-3_arm.deb
-Size: 82892
-MD5Sum: 339a439f5558cc7907d70861d1586b19
-SHA1: 24bba807c001e53499b3c48b8b3b60ac22a848ae
-SHA256: dcf4d2ea708c2bbb4f6a48214e44dca0b7a30eb4311f82c1591a6102ed994249
-SHA512: c2807cb6688720fa965f2cc8128a2f9d02e64134705b19f78d9f79cff6d1b149c80150671a6a3de19ab7a42fe57afa88dce57758e194100e9e0f1780e3a91a58
+Size: 82912
+MD5Sum: bbe3a4339151a7fb739425736b58ef97
+SHA1: dc36c85115ccde8ad9c8d837bbab62ab5ee70797
+SHA256: ae3331d736996d352a26d3d619af9699f63fefb90111c198ce76837e9f5abd67
+SHA512: 3627f8ced5df1de3727f7af6ca5bd1515a0fb3617fc2587d632b8966b8aef59020532bfe3c012ec3164621e49b52ce01516d1402ead68262879288a12430c3ee
 
 Package: ncurses
 Architecture: arm
-Installed-Size: 1464
+Installed-Size: 1460
 Maintainer: @termux
 Version: 6.5.20240831-3
 Homepage: https://invisible-island.net/ncurses/
@@ -1099,10 +2326,10 @@ Replaces: ncurses-dev, ncurses-utils (<< 6.1.20190511-4)
 Description: Library for text-based user interfaces in a terminal-independent manner
 Filename: dists/stable/main/binary-arm/ncurses_6.5.20240831-3_arm.deb
 Size: 524640
-MD5Sum: d946440c9328bb23cd575fdc56a3aef7
-SHA1: 3e2b4954bcd73566d28065a813ab039ef34e3448
-SHA256: 338600af8c3127d706367fca93c3e285eb8df046643aaa1396fbbe6cd594c601
-SHA512: f73c5f1ade54d573cf8ab08f07ada75d4903ea2ea3cae258d3416bf5155803c8a0fdc3dc2eb2812b38626df26b543cb56113d4a3dc94c09c9655f7ab7d9589d8
+MD5Sum: 6ca9e644eb65e44e06912cfa7b7ee9e4
+SHA1: 39d4840e51d763c8216fbc90c3673cc1d742eb17
+SHA256: acf07c22c40e4938cf1990600819611fff674ef517aa37916cf65eb39a3f2a29
+SHA512: 47aac013e72cbbc8d59b9e07c4af67c026d4b41390e6e46f78027074bda07cb4e88643bc39d21aae1807e42ae0b7615a10f329674d5a607e453b70b8579f0dcd
 
 Package: net-tools
 Architecture: arm
@@ -1118,6 +2345,21 @@ SHA1: 73d3dbc9cc423ba7e5fdf8de16ace7da8ac5acf5
 SHA256: b3f7f9feafe1e70615a29f4019b45bacb0e02d443889bb3e1c0734f175b52527
 SHA512: 33001801ab724ec69f2aa49b47bcd4555a06553fc3da1021392714c7a32246d7578c9c615790276ef91e20262214606c14448a9c2d901296fa57374398bbaa57
 
+Package: nettle
+Architecture: arm
+Installed-Size: 92
+Maintainer: @termux
+Version: 3.10.2-1
+Homepage: https://www.lysator.liu.se/~nisse/nettle/
+Depends: libnettle (= 3.10.2-1)
+Description: Low level cryptographic tools
+Filename: dists/stable/main/binary-arm/nettle_3.10.2-1_arm.deb
+Size: 16120
+MD5Sum: dd3a13b9e3a8646742d42673867e404a
+SHA1: aac89adb5caa3ba4ca1e7bdc0e22f55d0592b54d
+SHA256: c629aadbbe994799952e4b0b189cf950b53012fc31d67916d5c8d9cd8dc1a53f
+SHA512: fe28fc4269383db2a3e83cfbbdae22bdf8b361bc073416e78047fcc01360b83a2ecb8d90be73a9afe962bd04b0020304c863a45de31481be4ee5780969f2a272
+
 Package: openssl-static
 Architecture: arm
 Installed-Size: 7484
@@ -1127,11 +2369,11 @@ Homepage: https://www.openssl.org/
 Depends: openssl (= 1:3.6.0)
 Description: Static libraries for openssl
 Filename: dists/stable/main/binary-arm/openssl-static_1:3.6.0_arm.deb
-Size: 1979640
-MD5Sum: cda64d580ec9c52dce4af7083ce80366
-SHA1: 626f4ffd098d633fb6035c7f9be38aae7593cc6a
-SHA256: b3b36e33ab98fac875ba9893afaad65f4d85115ed56c9bb04b30cdb4d4eb22e2
-SHA512: 940711c683afb4655e8426221a9fe409f757c3c909bda2ed6150fb0784bfdbb8526aa268edaad4e2de16e4d75915922ef08114ea73c2ecc4aeafa600368e6a57
+Size: 1979720
+MD5Sum: d88b0e09ba46cb21213ba555a31518ca
+SHA1: 8c033ee699a6d3d93d5849ea4f01412c89b4455b
+SHA256: 6b1de7743337a4b652812096375ebd3c8b87d67cfcfa623d0b24ee5a9a6c0538
+SHA512: 4cb1b11d9cc14f74b67751b967946c007ffe4b36d09d35257f54e14e2ec44dd35e9eb3218f6dfd5e08db1c91b6863d8e5f2cafb2461023a84ad4dd0142ed03f2
 
 Package: openssl-tool
 Architecture: arm
@@ -1142,11 +2384,11 @@ Homepage: https://www.openssl.org/
 Depends: openssl (= 1:3.6.0)
 Description: The openssl command line cryptographic tool
 Filename: dists/stable/main/binary-arm/openssl-tool_1:3.6.0_arm.deb
-Size: 265588
-MD5Sum: 9ce07eaff7b23293222b4ec7d9dad763
-SHA1: cee6df43ecaeca806580c8df3739e7f5601d4881
-SHA256: af5aa68e7ea4d93b8ef54d9e9020c7e362e0ea4c3b000ad4eff0bdd89b9358a1
-SHA512: 8200c211f8236918ed683d6678837b8ccd4a5f8d5d9f5c526f37d665a87378b5ca47400be0a8b5328a29e716e91e11b2567390de201e974972e0cc2cec7b840b
+Size: 266376
+MD5Sum: a889ea24345eed651673ca2acf021eb6
+SHA1: aaee7ab7296db926df9b6fac2ac36ca0cab58e55
+SHA256: 506a025462dea9f840694c6279b7b4efc986d09b0bcb5cacda21f90a90c59388
+SHA512: 605c364842bf76c9ada333eaf26beaf244dfc5a3b3836aa876466866eeb42cef44a7920989c45337d5abb9e9005c338d4e8fa0c1a0ff5020cd7f4a3d37a22247
 
 Package: openssl
 Architecture: arm
@@ -1160,11 +2402,11 @@ Conflicts: libcurl (<< 7.61.0-1)
 Replaces: openssl-tool (<< 1.1.1b-1), openssl-dev
 Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
 Filename: dists/stable/main/binary-arm/openssl_1:3.6.0_arm.deb
-Size: 1811160
-MD5Sum: 195e7164d35bd69b5d1f6dc054d73834
-SHA1: 907750813bac0010144bc6ec549eb48a4e566cdc
-SHA256: 2d1ff0ff2f6ef66b5ad9f5d8f74421153859e9a3fdccd00cb86cfd63cf69bff7
-SHA512: 67d21cdb402ecf7093af1a2a041c05b01082c96f18ccd0c3217321bb3616387e7004bb7e1d110bffd3494307acae1173b0e511918b39a3f3c9b20bbcd77ced14
+Size: 1811872
+MD5Sum: 5ad9bd194b6cc9330795ac57aae26eed
+SHA1: 346c53408d62f4d4a8f711a50a5be837b002286c
+SHA256: 6c2da1f3ccd99ff4ede0c4ad98cb3da00922dd783e2eb983fbb7e3401e668fb4
+SHA512: eb313093edc5833d30185eaec78a1694c2b7cf7fabbf746edfc93f32f177f8885ba5db4084f62e1d4779c83abd6c277f23deb9c0dcc84bb3cfa3daea17d9263f
 
 Package: patch
 Architecture: arm
@@ -1189,11 +2431,11 @@ Homepage: https://pcre2project.github.io/pcre2/
 Depends: pcre2 (= 10.47)
 Description: Static libraries for pcre2
 Filename: dists/stable/main/binary-arm/pcre2-static_10.47_arm.deb
-Size: 355088
-MD5Sum: 9ed42043463effde05625cba1158cc33
-SHA1: cd030cfaf77689a6b2c1f9ec8d2a46d17ed6b6f5
-SHA256: b62cde93398f4e5fabc8b8c054e1af68ef71e8184ec35876b2ddd6a2f0b15412
-SHA512: 89a92a8bd49c862967b389163bf7a8587aa024461fe04473eab08fdad9132f516e7ddfc797f3e013ef51c196f43a11b32f2d7c0c9b3afdf391b4dc9aa2982a0a
+Size: 355116
+MD5Sum: 99f8b7e4a857b5765554e54e59f86d32
+SHA1: f16260226badb99cf6f2df5a85d692bfe7c4954f
+SHA256: 0ac48fc09abfb5468b814a3ac05e238e722ef6d62452ce6649d43e4365faadf2
+SHA512: 913c30fba1d9c7acffcec61b2ab014b5ff786cc2d8981f301e3eb2c0000b1a113fc618c5f93fc952ac919a4a7d2b89041547fe00ed3283afd8948b7acc789d81
 
 Package: pcre2
 Architecture: arm
@@ -1205,11 +2447,11 @@ Breaks: pcre2-dev
 Replaces: pcre2-dev
 Description: Perl 5 compatible regular expression library
 Filename: dists/stable/main/binary-arm/pcre2_10.47_arm.deb
-Size: 953236
-MD5Sum: b320503f45af0f1b6e18821aa97d2a6f
-SHA1: 537d21cd5b75012570965ceead988e37d84cdda5
-SHA256: e0186793fed9c2f22ded0e56e7ff127919a24c8b3c6809da721d0eee0fd70647
-SHA512: fbb69a318bc4d533655bc4335d56159cd745b39fb3855d1eb11ad24e788542585a7a2d059f85326504b713e5074dd5546d9f1c1c1e7029042a453dbe2799623c
+Size: 953304
+MD5Sum: 8af24a9c904204d0e58caad7331cd750
+SHA1: d3443b2b98809c4c7ac9a89c9b9aa5892107b7f7
+SHA256: 3a9bc908937364ccc7482343905f5b56309872487043a98d9a64771e0415c2f4
+SHA512: c2e4b9ad85b45e23d0265cf96f6f0669f04e000b25d6f77f3a707bc8ca3429687219751dfefcf37e6449489896f104c2273cbed27395a2cf707f0a174d4dbc59
 
 Package: pcre2grep
 Architecture: arm
@@ -1220,11 +2462,41 @@ Homepage: https://pcre2project.github.io/pcre2/
 Depends: pcre2 (= 10.47)
 Description: A grep with Perl-compatible regular expressions
 Filename: dists/stable/main/binary-arm/pcre2grep_10.47_arm.deb
-Size: 32780
-MD5Sum: a729502e8bb2a31e47732d2beb2e59cd
-SHA1: c383625cb21a4e478ace448af268e227dc4b14f0
-SHA256: 6f2a42a7388df32b97031a1f637c1a80c4e2f7e54a9f8c2c87cb796ee6ab249a
-SHA512: 95210224852269b0a77149bbcd6a101ad96d2670b788d5f0ad50f11ef5aafc2f97852fcc7bfdbae6a7bfb2fd9132f936a202169db4cf8b7405eff4bdd963e249
+Size: 32788
+MD5Sum: ff9ae2835da01ab3b04de0fc303dfbd0
+SHA1: 0a647eb00daee9ade0ced2bec1d01d6119dfb17e
+SHA256: 8528affca111e1c3b36391c9ac5b167222c71ea8ae2760c9c3fd3115882833f3
+SHA512: f7394da4427878d281526f852dc64a4cf66dfb67d79cb8a847ee168ed837e923692804e4827eaf8378cd3cb6753291c8722c181fdcd301c5cf2bceaac5279f8a
+
+Package: perl
+Architecture: arm
+Installed-Size: 63072
+Maintainer: @termux
+Version: 5.40.3-3
+Homepage: https://www.perl.org/
+Depends: libandroid-utimes
+Description: Capable, feature-rich programming language
+Filename: dists/stable/main/binary-arm/perl_5.40.3-3_arm.deb
+Size: 14645756
+MD5Sum: d303f2d88ec70fe185e03450405fd6ba
+SHA1: 8f985887202a18a983230e7f7d2c886dc0defeb5
+SHA256: ccd633699737ae357e452d1352a0d63c95c673eb303e1a9b3f0533e7799fdfc3
+SHA512: f1a52588d12b11a51284b5e4b2bcf6e43fd66b752f2e1c5195faa491e4723fa0f34917aeb3236036f0ae5e56c22813d7cc95cba633339bdd6e2c4d31c82259f9
+
+Package: pinentry
+Architecture: arm
+Installed-Size: 172
+Maintainer: @termux
+Version: 1.3.2-2
+Homepage: https://www.gnupg.org/related_software/pinentry/index.html
+Depends: libandroid-support, libassuan, libgpg-error, libiconv, ncurses
+Description: Dialog allowing secure password entry
+Filename: dists/stable/main/binary-arm/pinentry_1.3.2-2_arm.deb
+Size: 43004
+MD5Sum: f67f8b053b882090bd2a31e5a35f7dd2
+SHA1: bf6c48cec7728a505b917848706242710de2e355
+SHA256: a4b02fe6da0f9dda62efcba88f04cbd2428cbeda0db5449e3cc260d32f9d4711
+SHA512: 6d3b1080c6e4d5aacaf9f9c1570033ae9766556cc472b227955cc991a3957e277a691841516d9bfe0c17a20cb5ce24378612d859b49af7cc05bb186b1d282890
 
 Package: procps-static
 Architecture: arm
@@ -1291,6 +2563,89 @@ SHA1: bd07aa72025bd175cfbb918afbb57e69f8b69457
 SHA256: 4c7bd1bdf88ed4459d9f7de948914e2ac19a5708f078d8f4365685fcd1c301ac
 SHA512: ad561d29f3430c1ccbe2755f1cd0e6999b548594710f579ce6fe0f1d6dcb598a07bae5999e982e397a5f3ea63bc64dc9d1ec7a28c8064e501cc1d43de67f3b62
 
+Package: python-static
+Architecture: arm
+Installed-Size: 28516
+Maintainer: @termux
+Version: 3.12.12
+Homepage: https://python.org/
+Depends: python (= 3.12.12)
+Description: Static libraries for python
+Filename: dists/stable/main/binary-arm/python-static_3.12.12_arm.deb
+Size: 6263176
+MD5Sum: 5c2a9483f4ccc2b5386e6bdfe499591a
+SHA1: cb198fd494aefe9461f5183db232dc902d807d94
+SHA256: e8852685ed356c3a4dc06b16b00bd978dd6e8edfaeeedbb6fec2a65df7c683c6
+SHA512: 97bf07cd5619321b4aa18dfbe83d375614c0db1be859a68a414b8b6ed50ab7560f44b21269194381999aeda92015cc650ff0ace89ee542d94590d3cd7ed7c6fe
+
+Package: python-tkinter
+Architecture: arm
+Installed-Size: 11032
+Maintainer: @termux
+Version: 3.12.12
+Homepage: https://python.org/
+Depends: tcl, tk, python (= 3.12.12)
+Breaks: python (<< 3.11.1-3)
+Replaces: python (<< 3.11.1-3)
+Description: Tkinter support for Python 3
+Filename: dists/stable/main/binary-arm/python-tkinter_3.12.12_arm.deb
+Size: 1217892
+MD5Sum: d5aa1cac1a88e2495b2f66c956456d3f
+SHA1: 58459dcf4b81b7e2664e669ad5bfaa04b2eecbcd
+SHA256: 680e5fa31725e54d8b65a6fa43603e2df020ebebafbe2afff0b23dcd86086ce8
+SHA512: 756e127a29efe853304c6205fff08be8a743cd00af93b14cbb759bf61701df543950474d45fc9f71683771eeed96d5a2c9edaf2a816b29bc76fdb6b0c6a67369
+
+Package: python
+Architecture: arm
+Installed-Size: 54920
+Maintainer: @termux
+Version: 3.12.12
+Homepage: https://python.org/
+Breaks: python2 (<= 2.7.15), python-dev
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: python-ensurepip-wheels, python-pip
+Replaces: python-dev
+Provides: python3
+Suggests: python-tkinter
+Description: Python 3 programming language intended to enable clear programs
+Filename: dists/stable/main/binary-arm/python_3.12.12_arm.deb
+Size: 7501240
+MD5Sum: cf0d455821163fd0c2ff034848f7a3b3
+SHA1: 505085f1d613c77fe6e08f84ced5126e21d6df32
+SHA256: 5f7fa81cbc62534e99bba0a6952cdfd492e3ead0495aee7add8ac04c4669ff9e
+SHA512: f133b43871af3b88a263e1b6b4ba49252f913616697db0ecc33b34fe02f8cf8f719808394fde7f03f23bb635259019199cf4df1c99ccd9c2cbc127a72e0da369
+
+Package: pyunbound
+Architecture: arm
+Installed-Size: 220
+Maintainer: @termux
+Version: 1.24.2
+Homepage: https://unbound.net/
+Depends: python, libunbound (= 1.24.2)
+Conflicts: unbound (<< 1.15.0-1)
+Description: Python bindings for Unbound
+Filename: dists/stable/main/binary-arm/pyunbound_1.24.2_arm.deb
+Size: 39092
+MD5Sum: 06a284732147f031d2d17e2f3dda83d4
+SHA1: 27dd7108d1dd88b1c570270d0ccba8f02f0cdc74
+SHA256: 1c9e98a8973d9c9a78f73ded8f2c0ee9010851dc1c7f17b29034eafc0686d077
+SHA512: 37f66ceb5cc179ec4ff3d202d38039fd2e1a01bb474a7c08bbf25e4791e8c05dab396fbe5b78b92e1de1e0d6231d0a9c19c0264ed0c18929aa4f468e99954ba1
+
+Package: pzstd
+Architecture: arm
+Installed-Size: 96
+Maintainer: @termux
+Version: 1.5.7-1
+Homepage: https://github.com/facebook/zstd
+Depends: libc++, zstd (= 1.5.7-1)
+Description: A Pigz-like tool for Zstandard
+Filename: dists/stable/main/binary-arm/pzstd_1.5.7-1_arm.deb
+Size: 30452
+MD5Sum: 9fa22e0708632b944cf4703cc2d7ab9c
+SHA1: d789ed51d90df5c1fdd72ab02b528f1d80eabfc1
+SHA256: 4e14175f38b026a8966c3ea29f99c0e9de8216f23a32d73e5ef7400f8a25c3a1
+SHA512: ffca812d0617b8c3dcababba0c5fa8187e77c649087617b17f0e21871027bebb8be9b7d3094889f59f664f3387c1e05a7bd17fe098e7a3fa16bdda623d85cec0
+
 Package: readline-static
 Architecture: arm
 Installed-Size: 424
@@ -1300,11 +2655,11 @@ Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
 Depends: readline (= 8.3.1-2)
 Description: Static libraries for readline
 Filename: dists/stable/main/binary-arm/readline-static_8.3.1-2_arm.deb
-Size: 111212
-MD5Sum: a4c61d5d50d955f5d29c8b45adf594b2
-SHA1: 70f48919818eb133b7b09004a2756790728bb816
-SHA256: b52a97d92f0cfd7eaa0d98b3b1665a507a1d3b69678ea748df4119f55669774b
-SHA512: 958684ea96ad87599b3933e7001cf3c0e9b7e12dd12e19ed2117e0e52d969e572cfa794c24019584739607b68c802041398cdeb397bd49c648c7f91bdd1cf358
+Size: 110980
+MD5Sum: fd0ae4afbcb474c9f8f54aa8dfa391ea
+SHA1: bee6fa0434406ed398b137f740496f418bcc3bc0
+SHA256: 58b59a8fcdaa1d1141f79f16ec3c54c0c66f1bd1552a4c868730b21e32c8a454
+SHA512: a4dfc6c506ec343691369966bd69d5a57c26c0af8778f45616775d33842760e800a023a424417077f20570bfd57913dc6b9e1cb17876db6862819dd040cb2317
 
 Package: readline
 Architecture: arm
@@ -1317,11 +2672,42 @@ Depends: libandroid-support, ncurses
 Replaces: readline-dev
 Description: Library that allow users to edit command lines as they are typed in
 Filename: dists/stable/main/binary-arm/readline_8.3.1-2_arm.deb
-Size: 283664
-MD5Sum: 346ab2fafcf4dc9c269d4ac17f0759f8
-SHA1: be06ffccfaf024fcc37c34a61c576d7630e113ce
-SHA256: fde7d8177084289edfbcd3299247a3b6a1ab518cda52abbb625e875cfac68cc8
-SHA512: 46f934e803b1245ead12f1c05d28d5efa8f444432bd365af3bc141924d57c83ba17c27abb08a7be450beefcf227adf950b1958b6937998f85372fd5251c641d5
+Size: 284024
+MD5Sum: 57c30da8c93f165588f01e8a1ba15f6d
+SHA1: f7d7021900feb1e3b2666e37d409ce893bdd0185
+SHA256: 03d4eed87057f159dcd3e14eeb362356fbc561e9b861aabafa90486fe23e121b
+SHA512: 73cfe17ef2ba46283f3bdbd92cbde97e7ea61fa8b616c92d3dcd08e37779386e61bc0e28ca55e6d54b37b74f2e98c72803158f7d08cf3f5fec3ef829a637f286
+
+Package: resolv-conf
+Architecture: arm
+Installed-Size: 48
+Maintainer: @termux
+Version: 1.3
+Homepage: https://man7.org/linux/man-pages/man5/resolv.conf.5.html
+Description: Resolver configuration file
+Filename: dists/stable/main/binary-arm/resolv-conf_1.3_arm.deb
+Size: 1012
+MD5Sum: 88e4bcf391f6cc40b32b909deddff84a
+SHA1: 606c2fde2329e922eb3eeb046d84e40ff6c583e9
+SHA256: cb1e162a4b354cafe8c5f2975d7272d89fe702a61f37d13aea923999100adb67
+SHA512: 3ed4c19f72c75d982c7bbf66f41675686ae76f4db59a35c67070b028e1aacc2bc21fcea8dbbb62169242097efea9ca1899250ade748e3fc888e40c026e8beb4a
+
+Package: scdaemon
+Architecture: arm
+Installed-Size: 364
+Maintainer: @termux
+Version: 2.5.11
+Homepage: https://www.gnupg.org/
+Depends: libgcrypt, libksba, libgpg-error, libassuan, libnpth, libusb, gnupg (= 2.5.11)
+Conflicts: gnupg (<< 2.3.3-2)
+Replaces: gnupg (<< 2.3.3-2)
+Description: Daemon invoked by gpg to manage smartcards
+Filename: dists/stable/main/binary-arm/scdaemon_2.5.11_arm.deb
+Size: 169944
+MD5Sum: ecb9bb940c65e43f143a614f204ae00d
+SHA1: d296e62fd130ff1f21966ff59e420be24ecb6dfa
+SHA256: 15439530487f6bd8fd961b8a75122d5b01406cc7c1cb82a0f238fe05e143ab41
+SHA512: 906c1958c6d9dacf581f8176efb995d99628fe391b5b3a0493357c99d239007eb6c6f762108115714fe69a28a88e81538c28985b4cd675db7c30b9233951d330
 
 Package: sed
 Architecture: arm
@@ -1332,11 +2718,41 @@ Homepage: https://www.gnu.org/software/sed/
 Essential: yes
 Description: GNU stream editor for filtering/transforming text
 Filename: dists/stable/main/binary-arm/sed_4.9-2_arm.deb
-Size: 111532
-MD5Sum: 084f2b088fe43e38fc116485a037e594
-SHA1: 6df21b45486b1e677289ab149f902fd114d5f1f0
-SHA256: 75ab3542cbba51a1f915e8a5c0e97afb694580082ddd8419664ea2f71d9574df
-SHA512: aae5ba8f7aa57965395cb61f4f7ab944552d4a9f31baaddfdae862c7624ccd80c590bee992af3b6a76ee5f2caaa56797b169e2daf6b9421eca529a7f9d5c9aed
+Size: 111996
+MD5Sum: f546b96647e11cf378fc3af71a8c8769
+SHA1: 152443cabe2aba4df67499b1cebeaf11d2626eb0
+SHA256: c5113dae35e615e48c05f9c94805a78f8f41edfe5b4e1be7e4513c47934eb3dc
+SHA512: 04e225d5e95e32c02cdb2ce63114b6c390c762c17526414b8732e4ba148e2b2a3c6009d14c49d7d90e311a67b5de9b1336757f6673d006d0a67cea88c5501752
+
+Package: sqlite
+Architecture: arm
+Installed-Size: 996
+Maintainer: @termux
+Version: 3.51.2
+Homepage: https://www.sqlite.org
+Depends: readline, zlib
+Description: Command line shell for SQLite
+Filename: dists/stable/main/binary-arm/sqlite_3.51.2_arm.deb
+Size: 575176
+MD5Sum: 9cc719397f4bb5bf4d9a61ed5e63fe38
+SHA1: 1eec1f9599da8f554da33119afd911b6e943b231
+SHA256: ffdf6eb21a1d194fc964e4a17b0fb2353e3036ed51dde8b03e5068323fe30bbe
+SHA512: 7110fdb627b6951d162fcd9ce1048ae10289768c068b084515c587873dee088aaa3c588b6727440b331d81b6306e86612bcb0f7963f99501751c4879f774609e
+
+Package: swig
+Architecture: arm
+Installed-Size: 6476
+Maintainer: @termux
+Version: 4.4.1
+Homepage: https://swig.org
+Depends: libc++, pcre2, zlib
+Description: Generate scripting interfaces to C/C++ code
+Filename: dists/stable/main/binary-arm/swig_4.4.1_arm.deb
+Size: 925844
+MD5Sum: c0c1ec27af3f6a6d6c8c5f114c9b02b3
+SHA1: f7174974af0e4bf575ddc2a587ab12ac4ebcd82a
+SHA256: 2733cf90f279326d86109bef11138dfaa5d1471f1444ca93dcf9f9856db18839
+SHA512: bf4d5f3df94a8807a4fe46ad794487ac5952a00a07d16411006d07726f08dca8652be4e1cc52fe5395a4b4d4269422995098ef3e913df67fe47a06736a0ad334
 
 Package: tar
 Architecture: arm
@@ -1348,11 +2764,28 @@ Depends: libacl, libandroid-glob, libandroid-selinux, libiconv
 Essential: yes
 Description: GNU tar for manipulating tar archives
 Filename: dists/stable/main/binary-arm/tar_1.35-2_arm.deb
-Size: 329792
-MD5Sum: 6b7d99211496d10c33d16d66ded3041d
-SHA1: 8a0a5e93988aeb21bc5162abaa8916538400f025
-SHA256: 57bb0c75e6b6747161c9880c5eed07eef3e71f719581d349b2a7ff9b97530044
-SHA512: 68a235143c4ebba7e7ff464c81ec03ada7cad77fe26d91ecb87fc225a23dd89e0d2a8dd0d39b7d2068c82ffb35184d00d32385a6053031fa3b72b93a7d782894
+Size: 329816
+MD5Sum: a68a9d5e9dadc4369195abd700382fbd
+SHA1: af181c6aed42bfcbda62723b910c99779e9ffb7a
+SHA256: d938c861767e99bce97aa71ad09ee26e3fbad2e6c83b963df3d7e2f5979e3c79
+SHA512: 100ca9d45aef4c8528e789b870d66067c8c201ce18f496101bbf875c3a64e901f3ed568799853b01030fef77ca0d0a38f4b004d03611e7e188cc0710fc849c7f
+
+Package: tcl
+Architecture: arm
+Installed-Size: 7056
+Maintainer: @termux
+Version: 8.6.14-1
+Homepage: https://www.tcl.tk/
+Breaks: tcl-dev, tcl-static
+Depends: zlib
+Replaces: tcl-dev, tcl-static
+Description: Powerful but easy to learn dynamic programming language
+Filename: dists/stable/main/binary-arm/tcl_8.6.14-1_arm.deb
+Size: 2207156
+MD5Sum: f85af590e1a5e23aeea36a81665c114d
+SHA1: 1de9850a832cb6c4eeb4fec84d5104a4c320ca17
+SHA256: c6d3f93ce49e3848bf5b01ce5d9f9cf4ca4308c44ac24d19ea75f984be9ce94c
+SHA512: 28585ca9f2c68950ece95a18fae31ed869491ff0d6dc23022774cc35f6a83ca85563c573e7dda7f58a0c0731fe4822336f05633959029a4135687eacd39c3299
 
 Package: termux-am-socket
 Architecture: arm
@@ -1449,6 +2882,51 @@ SHA1: 6a2c5237aae9ee5f4a7080784614b34fc3014848
 SHA256: 29d5f018cb1ee9a02c4b60c7a1fbe0c29683e71c8a497b30bf1e9008cc8df901
 SHA512: e3f075008f9bb6ed3614cec1908e7b5425792781f23144dcabbe9e4040554067ce7ca8cecf5ca1dd01ca0b017c636d6a585f8b53a74c26ea06f240377d3ab02a
 
+Package: tk
+Architecture: arm
+Installed-Size: 5080
+Maintainer: @termux
+Version: 8.6.14-1
+Homepage: https://tcl.sourceforge.net/
+Depends: fontconfig, libx11, libxft, libxss, tcl
+Description: A windowing toolkit for use with tcl
+Filename: dists/stable/main/binary-arm/tk_8.6.14-1_arm.deb
+Size: 1719496
+MD5Sum: 109dfd4280a5c58ed4e6e8eb8515bc6c
+SHA1: 964e766d60187ec6bec235c0776dec906a41e2d4
+SHA256: 33429491a4b3120d030f85679bb3e5aaa63f961c2f5fd3930a94413949723d83
+SHA512: 2b5de31c7956228a8041a9ba5497286805c76ae93c3d6cd8cb8ddad59490465d1b0447979a123031569e43a5b0397f9940e4540322ce51c883c039f55b748c5c
+
+Package: tor
+Architecture: arm
+Installed-Size: 27688
+Maintainer: @termux
+Version: 0.4.8.21
+Homepage: https://www.torproject.org
+Depends: libevent, liblzma, openssl, resolv-conf, zlib
+Description: The Onion Router anonymizing overlay network
+Filename: dists/stable/main/binary-arm/tor_0.4.8.21_arm.deb
+Size: 3184416
+MD5Sum: 54c9c043ed87f1b3b3ccf99b4bc7368c
+SHA1: 4d138ae6020a84aacd2d7d3485acd4739d0df0cf
+SHA256: a590ef7641626e02c8e6bfc37cb5a2b7b705eec8855bdbdff5d03f666031fc92
+SHA512: 0551534fece41baf85a7ca2be5134af942fcebcdd902c76759c63de91a8b1525438719380fd29f13601501bc79f6213d88e3f30957e28248f96ddb4c2823acc9
+
+Package: unbound
+Architecture: arm
+Installed-Size: 2516
+Maintainer: @termux
+Version: 1.24.2
+Homepage: https://unbound.net/
+Depends: libexpat, libunbound (= 1.24.2)
+Description: Unbound command-line tools
+Filename: dists/stable/main/binary-arm/unbound_1.24.2_arm.deb
+Size: 566056
+MD5Sum: 9ffb902443672bdded882922bfd3dba0
+SHA1: 34759fce40fb016b0c6d67d82370fd062a859f49
+SHA256: 3e92e11ca54427421d2123cf1e0b9de44cd14dda56f277821d7ade5588a8ccee
+SHA512: 32425b4f05eeb61337716f8144411f31c66dfbda9a1c0fcea7cf5989c61478ef997f5f5f2583df65db4fae18451ad19f14e211fcc92a58ae5ddff870b008c482
+
 Package: unzip
 Architecture: arm
 Installed-Size: 276
@@ -1512,6 +2990,50 @@ SHA1: 5669a27be290f46a3c3478ade922c4ad30f5b3f5
 SHA256: 4914b80d4e3a5904c689e38f2d77bb248a0e37c56374163332e9e58f2c9ac5d2
 SHA512: e722599074dfce34ff68a130eeb4f9a3810b0f44e455d8d7ca49e1a77d6e2181b2c8154e734ef9e985b257e644ba7c82cf57ceb84bee8516749f990022c2ead1
 
+Package: xsltproc
+Architecture: arm
+Installed-Size: 60
+Maintainer: @termux
+Version: 1.1.45
+Homepage: http://xmlsoft.org/libxslt/
+Depends: libxslt (= 1.1.45)
+Description: XSLT command line processor
+Filename: dists/stable/main/binary-arm/xsltproc_1.1.45_arm.deb
+Size: 11344
+MD5Sum: d0e444af69877951b0e742f447860f06
+SHA1: 5b56314150799dd9ff68b09471de770ad782bb02
+SHA256: 040d0caee5244867cd78e11f1327432cbef5175c7d9eee5061ed2faa799be252
+SHA512: c2ee483aacc8e48640c373bafcdef9805d00b05f1fcdc7661bf14cf4b0078101ddbac88bec0a22b88456a7e22b2f120b5454d201d883aeb9c01c453e44842a2f
+
+Package: xxhash-static
+Architecture: arm
+Installed-Size: 48
+Maintainer: @termux
+Version: 0.8.3-1
+Homepage: https://cyan4973.github.io/xxHash/
+Depends: xxhash (= 0.8.3-1)
+Description: Static libraries for xxhash
+Filename: dists/stable/main/binary-arm/xxhash-static_0.8.3-1_arm.deb
+Size: 9356
+MD5Sum: 3020bb3836a559d681e77b96f312ed5d
+SHA1: 4e14ee82f4b1dbc5e890fd3ca6353d0a9e5bd705
+SHA256: 706b8e846d28e354d5d810a06b26ac8c4950ec42b03980c13fe08e2b5941d2cc
+SHA512: 5dd3c88b76a6c3087eff3545f74149fc264dbf3f6cb23e4430d86fd1b75f4ccb3ce38823f6403e2191c2ab5b084d61ac7d290ff6d765065921c6b295a07326ba
+
+Package: xxhash
+Architecture: arm
+Installed-Size: 392
+Maintainer: @termux
+Version: 0.8.3-1
+Homepage: https://cyan4973.github.io/xxHash/
+Description: Extremely fast non-cryptographic hash algorithm
+Filename: dists/stable/main/binary-arm/xxhash_0.8.3-1_arm.deb
+Size: 76204
+MD5Sum: a7b76f04ad4009ec41727a39ce16c5ad
+SHA1: 5c0f07e0fdb08d87109004354a1b41e4cfe54205
+SHA256: 604bb4c6d57ac8b60c172e4e61119939d97df043fec7505bbfc40c730b78ce45
+SHA512: 5257bab9de39a925ebdd109af8383c63f46ff360aaacff06df0842da49516bac82d2ae28839c3eab684356a0a127fc1165109d7119f1f43e6199496b88fa7eba
+
 Package: xz-utils
 Architecture: arm
 Installed-Size: 200
@@ -1522,11 +3044,11 @@ Essential: yes
 Depends: liblzma (= 5.8.2)
 Description: XZ-format compression tools
 Filename: dists/stable/main/binary-arm/xz-utils_5.8.2_arm.deb
-Size: 69800
-MD5Sum: 0a8dd5415583df03e1f549bb1879f005
-SHA1: ed2b702f32d99e7a75176e4d5fc320dd32188631
-SHA256: e11b33cc1e393d7e5623c84907d73c215f2a4ecf2abb6f15b2e45b886c9688e5
-SHA512: 6bf71a3e976cd1b955a35a3dbf3ae278014fe983a05643c7abe949601c49e79f5ee9da5ab1f0f11b0ecd2e812495ab528a594c1fd1ab7a2bba80a4c938f9a4b1
+Size: 69792
+MD5Sum: 05c091ad1aef56f91ebe32f16d04570c
+SHA1: b1478a2cd12158aa29e027561a5b41cf33094714
+SHA256: d658cf8ebb2ca5cff7835a57ef361545ac2583dab4b12662fd5b87644204729e
+SHA512: 155737c64effc51ad23202d870a91704a2b69ad2e92b8e1d70ffa9b202a94dc92395eb1c72c237724d484ff9d1be95d77a26d7efcee49b630318ebeb16ff68fd
 
 Package: zlib-static
 Architecture: arm
@@ -1537,11 +3059,11 @@ Homepage: https://www.zlib.net/
 Depends: zlib (= 1.3.1-1)
 Description: Static libraries for zlib
 Filename: dists/stable/main/binary-arm/zlib-static_1.3.1-1_arm.deb
-Size: 34824
-MD5Sum: d44c522e4104de1409d31bacd7c0f2a4
-SHA1: 67d820d5a7490efd2ce1b71020b92baa5d8ad465
-SHA256: d2a42200d5203b357bb32deb26ac6f6f4478e0e9efc2b386f279889bdd3bcc97
-SHA512: 39f875462fdd64e1073e4420c7aa7215a42522bd1a140e0fd0b18fde1d1f603edad4d53d23ffeadef36a6b15b90de4dd9f8a79ec7b51433252660f9f2a05a2f9
+Size: 34848
+MD5Sum: 6cc950089cfa99dc70ed5c5a45f9f41f
+SHA1: 89bac43c5a3389d0d4719dccc2b36b3bb294646f
+SHA256: 5e988f88d03db4c39c1a1809e42fbe61121b2f19aee4557f118733f731a88e36
+SHA512: f01c9ffe87fa44cc3cdfc1c1e247ab8e1dfa0c694c88f13f77ce742a0e6bebef953f11ae20a772a6cb50ae6319a90f3c510b225a83fc1e75854c5bb0e9427476
 
 Package: zlib
 Architecture: arm
@@ -1553,9 +3075,26 @@ Breaks: ndk-sysroot (<< 19b-3), zlib-dev
 Replaces: ndk-sysroot (<< 19b-3), zlib-dev
 Description: Compression library implementing the deflate compression method found in gzip and PKZIP
 Filename: dists/stable/main/binary-arm/zlib_1.3.1-1_arm.deb
-Size: 61048
-MD5Sum: 2c5d39dea24be7c454572b7c298f00db
-SHA1: f4cde24035e42fd1a16265a0b11724883e07d1a6
-SHA256: 2bfe8e1ca43711cd703f1008eb7d1bea251fc87486de6bd832134b366c449054
-SHA512: 30abd6cb64188822ff44302ea64f4e0cb365120ad830e3289d3bb91c01737a6a7ac10c850f2242023117fbb0a2092d1d1928c7f3ff9a72672ac4def447e2275f
+Size: 61076
+MD5Sum: 608fbf0797f3d8be58766ed2d8f79811
+SHA1: 51a732020cd1c809d5caeb8e49328d155b22ff51
+SHA256: 8a5104e5391417b07bfc24cb996c461172bb601820994a2fe0d6cb53d498f516
+SHA512: 97bd64ca1947fe823a085d37d3b5a6d4d85173aa3faad53cc91fab45d891d53e142272cfa11f740d1410b6486d175b2152eab90f5f2c65c5d965284735ca517c
+
+Package: zstd
+Architecture: arm
+Installed-Size: 1100
+Maintainer: @termux
+Version: 1.5.7-1
+Homepage: https://github.com/facebook/zstd
+Breaks: zstd-dev
+Depends: liblzma, zlib
+Replaces: zstd-dev
+Description: Zstandard compression
+Filename: dists/stable/main/binary-arm/zstd_1.5.7-1_arm.deb
+Size: 418604
+MD5Sum: ba8f7c6fd27033183d4b36f7c5cc3701
+SHA1: d8975102e0deb9cfd27cc2ace1e5c026d66bb3b0
+SHA256: 2f63d8dd466c1f13627772bcbd62dbaabed80b9955a96e0fb55681382a299b69
+SHA512: 2dc39c34208c38932d279ddc510a29e49fc6d0adbc129c284365d9df998126c668735eb9a2a9f80aa8efba9610df52335832843967c739dd7a374fddfee495dd
 
