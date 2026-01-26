@@ -7,11 +7,11 @@ Homepage: https://packages.debian.org/apt
 Depends: libdb, apt (= 2.8.1-2)
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
 Filename: dists/stable/main/binary-aarch64/apt-ftparchive_2.8.1-2_aarch64.deb
-Size: 95680
-MD5Sum: e34bcbe48e2d1c9bc9ed7f2705928d79
-SHA1: 4c5e1752546df654dcbc4e84611e118330c41582
-SHA256: 9ca9f01bfa996cc245e76a8a9dbeacd001e48bd18bb6fe0a2207c872b375f893
-SHA512: e5dd215b2c9fda09c20536f0bb29005c2ed20d11a9d83b17260c53d8c25a7209c60cb89d1a974b51a8d9900c1488fc5ae3dcab99febf5b9e80001aa16c08413c
+Size: 95684
+MD5Sum: 07ed2f0fa4fa0f81df9f900e0d753a83
+SHA1: 7af2fba636e06ac75ab4bd7dd5b88206cbcd3a6b
+SHA256: b17ebe2ce73a132b1d6060bf7e3a99604693faa400ad70e8dea7e414af0944b3
+SHA512: 9354fa9682890b6882f8c39f207d7a8d688ae0de2025af9c900ff8a350a0fbbb35c487df76041f10473d8f25c3984a33ab8c471f7d1964a35217eb2baae96b0c
 
 Package: apt
 Architecture: aarch64
@@ -27,11 +27,11 @@ Provides: unstable-repo, game-repo, science-repo
 Suggests: gnupg
 Description: Front-end for the dpkg package manager
 Filename: dists/stable/main/binary-aarch64/apt_2.8.1-2_aarch64.deb
-Size: 1032596
-MD5Sum: 1b73001585dcb2abadd50332e39754b7
-SHA1: 4d39756b441c5f1a780386441cd6414134621273
-SHA256: 9f64c0147b64a2065136b20998fbaeb8f08703260ceea0dabc4065151752c431
-SHA512: 5b47ee98eb4374da55b5e6ff7dd72acadc6c0b99485996e767443d58763614128328d8cfccac2ae185dff519bb3058d071a6e1a0589e77efd1cabd5d0aae5e98
+Size: 1033512
+MD5Sum: 6dd3ea1da080e7c472aa9d6dce07531f
+SHA1: 93420c83c2d29244f3ea65da37d9f2b450dbab1e
+SHA256: a2f65205ccf2f50e47086ff0905b90940426522113b803de72001712ee0adf2f
+SHA512: 369bae0f00542a61dd78eaeace38f7fb080fcb5ec8007c73f54dc89f8cacb60008f09f4bd0c55620897698716167454ba3eaf28f630146d97e218d632b52ff61
 
 Package: attr-static
 Architecture: aarch64
@@ -131,6 +131,23 @@ MD5Sum: ed261058e4b2ece01741bf9e5403719c
 SHA1: a1625acf282466c2f8bab196b900a6809ba53d46
 SHA256: 95ca093462471a3da5b558b4bab756ec0e35eb6606787e222aec5b966447fb20
 SHA512: 0a8c0405c408b015feb2c8630de1c9a42ec07c3102d399e81596546b02e50aec3b61ddf4e2b3549a1b46c02780ccd26e805af5df618f331e98fef3e5b57b54c7
+
+Package: clang
+Architecture: aarch64
+Installed-Size: 186820
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 21.1.8)
+Breaks: libllvm (<< 16.0.0), clangd
+Replaces: libllvm (<< 16.0.0), clangd
+Description: C language frontend for LLVM
+Filename: dists/stable/main/binary-aarch64/clang_21.1.8_aarch64.deb
+Size: 30437712
+MD5Sum: 67ad114258d9038250e114c7e0bd63b0
+SHA1: 9707c796a362aeccb4ea2cd563943aacff464361
+SHA256: 63ebb762430900a2dc1c7af2a2cc7fe58434315619e39b40ae18dc15b15abb31
+SHA512: cfd5065a2b15240b98585459ed374e3499a84b4be8ad5b956f9be81c6bc763a892e7e44fba87f94b8ae10341ce7c189e5bee53e7b43b1719e08bee36656a0ee2
 
 Package: command-not-found
 Architecture: aarch64
@@ -511,6 +528,24 @@ SHA1: 76146c9be283662be84136a1a51df70b346ce1fd
 SHA256: 098b9950f835cb8c696d6b2aece4cd32e5af59a112b388d1f1bbb8d8f9eb22fe
 SHA512: 48f2408c3cc865d9f2d23a2fcacf882ebccc04b094e0a6a7767d7733ba8afe032232c3e8a382a4f6631c2e27b2018e73b24ddbf8cbbd224eb71c2405b88ca501
 
+Package: gnupg
+Architecture: aarch64
+Installed-Size: 5540
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgnutls, libgpg-error, libksba, libnpth, libsqlite, readline, pinentry, resolv-conf, zlib
+Conflicts: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Suggests: scdaemon
+Description: Implementation of the OpenPGP standard for encrypting and signing data and communication
+Filename: dists/stable/main/binary-aarch64/gnupg_2.5.16_aarch64.deb
+Size: 1409412
+MD5Sum: ee361abf69180d3ac4c374a546196e01
+SHA1: 690dcdb03027d4bb1d588d9aea9bafa544fd407b
+SHA256: 693290511998531902f19044b03c87493f3a9f405a7484db9716198049d2e17b
+SHA512: 7f1000cddae4ed398154b745403e9f7c8dddce8a2c9cdd3724e6ec4ca7281490075ba1278f68afd8fbc2cd97af6da3f41ea37dc1023b30897ad79066e5d7208d
+
 Package: gnutls
 Architecture: aarch64
 Installed-Size: 904
@@ -540,6 +575,21 @@ MD5Sum: 140a638077db8aba37674fad73488925
 SHA1: 5dd837319b52ee17f75a7da8787d95b6e98d9696
 SHA256: 0d22ae2965d489e96dd44c21d1f6e8e733f7f4de04352bd8d355776c70b3e083
 SHA512: ac6bcec2b0037531ead1af0df337ecf3abad2335cbcde9a29236c16b2869bfde1251514d9f0003997d09e6ef7314ef8367a9d458268fd91e10d4af16488c2d2f
+
+Package: gpgv
+Architecture: aarch64
+Installed-Size: 508
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
+Description: GNU privacy guard - signature verification tool
+Filename: dists/stable/main/binary-aarch64/gpgv_2.5.16_aarch64.deb
+Size: 188304
+MD5Sum: 1960e9c7b23a79c118df8101422de6ad
+SHA1: 095005b0f3d1467177027500afeb95ef65f82afc
+SHA256: c007887ba4e7e53cb7b75200a8c2a6699bf1c8dc24664be3a51b6e2c63513071
+SHA512: 31ecb17f3bd02ca6e100b8d59d922d88e366c63e4707c27b0dc83c7df5751bdd0f9dad1112c35cc581a90a48f205d2dd0a8691ad0d94ba57889f8d46968347db
 
 Package: grep
 Architecture: aarch64
@@ -908,6 +958,22 @@ SHA1: 2388d91f0421edbcb700f00303df3f8a7002c693
 SHA256: 7b34848f8dc9ec1a398f968729a888cc644c546d2e58c640703ba893f45581f0
 SHA512: c9202d7dbf234780f1a5b4b30c395d33c4db89df5e68136267b3b1291881dbc2078c7842459ffbe5af9d44efec07c64805f2b8ecf701b78a2457ce6718b99de0
 
+Package: libcompiler-rt
+Architecture: aarch64
+Installed-Size: 34020
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++
+Conflicts: libllvm (<< 21.1.3), ndk-multilib (<< 23b-6)
+Description: Compiler runtime libraries for clang
+Filename: dists/stable/main/binary-aarch64/libcompiler-rt_21.1.8_aarch64.deb
+Size: 2706184
+MD5Sum: f531f49a73c760551b113ff10eaa4b52
+SHA1: 2ebab11eaaf418dd3d318af1d5e57c5ca2bc687d
+SHA256: 2ff9831f96ffa0d161e3624f942c90f52d6d3953ea70822e3985f0f9511dac3c
+SHA512: 84a01a64649a5fab9f03fb649bfd80a38dac2314ae1b7d7678da79f4030194e65f2e979c9302e03c1febe3f6c64aeae69b698ec9bb07e1f5df864d3372b6a70b
+
 Package: libcrypt
 Architecture: aarch64
 Installed-Size: 72
@@ -990,6 +1056,38 @@ MD5Sum: 13e9ba31e04a0aced33797477b0f256e
 SHA1: dafff750d6e7471b87d1495b62d886fcd4183a59
 SHA256: 02c636fe08c9d9645877f0d452f368221cf2fdfa7e4cd2910fcdd0a09a1b754c
 SHA512: e0ae6bb4a20bd58c4b07604e0718b3beef0c80500a5b9d1ce9d8e347f2d8a8d41cecf915c0a7e1e3161f5e0e438fc8a49e0ae7e269491cd4eb24e96f4e8babe7
+
+Package: libedit-static
+Architecture: aarch64
+Installed-Size: 384
+Maintainer: @termux
+Version: 20240517-3.1-1
+Homepage: https://thrysoee.dk/editline/
+Depends: libedit (= 20240517-3.1-1)
+Description: Static libraries for libedit
+Filename: dists/stable/main/binary-aarch64/libedit-static_20240517-3.1-1_aarch64.deb
+Size: 76912
+MD5Sum: 8deb3154bed4f6042bd03e41af8ecdb5
+SHA1: 1f4503228be5f7385053a5471325cd87c26a0b2d
+SHA256: 834d8ed5821f0324e57adf86ade647b392583a62110ffb69be749583a9821753
+SHA512: 2ce8a5c1ac92ea6e502d12146f6f4cf40f73571a17c7baff14932c49ded2dd4606211b56ed04bc1b423c54d71d50d83904e13ed0818a918bdb283eabd03878be
+
+Package: libedit
+Architecture: aarch64
+Installed-Size: 300
+Maintainer: @termux
+Version: 20240517-3.1-1
+Homepage: https://thrysoee.dk/editline/
+Breaks: libedit-dev
+Depends: ncurses
+Replaces: libedit-dev
+Description: Library providing line editing, history, and tokenization functions
+Filename: dists/stable/main/binary-aarch64/libedit_20240517-3.1-1_aarch64.deb
+Size: 79336
+MD5Sum: 17bbffa40b714dbac4fe20e468aeeaa0
+SHA1: 6bde4d941708f9f4871d2fe780fda0a68fe1dc02
+SHA256: 344a1a81db75ea21145a74aa778d9a5488e0cf644f91ec22839ccb1d99dcfb1d
+SHA512: 09a36dd9be0dc3582a9f9f3d5f8f3137fc94390657de1a78ae47404e37a542bfae4fd9e1f9bf285956d1c7b01f8e124f5cc468b554481065b0b0f0c5db34ae66
 
 Package: libevent
 Architecture: aarch64
@@ -1195,6 +1293,21 @@ SHA1: 90a5758fdc03f6dc292d9218bc4f4b49d7f943e3
 SHA256: 01790dea9e4de272ef1be08398b0d38dbda8bfebe9df8b56a8482d0b8cf7312a
 SHA512: f62a6efad322f1208a52c78ffdb45ad79d5463ea733d6f6078acb0121afd897bb8d7705952793122d4d58e4351439159a9d284badf39ea0d399d5a46ad8e2c5b
 
+Package: libgpg-error-static
+Architecture: aarch64
+Installed-Size: 304
+Maintainer: @termux
+Version: 1.58
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Depends: libgpg-error (= 1.58)
+Description: Static libraries for libgpg-error
+Filename: dists/stable/main/binary-aarch64/libgpg-error-static_1.58_aarch64.deb
+Size: 65936
+MD5Sum: d7e1349b87353e310e5f3f70f7efb563
+SHA1: 8b59cfe28c36bf439ef5ebb69dde47db8d80ac8e
+SHA256: 23b81de0586aef9b64e330a81e55856de1f82d0571380f076270b9e652d9fbfd
+SHA512: 7360c919957dc371f6c69e0423ba8145cb6b11b8af2ca38e01f11a4b81840c68288d7b810aeaa72974ffb5b8ad84dfe875259c67b90f557fd5e25e6ba75272ca
+
 Package: libgpg-error
 Architecture: aarch64
 Installed-Size: 604
@@ -1210,6 +1323,22 @@ MD5Sum: 162ae26f18d7ef6cd97f58fca10fc39f
 SHA1: fe050db2da66cf9388566aa7e559de3f886511f2
 SHA256: 1d7aab056349b0f033a7e978e78cc7a87d558793317483100c5a90f7aa3d23da
 SHA512: 4b54e9faf669eef997cfdcf785dabbc23dc536a44182fc4022be331d3fe0b36eb2a61d60b5888f41f48f54d95d3713e77a11b546998c7e1546f39db5bb7ff7d4
+
+Package: libgpg-error
+Architecture: aarch64
+Installed-Size: 604
+Maintainer: @termux
+Version: 1.58
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Breaks: libgpg-error-dev
+Replaces: libgpg-error-dev
+Description: Small library that defines common error values for all GnuPG components
+Filename: dists/stable/main/binary-aarch64/libgpg-error_1.58_aarch64.deb
+Size: 121264
+MD5Sum: 7dc3b31200523a47ab866c7c4f1fef30
+SHA1: 7171bcca0abe111bdc8ec6af681325765e6181e4
+SHA256: 237f5c4db561024c83de14b872082528bb66bb7fff7e04c5c4db6bea97580046
+SHA512: b01b0c94c9f20692784ae823b1d98710ac1c2ce7b7c54deebee73c0999a7c96be619a040834e29c7ab43adf2312d91e5509afc17f7ed0f1648fc67429d2164e7
 
 Package: libiconv-static
 Architecture: aarch64
@@ -1337,6 +1466,39 @@ MD5Sum: a1a2c0591873fd190d83dc06ca079fe7
 SHA1: da8d875db24ffff1a4d5df98ad127bc37ee7ebeb
 SHA256: 6bba7bf122482c55577946397f33015e5b5837ba8797237ad7b3ad82f75ae326
 SHA512: 4e4b9a7c419ac91d201b4af39a8e33ec267fbbdc565d7c2fb4c51cc3f08903be35548390a0ee88228d1169da98288fa3ac5deabc9d87c817494d35326a688460
+
+Package: libllvm-static
+Architecture: aarch64
+Installed-Size: 913124
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: Static libraries for libllvm
+Filename: dists/stable/main/binary-aarch64/libllvm-static_21.1.8_aarch64.deb
+Size: 87690664
+MD5Sum: c442e71d8ae82cad66cbe824e7117bb6
+SHA1: f25a1a47be6733e9572ac52a69271a0602206871
+SHA256: 15dd7c184c9cfcdaa111ee0b1e254b4bc19569a53a09a3b95c89e70146c3235a
+SHA512: 2a9f504d4ba7a6aa2ffc6465f62ea9de0fba283f731b10ce26bced061b8bf6410982d89ed84d77cf7ffc9ff156da749c6a09e8e02d324eb9fd7c6330eed756d7
+
+Package: libllvm
+Architecture: aarch64
+Installed-Size: 169552
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Breaks: libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Description: Modular compiler and toolchain technologies library
+Filename: dists/stable/main/binary-aarch64/libllvm_21.1.8_aarch64.deb
+Size: 30439976
+MD5Sum: 8b7e40a994a65a827c223320725caf6e
+SHA1: 96e7cb6cf0f327af1b243fa1809cfcc69e080c81
+SHA256: 1c708542071e9a47291ca4e194cffb3590af531dd9b0ca9e7356e6e01dfcd5af
+SHA512: 205d0c8cc5235a87a3f83eba6c91e5a77c9048e67d283f2ebbfc9aeee6adde958d49696b3979e784ba9a95d5463450c43cb9a609aa61aabb97f014a2c028586d
 
 Package: liblz4
 Architecture: aarch64
@@ -1617,6 +1779,21 @@ MD5Sum: 9d887bda278dea7e028a31706bfe5399
 SHA1: 670a95b7be1db2071cd162255a68da46943fd09e
 SHA256: 88c4d1f38f22c4c189d820164ad0c342af1939f488efcac50d9e2b95e54ca85e
 SHA512: 97be29c1bb5cf0ca66ec1eaec157783c58038844011059034bf96d56ac0d6065ccc7ae1a65d2f82ca2aed34563b05edd5e7c93a033bc961d4845dd23e7237d6a
+
+Package: libpolly
+Architecture: aarch64
+Installed-Size: 5816
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: High-level loop and data-locality optimizer for clang
+Filename: dists/stable/main/binary-aarch64/libpolly_21.1.8_aarch64.deb
+Size: 1224964
+MD5Sum: 4d89661ecc64f05d42ad013ad838ed3f
+SHA1: b37fe2a0eac917db3b8442732d53a463395f5df8
+SHA256: a40e638780c96104c4fe6931b1d9686e799b8ee2d3222573fe84cd30aff655c6
+SHA512: 6c85f7620debc6f715aab1b345ac90861904ad2bc80771120deaa982bef42707fde2bb4ffe4c9bdc1da7fb4a1f5def63a54dd6263ca9db9ad8e2a7baa53f4b3a
 
 Package: libsmartcols
 Architecture: aarch64
@@ -2160,6 +2337,72 @@ SHA1: 4d04d9c4641887a70e340be7d81b7a6df075cbc2
 SHA256: fd62bff985503468ea39aef8195242f4734016af2e570d4b777c00c30570c1d3
 SHA512: 816f66bb146ddb911d8375cad222745e0ee68644163202916d6055c28f98a4da16a0fe85442193aa2524bab73b076789275513350d0070d1c0cfecc70c01113d
 
+Package: lld
+Architecture: aarch64
+Installed-Size: 20300
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: LLVM-based linker
+Filename: dists/stable/main/binary-aarch64/lld_21.1.8_aarch64.deb
+Size: 2801900
+MD5Sum: 18a52d58ede1faa17e72d69be3faafa4
+SHA1: e3cbab0b9a7caaf841312e0ebf22a1bd6835e65b
+SHA256: f64246d0fc775b1a3adeaa765e1a25108e70d0b6aef2a8252315b55c3f2bb59f
+SHA512: dfbf6e2dbf880973325431bca31a1d3d239459af1fb7f4f4f76ef5a54eba71391f138192c3e98e7e34def228d5d4f2240fd8ef91eadabb48cc26e734680f96f0
+
+Package: lldb
+Architecture: aarch64
+Installed-Size: 26776
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: clang, libandroid-spawn, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 21.1.8)
+Breaks: lldb-dev, lldb-static
+Replaces: lldb-dev, lldb-static
+Description: LLVM-based debugger
+Filename: dists/stable/main/binary-aarch64/lldb_21.1.8_aarch64.deb
+Size: 5481092
+MD5Sum: 90da1efc71b7daf657b2c6aa9c743237
+SHA1: ae28ff3e3bd83650ece058581b66533e2765c2dc
+SHA256: 2f75f6ba83ae92d5fa41dc7f960fc8a19507be7ef45f157e2460036cb4f25daa
+SHA512: fb534b9888e385136040026b628ba772989cbc672a32db7319edd062cee2be0dc4dcf217cbe0a39d6fd1be25d1c4c204a66e5bce0938a376db43a1fe5ed859a6
+
+Package: llvm-tools
+Architecture: aarch64
+Installed-Size: 13004
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Replaces: libllvm (<< 16.0.0)
+Description: LLVM Development Tools
+Filename: dists/stable/main/binary-aarch64/llvm-tools_21.1.8_aarch64.deb
+Size: 2375712
+MD5Sum: 39954d531b95aed015055a625a9b505c
+SHA1: d55f0c5f5dca0815646c3ef3e2bb53c4a9dd73a9
+SHA256: 1f54b710530959d46638ce76ac3c18480062ea5690a87ea5be62fc57e42e77ff
+SHA512: 741d9f4afd21792cd41be970a21a0257c46ec0e9d69c42340224304bd6e7be1c6bd22e9293ff059d7853acddd619ea79936fdab2373b26663aaeea232f8d44f8
+
+Package: llvm
+Architecture: aarch64
+Installed-Size: 70576
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Breaks: libllvm (<< 11.0.0-1)
+Replaces: libllvm (<< 11.0.0-1)
+Description: LLVM modular compiler and toolchain executables
+Filename: dists/stable/main/binary-aarch64/llvm_21.1.8_aarch64.deb
+Size: 14762548
+MD5Sum: 9402bc03e251c78a5094192235131ac0
+SHA1: c8ecd01cba7524486218f860ae685d69ad23e005
+SHA256: 92998eeee8bbe4a46289424ed3e5553ff38d6c71a8abbcb1f73636de18128e64
+SHA512: 3364a8f1f2608d882645dc4cae2abe0fab6b083318d597b0aa5ca9815b4de6738eb9e0ef530315735e61a9857ffa2fc6e64bd8adafa1f4aff9656f640b3dd113
+
 Package: lsof-static
 Architecture: aarch64
 Installed-Size: 264
@@ -2221,6 +2464,21 @@ MD5Sum: bee310a205fa996cb7768dc468ee99cd
 SHA1: 67f931b80760dd3a5717fc22df9191dfaccb6a39
 SHA256: 09a1759743f9b81751ee12079d91e2c835eb06cdf8f3bf5c4c8b3566c5871e9e
 SHA512: 4f75bc53fb5daddb8434e87de538da1822b70010b15df3ed7a17c2e692e5670116d3f5c4550a2c6e39545809b4ca0d86d2415074cbba6748fc04ad85fdecc2f9
+
+Package: mlir
+Architecture: aarch64
+Installed-Size: 269068
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++, ncurses, libllvm (= 21.1.8)
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Filename: dists/stable/main/binary-aarch64/mlir_21.1.8_aarch64.deb
+Size: 29674876
+MD5Sum: c8c4f8494147ccfd1f6edece6705d146
+SHA1: 8198dc554fada6bb93a7e82a6e15c9442d6a6d27
+SHA256: af43e99b964d29473cb79f6cc551feeb34094ecbb2f3080f98baa5bb1b34bf01
+SHA512: 15349dd30a6fe4a8d4747bce522430645adbb7840ba6076eda0713272826944e7463b269cb3faf5b3ef539871708e0b63521e8c82f83a0af003ea55ba07ded7a
 
 Package: mount-utils
 Architecture: aarch64
@@ -2708,6 +2966,23 @@ MD5Sum: c6d4001524d11a58647374d4472a1175
 SHA1: 4426154ee3dbe41359418aeb9fe3c9a7b8065b82
 SHA256: 279bc6281ea1d0b51e1c388b09491b6e33df11cb4760c98d7fb9f3d9fc906a2a
 SHA512: 0e3a2e23ca428ab231ed6eac96b7465926d802e9ef42619e5f05a749790f52064455132ff91f2b624b545b8007e6b6759b7e5f3fa454736e3cee40f55fd965f9
+
+Package: scdaemon
+Architecture: aarch64
+Installed-Size: 508
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libgcrypt, libksba, libgpg-error, libassuan, libnpth, libusb, gnupg (= 2.5.16)
+Conflicts: gnupg (<< 2.3.3-2)
+Replaces: gnupg (<< 2.3.3-2)
+Description: Daemon invoked by gpg to manage smartcards
+Filename: dists/stable/main/binary-aarch64/scdaemon_2.5.16_aarch64.deb
+Size: 183796
+MD5Sum: c7f3b1505b791d4e7f14d046ac692c0d
+SHA1: fcae24611822d45cfc1bdf839875f5d9d2c8ba00
+SHA256: c418a1d7eb1c0fe835107a1b3cc92e231d31fbd9c32094533734b86728b27762
+SHA512: ed5afa8eb991292f9b98db06e602240f89999cd7b1940af7ee6ef91b35fd4f794c4dfb201c351f1e86e7dd286b650e6bd1b0177430cab56dce66287e3572f4d3
 
 Package: sed
 Architecture: aarch64

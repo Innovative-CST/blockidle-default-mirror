@@ -7,11 +7,11 @@ Homepage: https://packages.debian.org/apt
 Depends: libdb, apt (= 2.8.1-2)
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
 Filename: dists/stable/main/binary-arm/apt-ftparchive_2.8.1-2_arm.deb
-Size: 88428
-MD5Sum: 156894ebf7c14a0ee2a34f48f1caf0ca
-SHA1: a7f804fd3737f79f038c1319eb96ddb8c3ce41ee
-SHA256: 9046b358e3d835cbc872f40d5a1c55c3d649c515fff75d06ed1301652b5d7e33
-SHA512: a4f1c0bbb09b4f4706187b3ada2336789c810a6d0f13c16fcb62b49afa96e070905abe4fe95160e2f7a8ca177e6a310ca4c49deda9d920cf9841a48d92f7b697
+Size: 88380
+MD5Sum: 124c8cc08ecd5b817a9c81a984b5ec1f
+SHA1: 78b443c800561baa6d69d1a05eaa028d758fd648
+SHA256: dda9f8778af4f7797451764c101828dd829c0bf9df756c7127ca390d2d1a7655
+SHA512: b77e4e645d28baa5681dcd990d531839ef118d1fe541c13de6b7b5c023ef3abf94094785106c3991dc4aabbcaee1454be41512e16c3cdfe3dc64acffb807a294
 
 Package: apt
 Architecture: arm
@@ -27,11 +27,11 @@ Provides: unstable-repo, game-repo, science-repo
 Suggests: gnupg
 Description: Front-end for the dpkg package manager
 Filename: dists/stable/main/binary-arm/apt_2.8.1-2_arm.deb
-Size: 1000700
-MD5Sum: 826801bb24c275113027691f85b2b1d5
-SHA1: b5ed60623ebed6531864ab3e81abbd968613ac9e
-SHA256: 1328c708326830e64ff46100fd62397b05e80284d1d803cbfd6f3c710b30115b
-SHA512: b9a71bcbd3edb7173577865bccf73f0c68841cee97aff3f2be2f5318bed3b0480d4c6ae8b84b40f456a0bac1bbbf1e6a4bf077dd4d03e60846a24b45ed95192a
+Size: 1000676
+MD5Sum: ddd6be004ac3fd875cd9d7dcfd1d1961
+SHA1: 544357aae2be7b5ab2952e17e243d39cb5f526a5
+SHA256: 17dea1b8d115cc54337b96056993c9d5aff7a257300fef296e3f8ace450fb308
+SHA512: bb81b3dc72710c8d37c1a55f3b40fd206c874b4c0efc773283681aab0fad41861f9830dd6af5b2074aca1c641eb646b4b53f4d344d0067072342ffcd414927df
 
 Package: attr-static
 Architecture: arm
@@ -131,6 +131,23 @@ MD5Sum: a9e937dee099bf8f1f3aa4612ad455ea
 SHA1: 45649afbce4fbad57ceae58e06f1e6c2321aaf3e
 SHA256: db2cac32fa0fb2e748dfe77f02678e8a49c9af55f0ed5446764f9470ddbc6ab2
 SHA512: b62eef765a724b6877d186758c6306e70d5cade2c03561a855618dace055bd42d556d9dcd54ebaec8b6d59cc80fd652fcdacc2925d67dae67cdfea1368157e8a
+
+Package: clang
+Architecture: arm
+Installed-Size: 142504
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 21.1.8)
+Breaks: libllvm (<< 16.0.0), clangd
+Replaces: libllvm (<< 16.0.0), clangd
+Description: C language frontend for LLVM
+Filename: dists/stable/main/binary-arm/clang_21.1.8_arm.deb
+Size: 30144624
+MD5Sum: 71c12dcbfc91903e74ffb4a49e80ac8f
+SHA1: d271f95c761c863d540915de8776c8744445d575
+SHA256: 90bae3b4f6de4fd270718505d19c267741b2d8191721b65a90d1b6535d276ac0
+SHA512: 1fa27dda5b750af998d5e84d4a4acea9202b157d1d38ba155a61b0226f292cb9668514ddf3ef3a313627972fd2c1cf77b839b336b213ef4dd713c3b060940fb5
 
 Package: command-not-found
 Architecture: arm
@@ -511,6 +528,24 @@ SHA1: ee696c57760d31286d5b68278d2db254ae299fe5
 SHA256: 2aed0692d2afbef3f8c53134ed05e4d0addd0ad6b6a85a83b38ff6603fd71eb3
 SHA512: 76cd5ad9b64c9b0061665ad11ce514a4f1572dadaae34f58ad60f2737b4b25fc6ca22daaa3e93763989c6dfeb7b707b83462918243725d919182fe3e96d1ccbf
 
+Package: gnupg
+Architecture: arm
+Installed-Size: 4100
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgnutls, libgpg-error, libksba, libnpth, libsqlite, readline, pinentry, resolv-conf, zlib
+Conflicts: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Suggests: scdaemon
+Description: Implementation of the OpenPGP standard for encrypting and signing data and communication
+Filename: dists/stable/main/binary-arm/gnupg_2.5.16_arm.deb
+Size: 1299112
+MD5Sum: db0b5a2e023cea1eea78f3277428f168
+SHA1: 53d3c5a6b7a19e8148891264a316bdf9b94aa044
+SHA256: 4725952d190f358f787ead71ed353d2b1b447e983e6915b5d18b35434286a829
+SHA512: 45ef655706a98b246a0c0eb2c000631e2caa4d7254001a0317422ae9e90f0d505ade49a7e7afb5b8e607cbfbaf1997dbb5faef95f53252e3596b7b4aaf751fe4
+
 Package: gnutls
 Architecture: arm
 Installed-Size: 684
@@ -540,6 +575,21 @@ MD5Sum: ed1ba9a2f6fb3271e7e9e6080967f8e1
 SHA1: 9266c8eaca430840d02bf724f2bc6af3e2c6b1cb
 SHA256: ea5e35b7778b6db2a8abdf28d76b3ab88a9057f667ee06c38ba67e51d39f0c0d
 SHA512: 33ae5147daac0a5b7b598ccd5cb2566aefb2807ef03076451f8fa3188b59dc46b1eac2c998a2e78560f3b19ffae00a28b7cbdafb2f32d7209bdff44c91acb59e
+
+Package: gpgv
+Architecture: arm
+Installed-Size: 356
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
+Description: GNU privacy guard - signature verification tool
+Filename: dists/stable/main/binary-arm/gpgv_2.5.16_arm.deb
+Size: 173960
+MD5Sum: 18920fade62629c8f0429591371b7820
+SHA1: b447ae450410c413bba019e098b9e353846639e6
+SHA256: 22dee97a480f8c764108a4875482b43149fbf2d7e86ec781889c0902ac30dcb4
+SHA512: b885c5572767526620ac9d86ce1a6230a1736cb9510bdf0bc46e0ca3198100361923e26a689b941f30c221e0dbab7ed44537262e54293ad6c8b20f2b17b292a2
 
 Package: grep
 Architecture: arm
@@ -908,6 +958,22 @@ SHA1: 29298df0ae4796e12ddf1d924720d24816180e76
 SHA256: 39afbf3a3fa749674cfbb8468488ac5dd9a3a8ad70f1414d4728c0b1bc0ce2cc
 SHA512: d659eddb2ce9c9211170e52b18d4b70997267217305915133eec9a73182eb47d647a585df43afff5e6c078a116fb93665fdf4f5aa7b622c6178da92fad3031ce
 
+Package: libcompiler-rt
+Architecture: arm
+Installed-Size: 14672
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++
+Conflicts: libllvm (<< 21.1.3), ndk-multilib (<< 23b-6)
+Description: Compiler runtime libraries for clang
+Filename: dists/stable/main/binary-arm/libcompiler-rt_21.1.8_arm.deb
+Size: 1576920
+MD5Sum: 6de2a75c9122ae06c2a57f042ab291df
+SHA1: 4e20f3c8db3075cb667579ea0e4b0469be34b1a7
+SHA256: 0d8056d36e3c07d77b037b960b8a67fc0a412ae6dd71e4cc8df0e0c1fb272f7f
+SHA512: 5c42f5d838a32f44e046f85cd121fc83e2fe184d2e54686a2c70afc3b3f643ba6b6681049389b027560a401ac8f687ef49540fd33614096344e47e66023a6a02
+
 Package: libcrypt
 Architecture: arm
 Installed-Size: 68
@@ -990,6 +1056,38 @@ MD5Sum: af74880f599de91636deb07c81f3d2c5
 SHA1: c32a1a7338a38c8d0591da15e031292abe821e9d
 SHA256: ae4a018f5e1124a1b7683fe7cf0cab9731e21d93d7da74627bbc13a62307c85d
 SHA512: e05e4d289b580755cd4a2649dcd94a1dee934e5b40cdf8bea68a62ac4c898bdf8e4a43b54fb684e968cde90781f3964e48d7c56388654fb0b79e5a2cc76f78e5
+
+Package: libedit-static
+Architecture: arm
+Installed-Size: 248
+Maintainer: @termux
+Version: 20240517-3.1-1
+Homepage: https://thrysoee.dk/editline/
+Depends: libedit (= 20240517-3.1-1)
+Description: Static libraries for libedit
+Filename: dists/stable/main/binary-arm/libedit-static_20240517-3.1-1_arm.deb
+Size: 67416
+MD5Sum: e7120039cf647c08d57d794ffa7a62a1
+SHA1: 168e506ffbae7040ec4b2566ee1827b7701caf92
+SHA256: 70d3a4ea3fec660037bc9ba29574e00548773f21faba19fc612ce8a3eeacdb3a
+SHA512: 73c6ef399446b896a9f48dbf516ee3fdc14a7f125269dfa10a7146998529d07ec870c54920dc6293631201bd4d176821808de1f04fc6ac45e149449a99cf24c9
+
+Package: libedit
+Architecture: arm
+Installed-Size: 228
+Maintainer: @termux
+Version: 20240517-3.1-1
+Homepage: https://thrysoee.dk/editline/
+Breaks: libedit-dev
+Depends: ncurses
+Replaces: libedit-dev
+Description: Library providing line editing, history, and tokenization functions
+Filename: dists/stable/main/binary-arm/libedit_20240517-3.1-1_arm.deb
+Size: 69548
+MD5Sum: 73365b269c7fd69e7b63e4dad61185e9
+SHA1: 242a06db542aec54daba27ddf09afacb69241eaf
+SHA256: a90821a3d99ac7ffa35f31f1e6e1a8eeeed54fa7c203394277af8d99739bbdc7
+SHA512: 6cbd22e1fdbcceab84f70e250b7bc776b190e2ea9542ecd183962e08b09cd422dbf8d7ad749ee40cd958554d5959a9fb9e33932968e659c933a5b98ce1b5c46e
 
 Package: libevent
 Architecture: arm
@@ -1195,6 +1293,21 @@ SHA1: 1b6c4f04ef94c2617e85939b78927456c38add04
 SHA256: 64ec3a2a70b6c05a4b5cb52e3bf656eeb09f53faf0464802fc04db29b3050139
 SHA512: 91c841bf3c23d2ac692609d1da97caa36621728a467fcb44f67e453e60c035e2100c7166bd55e14dc11bb2680b4539bd9866cbd2dcee6c2f863462021baee8d4
 
+Package: libgpg-error-static
+Architecture: arm
+Installed-Size: 204
+Maintainer: @termux
+Version: 1.58
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Depends: libgpg-error (= 1.58)
+Description: Static libraries for libgpg-error
+Filename: dists/stable/main/binary-arm/libgpg-error-static_1.58_arm.deb
+Size: 59060
+MD5Sum: 913f78444975b9f7a1696d7b26468230
+SHA1: a96dd3cd1825ac0af87b8d813097e644c212844f
+SHA256: e2e46d26a054655ac97a6003b3882d66d21d7358c89a47af32461ac9ec9b6145
+SHA512: ee9177a98b7c441fb33894aff133f288326814dbf2047dacad8c7d2eb22adf8acea47faf33ed5b06b18cb34683dcdb8bed0ec029e06ca7649c5966e38d029718
+
 Package: libgpg-error
 Architecture: arm
 Installed-Size: 532
@@ -1210,6 +1323,22 @@ MD5Sum: 8f0f5496a5c02ae1f253ab82efcfbf92
 SHA1: 07d339a11849c3936f0cf7e5dcad6a27b2e46155
 SHA256: f39412b1dd5ee624d3513434cdf7679d44678109b1f088a6919a9c80db082ac7
 SHA512: 55dea245c2a6a99910e4dd61baa7209d12b5faacb0025e417bd8a7ba887b24055cafda6773ba8cd77dc2cf2d9eb7041633ea049f6b48ff2de27402c87ec904ab
+
+Package: libgpg-error
+Architecture: arm
+Installed-Size: 536
+Maintainer: @termux
+Version: 1.58
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Breaks: libgpg-error-dev
+Replaces: libgpg-error-dev
+Description: Small library that defines common error values for all GnuPG components
+Filename: dists/stable/main/binary-arm/libgpg-error_1.58_arm.deb
+Size: 112692
+MD5Sum: fd79ae61e5490762ec9772a12ebde073
+SHA1: 39b943c12d2fbe5fd00710ead7132c15d45d7b92
+SHA256: 10fe1b60f38e4ef10de97a66f3075a80b089892b3802dcc8e2e7644f83bc6cae
+SHA512: 1768fa7fa3d35455a22e8db5bb7eabf1a91669596c8a72fdfe9373018ff589e7eb27022bf80a5efdc7e5042c4f36e24a90fcc40ccc4c871c27df02c177396c03
 
 Package: libiconv-static
 Architecture: arm
@@ -1337,6 +1466,39 @@ MD5Sum: 6ab929ded0bf6a41ba99ac99deddad74
 SHA1: 7b967a502df3b4f9199eadc30598c69e218418a8
 SHA256: c5f8fe74b4552b0f9ca85450e715c8f8a1098e1f2fe7638e123e53a8ec0b7444
 SHA512: 54fcacdba53122615a0c121b0ace3bfd7c651b4b34f5ce06f36cd4c3f2f78a6d24209172d270f37ff80609a3d6d282c7982889b467c241a82a7cc7b179481faf
+
+Package: libllvm-static
+Architecture: arm
+Installed-Size: 870752
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: Static libraries for libllvm
+Filename: dists/stable/main/binary-arm/libllvm-static_21.1.8_arm.deb
+Size: 102952196
+MD5Sum: c593f0f613d7c9f5be3b532a558c72fe
+SHA1: 7ed60b7f681623a73fab291cfb89aea7d6c40766
+SHA256: 42079dd97ec3a533db45ddc0d61c98fed2a0c86b612c72873ef188d8d5c08b01
+SHA512: 46778cfd8750897b1edde04398e9ba41047d00f68b7683d446dc3d08a58f1d090ad3a8637290a6a77aca0fe97dd546120001be04daf5113e6cdf680cb2cc2942
+
+Package: libllvm
+Architecture: arm
+Installed-Size: 144496
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Breaks: libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Description: Modular compiler and toolchain technologies library
+Filename: dists/stable/main/binary-arm/libllvm_21.1.8_arm.deb
+Size: 31735740
+MD5Sum: 9fe3bd203fc1bb7e17b3db7d901e55a5
+SHA1: fefb78b7401c747dd849a754119e16c4bdec5809
+SHA256: 9ca2893b22a251590b70358a95eaa971c2af45ce12e56b89d2bb94c0802276b0
+SHA512: 6d109d892fbb7c1067da59b7d36ddd76f9ae54452d8206e8cd01d257e87f416199d41f7872402144abe0df3db74143254382dfbe4f4b9bb469784a0b0c5b433a
 
 Package: liblz4
 Architecture: arm
@@ -1617,6 +1779,21 @@ MD5Sum: ff12130316304d5a451d32664a1651e7
 SHA1: 803df64db9d60153ad08d0226b236780dbedcb6d
 SHA256: 61c3cf483645f1790cae7fa9728769c1e17a2a11f34f0225cb823ec6fc71e956
 SHA512: 19b1ba6da8632d937c121e68de3b893e3b4e386951c77ce0de413720bdc1dd75d6d07760436d3bdcd7f4db019d6c06b052da7e398f24d3e72fa65b3175d733bb
+
+Package: libpolly
+Architecture: arm
+Installed-Size: 4384
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: High-level loop and data-locality optimizer for clang
+Filename: dists/stable/main/binary-arm/libpolly_21.1.8_arm.deb
+Size: 1195560
+MD5Sum: 5905883f1a7f61d1d48b6621bb7392b7
+SHA1: 6c284529b25001ef5f66ef48733a80a728d3efb5
+SHA256: ec7a4163522a5ae3b191bfc4e698cb761bbd1cc0b90fc34202ed9e1a1acd4704
+SHA512: 9747e0922d5f29a467510d8590379afd691a121dc3d782c708b90e796e30e2a3a2994849a4ef3b97c37fa4b01842192e7f5ff2e89a37d08bb08194efc4fe1f8e
 
 Package: libsmartcols
 Architecture: arm
@@ -2160,6 +2337,72 @@ SHA1: 9cf426fd4b066dbb50a5f4b300412d5ecc079619
 SHA256: 8e2a336ded8788eb1dcc38579c0abac8e1a3948f24d816e735c65f68ddc53057
 SHA512: f07991e8f85b484b80e1374e7e1416f984f424dfa4685e90c00702e2945bd4603726885f93badc89234ab4b174dbd4964138a4f35936f737bebf68d08dfff26e
 
+Package: lld
+Architecture: arm
+Installed-Size: 17484
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Description: LLVM-based linker
+Filename: dists/stable/main/binary-arm/lld_21.1.8_arm.deb
+Size: 3054132
+MD5Sum: a96f000149c93a3537fa3e1bd0479295
+SHA1: 611dcc37d8937512eb74b1b0f9b3ea1c3a8cf7fc
+SHA256: 2624c1d1a3dcb8b3f6d0bd9991b6ac901052bd3fae1734cf7e6a71815bde4a7c
+SHA512: 33594aada9804f36661f93d13266767b02d79f63eb10c1159e03ce75836fdafd1032c8ff9191016d56df7eed2a0d0cab6a736ed5dd37c3288480f2873492ca17
+
+Package: lldb
+Architecture: arm
+Installed-Size: 20084
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: clang, libandroid-spawn, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 21.1.8)
+Breaks: lldb-dev, lldb-static
+Replaces: lldb-dev, lldb-static
+Description: LLVM-based debugger
+Filename: dists/stable/main/binary-arm/lldb_21.1.8_arm.deb
+Size: 5487700
+MD5Sum: 4842525d127c69cf23a9f42c9a04ca53
+SHA1: e0011f162bc5a3131a6456d546e6c1ae506d13ee
+SHA256: 4909bb371bd3671d1bf2316ee0f7cfdbe34ee7b2a957d4eb69ec352c28effbea
+SHA512: f7c6e5f8cc6c8bea79317ec4fceb23f33d9453f051b137865e6e799a0ea1e407ba48cdd6af42cbb549d2c7fe640f917040d4c3e640aec06e2da3333df43bc370
+
+Package: llvm-tools
+Architecture: arm
+Installed-Size: 9052
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Replaces: libllvm (<< 16.0.0)
+Description: LLVM Development Tools
+Filename: dists/stable/main/binary-arm/llvm-tools_21.1.8_arm.deb
+Size: 2359536
+MD5Sum: 57b4261e6440552763b98cfb24ac0bf5
+SHA1: d206e3116dd648f985642783bd37bd99d7b04415
+SHA256: 6710bbb737dbccdf358137e3121ea999b0b7a798b457559ad7cce314d0bfb71a
+SHA512: e483a728878b302753d397158e7de5c1134af85ef63575811b5f07329f98513e8d153c702bd66b3177a79013502eee943e9e1d3bea96c41bf7052c38d75ce8b3
+
+Package: llvm
+Architecture: arm
+Installed-Size: 55964
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libllvm (= 21.1.8)
+Breaks: libllvm (<< 11.0.0-1)
+Replaces: libllvm (<< 11.0.0-1)
+Description: LLVM modular compiler and toolchain executables
+Filename: dists/stable/main/binary-arm/llvm_21.1.8_arm.deb
+Size: 15445156
+MD5Sum: 61b42f439ce4307ce036ae4b3eca7dde
+SHA1: 1d54882b1274a08004c051c7b4dd75f166062da2
+SHA256: ee3923e4cfe3cac49a753e7dd06408ddede7504269729b9b28093baae3445275
+SHA512: 4ef712668e9587b1e233871522fd5126825bb35f2b746a3c786a366abf9008edc4979010a98f902a150cf4c698c6a2f949a0efe853e1fec574d8acff9dc78f9e
+
 Package: lsof-static
 Architecture: arm
 Installed-Size: 180
@@ -2221,6 +2464,21 @@ MD5Sum: 53fa3c3ead2590ee4a4f7d9984fc5377
 SHA1: 95f4ba9ec18da02c1e0786cacdcd397643ac4a23
 SHA256: c5ca4825b33c437ee23b0d8fbb5a6efd03d99a5d22a49a7312f50873f2c139e1
 SHA512: 0fd133cc2796d96cb9c9255af7c964075056ba2c580604be3f3487a17565baf3deae6c72df2886cd0f3f5224557dbd560eea36ef60cd78620891b024a21e35f5
+
+Package: mlir
+Architecture: arm
+Installed-Size: 211628
+Maintainer: @finagolfin
+Version: 21.1.8
+Homepage: https://clang.llvm.org/
+Depends: libc++, ncurses, libllvm (= 21.1.8)
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Filename: dists/stable/main/binary-arm/mlir_21.1.8_arm.deb
+Size: 29353428
+MD5Sum: 4e85b5ab2ae2718cebce61b0f8ca88e1
+SHA1: 7b788aa701fc8cb571a724f692bacca679a05f9b
+SHA256: ef2b518625e0300a63547542200b9fb3db52e9b96d331b36abab19da425211e7
+SHA512: 0b44b2f0b484edd9db09e94e9743a735b31e729ce6081ef210eb641facec645e2421b11c093ad1d3863cdf6483f4a120fd9fbc7a87d3718e3d7f7b868fc64778
 
 Package: mount-utils
 Architecture: arm
@@ -2708,6 +2966,23 @@ MD5Sum: ecb9bb940c65e43f143a614f204ae00d
 SHA1: d296e62fd130ff1f21966ff59e420be24ecb6dfa
 SHA256: 15439530487f6bd8fd961b8a75122d5b01406cc7c1cb82a0f238fe05e143ab41
 SHA512: 906c1958c6d9dacf581f8176efb995d99628fe391b5b3a0493357c99d239007eb6c6f762108115714fe69a28a88e81538c28985b4cd675db7c30b9233951d330
+
+Package: scdaemon
+Architecture: arm
+Installed-Size: 364
+Maintainer: @termux
+Version: 2.5.16
+Homepage: https://www.gnupg.org/
+Depends: libgcrypt, libksba, libgpg-error, libassuan, libnpth, libusb, gnupg (= 2.5.16)
+Conflicts: gnupg (<< 2.3.3-2)
+Replaces: gnupg (<< 2.3.3-2)
+Description: Daemon invoked by gpg to manage smartcards
+Filename: dists/stable/main/binary-arm/scdaemon_2.5.16_arm.deb
+Size: 170320
+MD5Sum: 64f0995f70d25cd676bf21cfe8423711
+SHA1: c524ec9e8475f5b613d65497ae44736d75cf61dd
+SHA256: 2fc284b3bbad892c6c22776c7fdcdc7a131ff0a0847dd7653c6137af7533e50d
+SHA512: 326cf8e01a17714700e11804b5b71b23d88f145e2b049b1bc08ca46542a2c59815f46e622b46f63dd50ba8030154b38c1f9d1f33f647a46713e5a8a1dcadbc2c
 
 Package: sed
 Architecture: arm
