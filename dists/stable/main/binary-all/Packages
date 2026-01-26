@@ -22,11 +22,11 @@ Homepage: https://curl.se/docs/caextract.html
 Depends: ca-certificates (= 1:2025.12.02)
 Description: Common CA certificates (java keystore format)
 Filename: dists/stable/main/binary-all/ca-certificates-java_1:2025.12.02_all.deb
-Size: 113836
-MD5Sum: efa0b8c70fbf26c17662cd29e9dbdd53
-SHA1: e8913b53e9b17947b5de97602f81e22ae5d2e78a
-SHA256: afdb34c08d86b8ce918f88281391cd1a671898985b31b771e69cae740c0c8d3a
-SHA512: 8499d56e19825e81fd82799e62b201364dc4b9f84c9f374784b23edeef64656acf941d3a45db5b6187a2a5b8d0e1d1097cc81bdf9da89b636ca4f14e23922c43
+Size: 113804
+MD5Sum: 51310c4fb2ba39866b1e6eed1ff70c2e
+SHA1: 2540d21c6b09493777af9d647b68375af9884ed0
+SHA256: f2a7e406e40ccf1bc2cd5e4521d6056fb7efd2b5713e860553bd601cae7f10d2
+SHA512: cccf8c52138785025e8cdacdb4918d26ca8083af1a9786daa99426d6a715b56c76fd7a4552bdf86a2cf5cd5d71f126dd7a02cd8d9a390454b8b8a1dcf16c3bb6
 
 Package: ca-certificates
 Architecture: all
@@ -36,11 +36,11 @@ Version: 1:2025.12.02
 Homepage: https://curl.se/docs/caextract.html
 Description: Common CA certificates
 Filename: dists/stable/main/binary-all/ca-certificates_1:2025.12.02_all.deb
-Size: 124252
-MD5Sum: a9a6fdef5e6f7ed6370f325ca0b46a85
-SHA1: 563b869abf4f6ad0856f633d39a7dea12eda2087
-SHA256: 63f3f4c9a85790cdcc128d79216f291a007f22d3f0c6ede13f5da59d9f62791b
-SHA512: f8e473f237677acd4aa002d726241afd5bf6034da07a31b8d5fb04da487fd9933b7b671769541c3d382a3700be2201f14b336a3bcad97880e7e437a18587282b
+Size: 124224
+MD5Sum: ec036980dbbe57fa0b8fab5cd9f058ee
+SHA1: a95ec49ee728fe34a3fab8e1e473dcfe3d4785da
+SHA256: f258dbae9d1151b3eaf7478a265c2a61fa07bab1798de7cea6bcd64ce73e1eb9
+SHA512: c49d0b31b95d2e85f5abaddbbabbdd7cf50142873de374c97ecafa7579dc324d6c0d4d29e7a3e3674033fd0883afba9aa23a84551ef790ffb1b6c02b72ac0564
 
 Package: docbook-xml
 Architecture: all
@@ -147,11 +147,11 @@ Homepage: https://github.com/termux/TermuxAm
 Conflicts: termux-tools (<< 0.51)
 Description: Android Oreo-compatible am command reimplementation
 Filename: dists/stable/main/binary-all/termux-am_0.8.0-2_all.deb
-Size: 577264
-MD5Sum: 9f0ddf09eea7671383c0a160d39038cd
-SHA1: 5a5a92422eef2409380a05cad4652ddd22caa502
-SHA256: 44ffccd9c4f450b673c4ef4b1fbdc5ea395f3a9d02dfd27ede0c632e0a1cb53d
-SHA512: 4bc8b708c7dd7a142d6d35f9ccaa79626b9595d06ed8d382f597e3a48a0cb4f883f28fe993cf86b2df10b493b2144a37b83bf8fe957007cf44f63b8373444996
+Size: 577256
+MD5Sum: 7f73efb15a5fd0afcfe1e71b9ef85150
+SHA1: 28db41bda6649e9a8acebfc2b84ad87edad689d7
+SHA256: 740fa0c1836cf7439a3a6cb1248c3a6863468ba65361bebc098be48f370aa6c0
+SHA512: 7c3a2061faddc52f0f9b0b2358b531bbc316e26f2c471cfde31d17c07f71806c467801380faba62b9f7e78b7aef64a56e900ded58d72129ca330f5d130ec5f0e
 
 Package: termux-keyring
 Architecture: all

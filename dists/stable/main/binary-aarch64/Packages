@@ -2882,6 +2882,26 @@ SHA1: 762b5fb6121535fb55bb2a9b6c66c975d47c7b35
 SHA256: 833d2df55d8067be97e4936c9e437fc1c00f73855ab73dfd81b968ae7bc3d8e2
 SHA512: ed837a1d396df56209c0b3adbd11f2863a89e8bc74a812d0582a2acd6324d24c5008d4a64734a472cfbfc40a4ac151d841a69716eab607de9818b925e745cea5
 
+Package: termux-tools
+Architecture: aarch64
+Installed-Size: 256
+Maintainer: @termux
+Version: 1.48.2-1
+Homepage: https://termux.dev/
+Breaks: termux-keyring (<< 1.9)
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am (>= 0.8.0), termux-am-socket (>= 1.5.0), termux-core, termux-exec, util-linux, xz-utils, dialog
+Essential: yes
+Conflicts: procps (<< 3.3.15-2)
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Description: Basic system tools for Termux
+Filename: dists/stable/main/binary-aarch64/termux-tools_1.48.2-1_aarch64.deb
+Size: 29856
+MD5Sum: c675d7c16279017ad1324253801d3ef5
+SHA1: bf5cdb16a878b97c43619a28b3dd464c7d331434
+SHA256: fcec66b8622583da42b7564dc619e2bae2760008ae95ba49ea5ccb836d4a36cf
+SHA512: 58fd32eb9d9186e0b37c5f1cc3742940a2b29873461bfa7e7604d6c58238b3918eed25a99cea0f6f95b06d4920aba937740362ab36d4851752a11f7777835d12
+
 Package: tk
 Architecture: aarch64
 Installed-Size: 5568
