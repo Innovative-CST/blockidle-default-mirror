@@ -100,6 +100,23 @@ SHA1: ff31c2ebf5ef6cdfe0407f7f224780f22a632113
 SHA256: 53a9e66fb81a5281a8c3eb3decd363a7530411e8ea39fa054f91a03bf6573a58
 SHA512: cad0a7dd6b29aa00f08b929d67b2740490c7952b5fdef2a56c2b3f417fc02e62d540ca12bccb93c7e3aee7376651753e050e30eedfbcf0c2b05f557b01ded625
 
+Package: blk-utils
+Architecture: x86_64
+Installed-Size: 900
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libblkid, libmount, libsmartcols, libuuid
+Breaks: util-linux (<< 2.38.1-1)
+Replaces: util-linux (<< 2.38.1-1)
+Description: Utilities for handling block device attributes
+Filename: dists/stable/main/binary-x86_64/blk-utils_2.41.3_x86_64.deb
+Size: 191584
+MD5Sum: d312619ce85834b229e153e97b1bc31e
+SHA1: 822b6cf464784343a57f6d8fc7b7963b4292fb0d
+SHA256: 961314857d8ae845a64bfd29f3ff1cd3a2bc849c527c4036fb629b7ed4fee9e8
+SHA512: 64b04f847a22e8d4878feabedd332220b26d5b4ee5452ce48f9ecde1aa01b0b602c396b50703148a8ae83ea3762fe667738d42a27358ff5b8c88aa1669cb8d25
+
 Package: brotli
 Architecture: x86_64
 Installed-Size: 1124
@@ -163,6 +180,24 @@ MD5Sum: 3057eb4c48a74d7552a486bf6b3af64c
 SHA1: 9308489e15f498b32d8dd986709dff42009a6c63
 SHA256: 2f09af9ccafe8aa0097eef66c5a31a6f8e01f28d471325dbdba8dd06954137f6
 SHA512: a68da1f1f87950eb3935d9b1a6c09f8545ad170e9fa3275d79812bc91c7fbd04033bb4469594d9c93a787ad0f588ae906da1ef9c611368e942c9550418ba3b9a
+
+Package: coreutils
+Architecture: x86_64
+Installed-Size: 2764
+Maintainer: @termux
+Version: 9.10-1
+Homepage: https://www.gnu.org/software/coreutils/
+Breaks: chroot, busybox (<< 1.30.1-4)
+Depends: libandroid-selinux, libandroid-support, libgmp, libiconv, openssl (>= 1:3.5.0-1)
+Essential: yes
+Replaces: chroot, busybox (<< 1.30.1-4)
+Description: Basic file, shell and text manipulation utilities from the GNU project
+Filename: dists/stable/main/binary-x86_64/coreutils_9.10-1_x86_64.deb
+Size: 851324
+MD5Sum: 7692a4969a553b718006c113380dc029
+SHA1: c13ea65093fdf14d0090152a7166fb3195246953
+SHA256: cdd3285909a52e3819fb9da1d500d7c2a41abda66389ad9e096f6744c90b15f7
+SHA512: bd09c5405a6339792cc6144621b087e2b2a9e580f1ae3aa401d2c0099303fbd8494ba1e18d8e6a9b3e6a917acfe5c350530bfdcfa8a7e5ed846f99d0fb5762c0
 
 Package: coreutils
 Architecture: x86_64
@@ -257,6 +292,21 @@ SHA1: c4e728c86b3e22e88094ac4d82bbc9813f81f818
 SHA256: 237f188cc34f632d6392e7ec90844b889989fd746b8570da3d48199f43e46dd3
 SHA512: 2a0ba576f0a197b7cc44f40730cafc03c89e123b768f0808463a6e22d53b95a110bce1241f4bc02400c5c1f8787dd9dd0215b6d751e00672749bba9e6ee4ba5c
 
+Package: dialog-static
+Architecture: x86_64
+Installed-Size: 436
+Maintainer: @termux
+Version: 1.3-20260107-1
+Homepage: https://invisible-island.net/dialog/
+Depends: dialog (= 1.3-20260107-1)
+Description: Static libraries for dialog
+Filename: dists/stable/main/binary-x86_64/dialog-static_1.3-20260107-1_x86_64.deb
+Size: 97016
+MD5Sum: 449881992c5a54e310bc5b088e509fdb
+SHA1: 77837a6d4b3e17f1b18b677fd56f28ed57b3a5a2
+SHA256: 3954af0f2f8653ce753cefed840dc7c8e93d711b1b3abd8d1554838a6fde4ef5
+SHA512: a9a328242081a3e6d493fc4c226d11613366f417b62e74127a2e6a6522768b249d5806b8fcd54781a89dd111838d0c9363df4bdf8ee7e45041562bc59e346e54
+
 Package: dialog
 Architecture: x86_64
 Installed-Size: 276
@@ -271,6 +321,21 @@ MD5Sum: ad276a761570a1f3d7df46e35d78d8e6
 SHA1: ad57e5136525e69891bb7e9028a6a439dabbf140
 SHA256: 1c61102129aed4fffb42a6496a944495ef30d2b1e9557dbd57aaee3bfe1a68f9
 SHA512: 45fe149d55915368966e4f88aa24da276e385e0305c143dfd3a2d570781086db84dd23e486fdd83b06a2df164fbe584c0176de6c3dc2034516115abf5c752268
+
+Package: dialog
+Architecture: x86_64
+Installed-Size: 276
+Maintainer: @termux
+Version: 1.3-20260107-1
+Homepage: https://invisible-island.net/dialog/
+Depends: libandroid-support, ncurses
+Description: Application used in shell scripts which displays text user interface widgets
+Filename: dists/stable/main/binary-x86_64/dialog_1.3-20260107-1_x86_64.deb
+Size: 109412
+MD5Sum: afc4254d14935ad9d2d83368de096518
+SHA1: 56fe745d54c13d03e5d72fbedc402e7e17c20224
+SHA256: fd4df78d81875db6c7e24852a157b0ae69906af4a0a151eb0025de36e1d13681
+SHA512: 86ac01b59dbc94b65e0ac3b500f6067641d86c7662dabf8c04319c2ad20f0a033cdb7a2866d6730b07666d5e2a4b40e7098ae1bc8193e5461a45811e1c851063
 
 Package: diffutils
 Architecture: x86_64
@@ -349,6 +414,21 @@ MD5Sum: 6620f3cd2fe31d2a947dd957fa04c071
 SHA1: faba58ca446660abfbd910e87baad60fd78fda51
 SHA256: 4ad06cf58bc47e26b29ddfc162491a2402d7bf73c16cdc48c05d7c1febd04c15
 SHA512: 3b038c2677bdd9d8570d5f5d88e6e463c071712c3456f6172581574de048c1b837ffddcb4ef345e02fe75285a7c47728b201e286d703a6c44c08ef314a828006
+
+Package: fdisk
+Architecture: x86_64
+Installed-Size: 464
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libfdisk, libmount, ncurses, readline, libsmartcols
+Description: Utilities to manipulate disk partition tables
+Filename: dists/stable/main/binary-x86_64/fdisk_2.41.3_x86_64.deb
+Size: 122168
+MD5Sum: 5c31ce363a40eed3050fb007934aefc2
+SHA1: b39fd34fb21983b24dcdf6cfaa855b7b554fb593
+SHA256: 41b4830c9c538e30c4c01f2647557ead4ec3a1b8f8e399e68d8473b2b33359df
+SHA512: 8714a7b065be6f621e87fcc9118ee6c09cbcb2fe6474b9099200683c3b55975d436835718857f6a515e042c8e46e15321aa3482639fefcdc23f1166d392d0464
 
 Package: findutils
 Architecture: x86_64
@@ -460,6 +540,21 @@ SHA1: 61d7222bb112b06037c75122010fd332e28a4e96
 SHA256: 7c4435fd199a4045f970fa479fe5218633e70223ea7d0295b9aa200247c2991b
 SHA512: 754bb0f079b50b48291538a658fd19e04e3b6f100db58eb28de4c45a795772dd52ec4f49ebb6cb3d972109d1fba04073c5df2e6907368d2ffcfd590aa7731aa1
 
+Package: gawk-static
+Architecture: x86_64
+Installed-Size: 172
+Maintainer: @termux
+Version: 5.3.2
+Homepage: https://www.gnu.org/software/gawk/
+Depends: gawk (= 5.3.2)
+Description: Static libraries for gawk
+Filename: dists/stable/main/binary-x86_64/gawk-static_5.3.2_x86_64.deb
+Size: 24660
+MD5Sum: 33e6e6284b117ef2393dc010ca95eb35
+SHA1: 55f752bafb64144d4aabc1b13cd355e16bf91f02
+SHA256: ea3c91a55495f9848a969601cdb204ae738e299a79ee249b06e39a84dc520c0f
+SHA512: 9177dc3c32d62ad428e934ae1e73d4ee93689aff6a192244d384c6d746a4e7786e6ac63ffef02fd29a23755b2b83013c9f4e5e27b2d04f62dabd85ac91dd7c5d
+
 Package: gawk
 Architecture: x86_64
 Installed-Size: 3216
@@ -477,6 +572,24 @@ MD5Sum: bb8eae2b85467d8edbc2ce3b9049fafb
 SHA1: eba2283d6e04578fef923577d4ee72d657e54baa
 SHA256: dae1c3cd8d763f944436e7d4ec58c0174794b8e879bcb13d7fe503cb8af1d2dc
 SHA512: ee1fe87c7c1f1f01540af3d5e71936a4f66cf06bcf4d090e466bc5969399a939383c28b826f059233d4f3b3b4d0e311abb91bfa7d9e7556a78d7b1305115c398
+
+Package: gawk
+Architecture: x86_64
+Installed-Size: 3304
+Maintainer: @termux
+Version: 5.3.2
+Homepage: https://www.gnu.org/software/gawk/
+Breaks: gawk-dev
+Depends: libandroid-support, libgmp, libmpfr, readline
+Essential: yes
+Replaces: gawk-dev
+Description: Programming language designed for text processing
+Filename: dists/stable/main/binary-x86_64/gawk_5.3.2_x86_64.deb
+Size: 894332
+MD5Sum: 09113620ed4219f05dc23f80faf0879b
+SHA1: 552697b6f3d94c162c00dc35002e7e604696ad0b
+SHA256: 5fe6ab37562501b80df1101df822e7d48d3d106d81f36e09eebcbb718b00f6ae
+SHA512: 971665703880a37ff982cf472eccb040b8b10be54f838d35aacdbc51a47837c869215684fb69d559a63ee1548aa8bcbb05b8296665697ec9588354d570b07cc5
 
 Package: gdbm-static
 Architecture: x86_64
@@ -607,6 +720,22 @@ SHA1: 59985970dd384b3a6f6e30cdba7c1f5dfb1fb2d1
 SHA256: 4ac420124d21b5e52334c9f80fc3dcebd153e8074c3c06e94deae245ff295830
 SHA512: bf7d815822660cc7545493590ed6ee59aa75bbae0d21e915249a7643feba4e79ed487ea81041be9b2850e6ecda9be3b52f502d63b1060f590b9c7b058539dff7
 
+Package: grep
+Architecture: x86_64
+Installed-Size: 456
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 3.12-3
+Homepage: https://www.gnu.org/software/grep/
+Depends: libandroid-support, pcre2
+Essential: yes
+Description: Command which searches one or more input files for lines containing a match to a specified pattern
+Filename: dists/stable/main/binary-x86_64/grep_3.12-3_x86_64.deb
+Size: 136380
+MD5Sum: 11614e9dbbf41b7dc6323711a76d530b
+SHA1: 7decf781dd80fd4b7ef35be93bf0dc6afdf773ae
+SHA256: 8e8ef0844b7f9b5eac5a126da522e6cd1b191b821020dd0b9959eb4cd65286f6
+SHA512: fa7a3e33d594633dd2150ce815f0b0433d11046ce7377f2585c6be3444c86e01f0e7185d6d12c1792d5e677170cb0abe44f347a74a0bd675993de07d70da2e3d
+
 Package: gzip
 Architecture: x86_64
 Installed-Size: 332
@@ -684,6 +813,23 @@ MD5Sum: 8165508290ecda14b22f60df39d51035
 SHA1: 58bc0d2556848e038de97b6979dcdeb18c4dc4c0
 SHA256: a71b072b5a805d0d30997c19a08a248cdd1f5ebaad9225d31f53628c176ed278
 SHA512: b4f57b95649cc15d83f71bd70fddc336a1df038713691a09d623ee8d2abe11f045a688dcddf76188560e5b2f093e03aede99aab5c18a3c9d199e1e37dd547568
+
+Package: less
+Architecture: x86_64
+Installed-Size: 520
+Maintainer: Joshua Kahn <tom@termux.dev>
+Version: 692
+Homepage: https://www.greenwoodsoftware.com/less/
+Depends: ncurses, pcre2
+Essential: yes
+Replaces: lazyread
+Description: Terminal pager program used to view the contents of a text file one screen at a time
+Filename: dists/stable/main/binary-x86_64/less_692_x86_64.deb
+Size: 192892
+MD5Sum: d543e9b9dc608e19709712e1344b28e3
+SHA1: 78872c71769daabbe1a7501d888ce6378a416691
+SHA256: cef3c696ea5ab9e2319e8e347734efe3d016979226ad778124814c56a7ed4bb5
+SHA512: 12d01578eb6e68d8a36ad7e2104e6362e58c0955069ece9317d09d9fbfc19a6500264c25041fa9cfe2e42cf914190d38948f1b825c12bb8074f693bf3ca1ffdf
 
 Package: libacl-static
 Architecture: x86_64
@@ -897,6 +1043,23 @@ SHA1: 5a32129e8676c8a649b464e926f7a057ce528b03
 SHA256: b467675b92d00ec96839116cc9aff01de70b57206208d1bf5233d9aeaaf83105
 SHA512: 72326246599854fdc51a3a3de4f695b75fc79b40d953273604e891205e76aefb19e2190b66de4aebdd00c5d1d703c30e0058ec14bd856688a4e8eefba238e8aa
 
+Package: libblkid
+Architecture: x86_64
+Installed-Size: 408
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libandroid-posix-semaphore
+Breaks: util-linux (<< 2.38.1-1)
+Replaces: util-linux (<< 2.38.1-1)
+Description: Block device identification library
+Filename: dists/stable/main/binary-x86_64/libblkid_2.41.3_x86_64.deb
+Size: 136316
+MD5Sum: 3b0858aee23dffa32558743afa83c09b
+SHA1: 4cc71a490a72d77cbf6a765116ec424aa97885e4
+SHA256: a500ee1585c15ddaa4125e7e5b20e9c4c840bbaf44ab25385d4e9843346e77d5
+SHA512: 4cdec06b6d886170fa6bb6dbddbad3885fd22362d43b2a20d29448956ce484e057f69d3c69ed14581d16348589763f47dc634675b4e89a24155926b441a4da1d
+
 Package: libbz2
 Architecture: x86_64
 Installed-Size: 112
@@ -944,6 +1107,21 @@ SHA1: dbd5538449ae0a5e7fccec8a0f6ff42a872f9be1
 SHA256: 95df024ef5907b29b136d2091352409b39776636d60aea11342f28eb09d6053d
 SHA512: 867986e89060c6ba6bdd14a9c908b1755850891afdc2a2850bf238043fb7aaa7a4fe04b7da45687d4e1f43f621066652682e75dfee158caa23db277993096a2f
 
+Package: libcap-ng-static
+Architecture: x86_64
+Installed-Size: 64
+Maintainer: @termux
+Version: 2:0.9.1
+Homepage: https://people.redhat.com/sgrubb/libcap-ng/
+Depends: libcap-ng (= 2:0.9.1)
+Description: Static libraries for libcap-ng
+Filename: dists/stable/main/binary-x86_64/libcap-ng-static_2:0.9.1_x86_64.deb
+Size: 8476
+MD5Sum: c4c8c7cb519a308599b70cf2d2e96a92
+SHA1: 04a86e68aafa1fc6cfc36277806521ddc09d1e9c
+SHA256: d9a9819750ade6f1e962a6890ae58a593bae173cb5b23a1318324a75a2ece77e
+SHA512: 74f2213a3dc458723080ff7f8845202a4d5987605660f4588f732a010f68e24e227547c0ee87ac1910461bb6975723e9503ffbf303159c458ee7d5ed550c3892
+
 Package: libcap-ng
 Architecture: x86_64
 Installed-Size: 264
@@ -957,6 +1135,20 @@ MD5Sum: fdf673b830697de89ceea10be84c0e2f
 SHA1: b042b4ba36ced646fd72eb7bdc2b8ef40f196716
 SHA256: d465fb3bec1c7660537c52526108eedc0fcf2bc04d2ed2c402d20dec4a8f4877
 SHA512: f2869e11832cb2bbca1620d478fcb1bed50ec9fba05b0419f2b1e03b072594803bb77d16798e456cafa2290f7e8ffc7da32696281a6f5bb37e60100cae0e8118
+
+Package: libcap-ng
+Architecture: x86_64
+Installed-Size: 252
+Maintainer: @termux
+Version: 2:0.9.1
+Homepage: https://people.redhat.com/sgrubb/libcap-ng/
+Description: Library making programming with POSIX capabilities easier than traditional libcap
+Filename: dists/stable/main/binary-x86_64/libcap-ng_2:0.9.1_x86_64.deb
+Size: 34756
+MD5Sum: cc8026b3dce3d31ed660ce4d25fae076
+SHA1: da8a7996f6c6af6b4735751c54b7a698c15f4906
+SHA256: 3424d25ab5c831c80a1c7ad80deddb3d3adb2872d7543ab40011617c7b9f0784
+SHA512: f9f0333f68d8a8ec8076eb9745d68307fa2699cef989e37d52163b136eb270d05ee82ce14b98d62ea6dd0935f0369db10b29f9d4b3ac3be405fb81727631961c
 
 Package: libcompiler-rt
 Architecture: x86_64
@@ -1150,6 +1342,21 @@ MD5Sum: 9920805d7535702e7b8e845b764fdf0b
 SHA1: e2fb322d3e68aeb2c4d9e1587c30b1060797a7d8
 SHA256: 99b2a28a298f2e5dbcae914ce990087b5f88eda7748629fd3a6b318f50e2d0b2
 SHA512: b0ac23f149a37e04383158734c42df725821549ec950bfd3c1b8e18741e5341d1054f93823d2246e83cb892995091effceeeaaaa869ca1e63a2131592551c358
+
+Package: libfdisk
+Architecture: x86_64
+Installed-Size: 504
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libblkid, libuuid
+Description: Library for manipulating disk partition tables
+Filename: dists/stable/main/binary-x86_64/libfdisk_2.41.3_x86_64.deb
+Size: 169776
+MD5Sum: 51fb1e012e3d7730b20f5709bab8e196
+SHA1: 48de32e9d7857639091fd21ba1346a16cb31ecdd
+SHA256: 2bdb1ec480af45f4a24187a6dcf1deceaee035225e65eee3c6ae81b6a3142355
+SHA512: 83e2d58d4c2a127aad2086ce4574a6174886c8a6c0e3fa1a809de1c584ffbb07610aa4c716542e88fa3e2c1cf2ac196d2878b6cab603e7cd2d9590fd48ad8618
 
 Package: libffi-static
 Architecture: x86_64
@@ -1592,6 +1799,21 @@ SHA1: daa0d4330dd62c1afc066fa659d4bce99b0494aa
 SHA256: 7aae03151bfea1a95dd6ec5bea10c0babffd63df33ee47f9ef8448e9101d5004
 SHA512: aae41afa79fe03569b62996836552af1ba664b415d3d75e58fdf8debd4efca51cdd7cef23d1000d898b2f7b45a10397dcf59229d011179f5116f439784aa71b0
 
+Package: libmount
+Architecture: x86_64
+Installed-Size: 496
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libblkid, libsmartcols
+Description: Library for (un)mounting filesystems
+Filename: dists/stable/main/binary-x86_64/libmount_2.41.3_x86_64.deb
+Size: 168216
+MD5Sum: 53096bcc69de6ae83403797d43d30d45
+SHA1: cba763b00a2bb0d518e45e1c5cf3ac02727fa37b
+SHA256: e4696bd395c77487d8d0dc1e15714c00ac83667431babf536e69617f0cc3786f
+SHA512: baa45ac6a6245aacab4620c768c4627e9c8d96c9837631c9eb1d7a032085487bff7c69de21e4e521a81d313849f94a7d3e8c12aa07b1259e451af39e06352395
+
 Package: libmpfr-static
 Architecture: x86_64
 Installed-Size: 1100
@@ -1717,6 +1939,36 @@ SHA1: dd02b4ede1e20d2a1b46271d334966eff471f6ff
 SHA256: c134d7d4b52d0414d2d8d3c750e36d07f8662d93181ad8807d3ecd4b4e1e067c
 SHA512: b3697f8e9b5d1a614a05880187419ad7ded27a8527e11a8fb078b3ad16447ba0244cb8fd31c0717f22bc44e7bace6567263dd03be5e7ef1467fbd767d3afc471
 
+Package: libngtcp2-static
+Architecture: x86_64
+Installed-Size: 780
+Maintainer: @termux
+Version: 1.21.0
+Homepage: https://github.com/ngtcp2/ngtcp2
+Depends: libngtcp2 (= 1.21.0)
+Description: Static libraries for libngtcp2
+Filename: dists/stable/main/binary-x86_64/libngtcp2-static_1.21.0_x86_64.deb
+Size: 160188
+MD5Sum: 3ae792a73e0dda59b5d8a13fc0de8ff1
+SHA1: c21d7fe2e6b0e4b3dcdd3a288c47a145540f694e
+SHA256: edc2e4aa272ad3f52df3e34f2cc6ef64609902b978632cfacc334e6e34c24464
+SHA512: a6c52acba852d856d37d0cfffd03069b51e4710a8ffc6f5bdd420da78510ce92c34749ae8b8cdb5b243d0114c8010b610672653f76f6e4c74d648e106ba8ac06
+
+Package: libngtcp2
+Architecture: x86_64
+Installed-Size: 748
+Maintainer: @termux
+Version: 1.21.0
+Homepage: https://github.com/ngtcp2/ngtcp2
+Depends: openssl
+Description: Implementation of IETF QUIC protocol
+Filename: dists/stable/main/binary-x86_64/libngtcp2_1.21.0_x86_64.deb
+Size: 180036
+MD5Sum: c2f09841d654a0543f4e69b6fef1245c
+SHA1: 1c561ca70f8e2b7a0116f0d1ef74f834c9de8de1
+SHA256: 3d4b1a097a77b39774c862b5f68f6fda8e987d67afb0d1842af75fac18f147eb
+SHA512: fa5b211a5c735fe3ea9065673677e93d91b0216203c609881bfd94cf66aae1e40eaf29ea7c779fb92b120b31c4350b4ecbf0861ed8642992d4c0ec93f71b7653
+
 Package: libnpth-static
 Architecture: x86_64
 Installed-Size: 48
@@ -1810,6 +2062,23 @@ MD5Sum: d962b8f4fb85a65591bb072e5c3b9a0c
 SHA1: 14ce18e1644ab6b77a093bc15538aa17f38077c7
 SHA256: 205fe7db5fb46396e1c783d8690d573992c77dd2de77f60d902803e31d7d3c3b
 SHA512: a31b2b9a7d2ce81ac098b4b581f3ea51d0738e6f6f58d2930aa3548c481b41000562c4f3c89f7b272690555a7592fef29ae7c9d411033a33241621b5509e7054
+
+Package: libsmartcols
+Architecture: x86_64
+Installed-Size: 324
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libandroid-posix-semaphore
+Breaks: util-linux (<< 2.38.1-1)
+Replaces: util-linux (<< 2.38.1-1)
+Description: Library for smart adaptive formatting of tabular data
+Filename: dists/stable/main/binary-x86_64/libsmartcols_2.41.3_x86_64.deb
+Size: 106644
+MD5Sum: c1c3bfcc2ae26fd920a3a9b759bde982
+SHA1: fb96925e869ef86a1a16a58b3b7f016dc29c6697
+SHA256: 7d85d6d9f33b849ff7cd9d8ffaccd3633146077e445fe09ddd3ade8f11318df6
+SHA512: 7ee8b91c5971d946823ffd4815fb62c22b39247a19fad73d5b97936f8e330aa281c3180fc9366b17fa1ee3da3cd28b02199f2c90e43ddc7ee720a9dceca99764
 
 Package: libsqlite-static
 Architecture: x86_64
@@ -2061,6 +2330,23 @@ MD5Sum: 9c5bb3f61d9469d0359c86eda5cdea6f
 SHA1: 591d66709d81d667ecacb6bd09eeb83e17fd4507
 SHA256: 198bc992799b722c7a4eb3f9f9b6062a1c83047aabbccfddc9b92de513749f5b
 SHA512: 0af75ce984825d7946ddf9bfef61c4879f21dd1bd250a1aba3f460f722150cc7e5074dd82213ba89be72ed0cef406a00fa8b39dff16d13ea98b7720152b04671
+
+Package: libuuid
+Architecture: x86_64
+Installed-Size: 80
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libandroid-posix-semaphore
+Breaks: libuuid-dev
+Replaces: libuuid-dev
+Description: Library for handling universally unique identifiers
+Filename: dists/stable/main/binary-x86_64/libuuid_2.41.3_x86_64.deb
+Size: 14476
+MD5Sum: 1e9aba0bbf3b6b7bb95e0afeb34f4760
+SHA1: b4145d55d32ab74faa2636fe0b067f3a2e40a160
+SHA256: 752df8b5209b8fbe1ba2ec5120f893fdcba0d26d8c21056f60d7c4da81b6967c
+SHA512: fc14c343b2dc0a4ae7ade0b992ca5f385b914d3c1efb6825f0cacf108214f236798aad01b08db184207a87e14680d8fa014c7c379beb8588169192b6fe339028
 
 Package: libx11-static
 Architecture: x86_64
@@ -2496,6 +2782,22 @@ SHA1: 49b7597cbc1c81517c58e64ea574e786d617c341
 SHA256: 7817427a523d105f1b73db23fbd3caf0e61a8ae9b81e13f818dab5cb67558d31
 SHA512: 463aa4905549c038f7169458eebddf7a77653bcf62fa9d84a35338012c5bd196cf886fff42ff027cee9a0651b282ca2284c3f534ca86405f6bb8ece0de2550e6
 
+Package: mount-utils
+Architecture: x86_64
+Installed-Size: 556
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libblkid, libsmartcols, libmount
+Breaks: termux-tools (<= 1.34.1)
+Description: Utilities for (un)mounting filesystems
+Filename: dists/stable/main/binary-x86_64/mount-utils_2.41.3_x86_64.deb
+Size: 148208
+MD5Sum: 72854c03a157dd54371fe5fb1d471d47
+SHA1: fd3966e82386509b14dff8bf8f63c727dd0b53b9
+SHA256: 7acf1f29e936a59dcacd0434ed00dab34b6100afd01629eea994a3663d8b007f
+SHA512: 481fc60e0ca6f1a4bfdc6919f5e6b22f18b59b3eaaa97149b671193f8eb1d64d3d324bb20333507a189f9e361f2714d4f4e2d9ef84cb6b1b4d7b0747e81fc9e9
+
 Package: nano
 Architecture: x86_64
 Installed-Size: 924
@@ -2526,6 +2828,21 @@ SHA1: 39c715af3f90caffa26f881b862062fccaa0f1ea
 SHA256: dfa85ba2c6bda42c5687414e3b912501d69616e1b5dde22edf8f789588dd43fe
 SHA512: 571671b6e126ffc4e1df63eb17da8c1cb1de1a5f105a093c556e3a17d4b076c5d894305fbd4fa7e5f2596da9d22580cd2d829cb84276f4dd7422b95d4a0f0438
 
+Package: ncurses-static
+Architecture: x86_64
+Installed-Size: 752
+Maintainer: @termux
+Version: 6.6.20260124+really6.5.20250830
+Homepage: https://invisible-island.net/ncurses/
+Depends: ncurses (= 6.6.20260124+really6.5.20250830)
+Description: Static libraries for ncurses
+Filename: dists/stable/main/binary-x86_64/ncurses-static_6.6.20260124+really6.5.20250830_x86_64.deb
+Size: 156720
+MD5Sum: ddf6ea27a382abde260691ff10386e06
+SHA1: f02ee429f74d415e98a243e935e7a61dc49dde57
+SHA256: 86ec3e0633b5baf77d0616929b1ff002a756dc095570a6f81aba448b0a21d5d3
+SHA512: 0172136d6a54b77c3b4009873c6ec47499fd074da48616b2115a72d00c3c81bbf224c857248fbc74e3545ed67ed7d5ccfd62702a242ced24138b29cec4ab860f
+
 Package: ncurses-ui-libs-static
 Architecture: x86_64
 Installed-Size: 240
@@ -2540,6 +2857,21 @@ MD5Sum: c1bd158ff32ab13802f565747c82b290
 SHA1: 7303cbe8888bf278c3573a6bfab8b166ae3c2186
 SHA256: bdaa56b987f99c2b5a9a8fa116ecfffc84be25565b5bd55840a4165bfafb0c85
 SHA512: 976295688136e2340f6d3519a4106a012139597161d8c7873db979053860599bd2590ee1bc83d968c89149a23fb948fd63cd45a847cbc785039d72f0930f3e8a
+
+Package: ncurses-ui-libs-static
+Architecture: x86_64
+Installed-Size: 240
+Maintainer: @termux
+Version: 6.6.20260124+really6.5.20250830
+Homepage: https://invisible-island.net/ncurses/
+Depends: ncurses-ui-libs, ncurses (= 6.6.20260124+really6.5.20250830)
+Description: Static libraries for terminal user interfaces based on ncurses
+Filename: dists/stable/main/binary-x86_64/ncurses-ui-libs-static_6.6.20260124+really6.5.20250830_x86_64.deb
+Size: 39112
+MD5Sum: 91224cfbe9e97ee93e7860f923d2c590
+SHA1: 004e49f5d2e9782e3b6ee6405e74544328c9886f
+SHA256: 39a48e734aadccbbc200aea4a3024ef3533dfc5fb7cf84e30efeb99f2e46980b
+SHA512: 0536dd6b48af85d960f44c1ad8d35f2015c19d18f2fa154df888c3520c28be21e841f6f3eac910cea91980acb47f58868f49fce38d0e7ca5d5d19ffe7c6c466d
 
 Package: ncurses-ui-libs
 Architecture: x86_64
@@ -2558,6 +2890,23 @@ SHA1: b5098cc44222d3c7a9724ea72bfe7da9e32e9210
 SHA256: 9f7b01be73463ac7de8d3c1c275dc874e8197bcbc08af3dfea7ca5666941f819
 SHA512: b76a82c63c2da1b5d682487c64d4fe393b5bc7b98ece6877e4286628e8f709dd154e9cdc7fdfb1d6d46ab05359cdb70b572b8540a83b80dfa2a60e51a6ed800a
 
+Package: ncurses-ui-libs
+Architecture: x86_64
+Installed-Size: 144
+Maintainer: @termux
+Version: 6.6.20260124+really6.5.20250830
+Homepage: https://invisible-island.net/ncurses/
+Depends: ncurses (= 6.6.20260124+really6.5.20250830)
+Breaks: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Description: Libraries for terminal user interfaces based on ncurses
+Filename: dists/stable/main/binary-x86_64/ncurses-ui-libs_6.6.20260124+really6.5.20250830_x86_64.deb
+Size: 35376
+MD5Sum: efa11ab44a1f4e709c046dc7162b4ea9
+SHA1: 9185b034ecfb42e759cfa358a1a4c571e8807f3a
+SHA256: 15842eeccbb4310f0202cce98d05042a45601a4a21f6278b46ad780a8d6616b3
+SHA512: d743f54a5f96559575b0f4883158d0001c9514bccdd62fef42399e3d5f99c506334ea81fd2f28b7ae2fc6865271c8ad28c531b0e225ae2fd21f1915c5b9975dc
+
 Package: ncurses-utils
 Architecture: x86_64
 Installed-Size: 268
@@ -2572,6 +2921,21 @@ MD5Sum: b7a16a6abde5187407676fcba6126a72
 SHA1: 0c9f1ad912a4a30044c5985b9d8bfec65c2383fe
 SHA256: c0bf2380235c61c7a3da81775842701d239468d9b329da88560d743e7f9c76af
 SHA512: 4c544c63024784b5cd76b5153f4793f236de5accdd488b064af0a199d1cfc68890cc6e18bb7a0fa0904cf07384a37ab6bd1c60a3e3c32a4396e6df39a9d60512
+
+Package: ncurses-utils
+Architecture: x86_64
+Installed-Size: 272
+Maintainer: @termux
+Version: 6.6.20260124+really6.5.20250830
+Homepage: https://invisible-island.net/ncurses/
+Depends: ncurses (= 6.6.20260124+really6.5.20250830)
+Description: Tools for working with terminals
+Filename: dists/stable/main/binary-x86_64/ncurses-utils_6.6.20260124+really6.5.20250830_x86_64.deb
+Size: 92636
+MD5Sum: ce6da3b0f5fff0b930e7295e77773c4e
+SHA1: 4f805053660f5a5a9dfc4df9e0edfde80c528c49
+SHA256: 5a23e99fbf6323298ce4ef8911c4c80ba67013f5a043fb1db4e602e98ed82274
+SHA512: 142519a0dda2622ea33985e3b449481387247ae0b2bcb6a1e9cff4a6aeef182f9060f4c1b349abc2a3652e7609ca9f37087d4c80c31d2b981237d919677ba339
 
 Package: ncurses
 Architecture: x86_64
@@ -2588,6 +2952,22 @@ MD5Sum: 558b046eacc2ea5d37a6583130839649
 SHA1: 37b9d82118ece41d27f0a77d8582eab1d827fb4a
 SHA256: 53d102e8e7e176a4057eb38ffa53d48e720962d89d271f7dc7ab3bb3676bfa02
 SHA512: e401453d5100edf83d4e79c70f1fe7bb89280fa7a7a06f1e9bfc6cc127b1994c3b86bc07c9c962820f6f495ea1494a4fc5bc51dbc6aeed83b7c2cd70fbc054fe
+
+Package: ncurses
+Architecture: x86_64
+Installed-Size: 1604
+Maintainer: @termux
+Version: 6.6.20260124+really6.5.20250830
+Homepage: https://invisible-island.net/ncurses/
+Breaks: ncurses-dev, ncurses-utils (<< 6.1.20190511-4)
+Replaces: ncurses-dev, ncurses-utils (<< 6.1.20190511-4)
+Description: Library for text-based user interfaces in a terminal-independent manner
+Filename: dists/stable/main/binary-x86_64/ncurses_6.6.20260124+really6.5.20250830_x86_64.deb
+Size: 569900
+MD5Sum: 5f3c8344ff8bebdb0b00d33239248356
+SHA1: 065075f429b57074bb8405ad4203d5df6a849f15
+SHA256: 24907c1e236e388c010810348f25f851cd9a3f8e4ec585f333eab050882db962
+SHA512: 7cc8f034beb202d481d5d6983b5cd16182e5d98b8d62a97fd101b823c0071cb6fd2ef03cf1b2848b6182621e924e713352c8cb7182d18cadd498ddeb40d8368a
 
 Package: net-tools
 Architecture: x86_64
@@ -2633,6 +3013,21 @@ SHA1: e324804d8770abe1740a9085f351f4fa98eb49b2
 SHA256: 00f7a3a28331eb15c00f4ee7eb62614170314a27dd85548ab7d897599de6aee3
 SHA512: a741d45ba9ca099473275491f1fedb41ad9da0038b325d7398b9f100d170b31f929c8f73e5c977d1524bcd59c9c7074442561d71b9b0419daca199ec4044e00b
 
+Package: openssl-static
+Architecture: x86_64
+Installed-Size: 12376
+Maintainer: @termux
+Version: 1:3.6.1
+Homepage: https://www.openssl.org/
+Depends: openssl (= 1:3.6.1)
+Description: Static libraries for openssl
+Filename: dists/stable/main/binary-x86_64/openssl-static_1:3.6.1_x86_64.deb
+Size: 2211020
+MD5Sum: aa83145429e829b51107c3abd3794e16
+SHA1: 11a90b081e0da17d2ac414fb17a94e28736448a2
+SHA256: c529a93275ac94fb7012eb29c115e6a62180a20aa1b8c7d3f8cafc7af57b9993
+SHA512: 6be8b28f3b0a6803ed4ba893be2055142413bdc18decbd3fbf4676ed666cac834d882f8221bdb29373aedaa32fd0d87d8752e4698981a113b7e924853eb5f2a3
+
 Package: openssl-tool
 Architecture: x86_64
 Installed-Size: 1016
@@ -2647,6 +3042,21 @@ MD5Sum: 4b42130e5445a14a1ca921504d55c81e
 SHA1: d774d5b3a148e4f6c0a67f42a9d3dd543f6f40de
 SHA256: 2ca17aef5b3dc839a858a6ef501d4695d45697024bece9e7314fed01c285ad7e
 SHA512: 472a1c38e5107c18636dc38152d939ff8d645a3d66e92b2fa1451fb77dba191f0352ce1af63ac28900dc8a4c86c13712773ff6216c79393850237a96533ea3e3
+
+Package: openssl-tool
+Architecture: x86_64
+Installed-Size: 1016
+Maintainer: @termux
+Version: 1:3.6.1
+Homepage: https://www.openssl.org/
+Depends: openssl (= 1:3.6.1)
+Description: The openssl command line cryptographic tool
+Filename: dists/stable/main/binary-x86_64/openssl-tool_1:3.6.1_x86_64.deb
+Size: 305392
+MD5Sum: 8e631cfd433d75c67aa1f4b4baeed8eb
+SHA1: 5db7354655467c255110784ccfbb5a755005c4d3
+SHA256: 6859bfaafd042641c35dc849fc2ced23bfb2db7428a5c32fbdc9919e946bfcd0
+SHA512: 3883db7982733d8f40005a3eb77df350d54fd2dd7190ba9b0797b569223994fe5068496c6efb004dc6e293219c01d798a07866625b514619a070949701fbe73f
 
 Package: openssl
 Architecture: x86_64
@@ -2665,6 +3075,24 @@ MD5Sum: 2576970ab4a2892d96badb5684dc80ed
 SHA1: a789e1cd7f21925171d1326de0a461c23d873802
 SHA256: 0ff35fa10d4d7bc87d729c3547e4915417ebde0d974b888666c7c738b1a557ec
 SHA512: 53a5f2d21f77f309ed13e1e4810be406f75bede3bf89921dd1bfd64c3c9daa7f0cfa6037a83ca25aa8be063e6268b8ddaec0cfb3cbda8bcb18ecd2cdd37fb9b0
+
+Package: openssl
+Architecture: x86_64
+Installed-Size: 8848
+Maintainer: @termux
+Version: 1:3.6.1
+Homepage: https://www.openssl.org/
+Breaks: openssl-tool (<< 1.1.1b-1), openssl-dev
+Depends: ca-certificates, zlib
+Conflicts: libcurl (<< 7.61.0-1)
+Replaces: openssl-tool (<< 1.1.1b-1), openssl-dev
+Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
+Filename: dists/stable/main/binary-x86_64/openssl_1:3.6.1_x86_64.deb
+Size: 2153320
+MD5Sum: 1ccc3d03aeed8ad0e21dd8d93e98a170
+SHA1: 6023e2f835c15e0926297814e8cf8b5cb602f57c
+SHA256: 3c7d802e71c6b964972fe4a66bf1e2dad0e61ec804bb48c09516e8cbc3afbbf8
+SHA512: 10bcd7b3d775f68d0332a7b13b3b9e1ca5e96622a48e052aca3c30d682fae7df8ebfacb0520c404e56cf1877ac89bd3f9591d0521b4ca62517de5183eb157d09
 
 Package: patch
 Architecture: x86_64
@@ -3217,6 +3645,26 @@ SHA1: 8c45b8f65929ba3044c0f5dfc5c1d3814ab9723f
 SHA256: 70e87a4cb462e420892e5ae102007c6a0e462b8c01347241514ee28015a82d3e
 SHA512: ef8cca8ff1167300cf561336a0e85781c7c296dfb28b63363a24732fa30beea85a6781f6860254a29733138833bfac64684b1d7756dce3a983a0e8940860afa9
 
+Package: termux-tools
+Architecture: x86_64
+Installed-Size: 256
+Maintainer: @termux
+Version: 1.48.5-1
+Homepage: https://termux.dev/
+Breaks: termux-keyring (<< 1.9)
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am (>= 0.8.0), termux-am-socket (>= 1.5.0), termux-core, termux-exec, util-linux, xz-utils, dialog
+Essential: yes
+Conflicts: procps (<< 3.3.15-2)
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Description: Basic system tools for Termux
+Filename: dists/stable/main/binary-x86_64/termux-tools_1.48.5-1_x86_64.deb
+Size: 29868
+MD5Sum: 99caea417632c07ebb2af9657f349be7
+SHA1: 203b55f08858df8264cff76400680ce6d097a99c
+SHA256: c1b49fe1025bc3a2b75917196a94626ba5aa110e6ed96cfa820f2fcf4f5291ba
+SHA512: 6d5a14614609739c932e08f6ea2bb1ecc40f7902599a08c68fe54f61c7cd16469ea14823105e596aba90f9a404e8f63c748b438fe0c8fe1c8c92803d79748b37
+
 Package: tk
 Architecture: x86_64
 Installed-Size: 5564
@@ -3292,6 +3740,21 @@ SHA1: 3319706e843b04d5eff163988da8deb22ab4c3c3
 SHA256: 78ef34a05a4f809ac6637de6395d244c71577cd85d1fa8e9c5f20ab1094038c8
 SHA512: be61720604f2af01f76efdc17e2aa1ee6081168b52417dd5cc5fc7ec319bde4f0a967ffd83ecd5b2a221314507f25a784c21315dc357428449b58e1ce9b99d33
 
+Package: util-linux-static
+Architecture: x86_64
+Installed-Size: 3276
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: util-linux (= 2.41.3)
+Description: Static libraries for util-linux
+Filename: dists/stable/main/binary-x86_64/util-linux-static_2.41.3_x86_64.deb
+Size: 443696
+MD5Sum: fd15452ebb62e8ca0b2e49bded5fe585
+SHA1: 504fae56d04b863ec22e4f0288c9f1400fa5687d
+SHA256: a52c3410924775cd469b8ed6a5c768022a6846604f2f2175967a318f77794234
+SHA512: fca080eda849639c7468a8e2c39bfbf412fc034d74c01b2a985783b9d084a8292600ef01dc5334069def3c0b28452c8ac4f34d185b237491d878262380429547
+
 Package: util-linux
 Architecture: x86_64
 Installed-Size: 4192
@@ -3310,6 +3773,24 @@ SHA1: 00c9326889c54965aadd3f1a107ec36b98e4940e
 SHA256: f7ba61f9dcafcbeb5bbb897ba4c2d10c52d101eee52b7f4818ac7fd1fd43db94
 SHA512: 856e5f32b8a8d8d0d3c3f939294153f06d4d12caf1b826baf4d7ea41c75c887209a20066cd0394151c9438647e400112367af9f53a9863b3e5cc1fb911348e13
 
+Package: util-linux
+Architecture: x86_64
+Installed-Size: 4204
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Breaks: util-linux-dev
+Depends: libandroid-glob, libandroid-posix-semaphore, libcap-ng, libsmartcols, ncurses, zlib
+Essential: yes
+Replaces: util-linux-dev
+Description: Miscellaneous system utilities
+Filename: dists/stable/main/binary-x86_64/util-linux_2.41.3_x86_64.deb
+Size: 776696
+MD5Sum: ad56fc9f1d87883874bb55b3b1ad8b3f
+SHA1: ceb9166f9ff561a26a2ccd9c5d63fb7c78db5e26
+SHA256: 9ec4518bfcb5b72951e7b11978bca43df33365186e724105582a2e1c231c1940
+SHA512: 34ab9d2c5ff5640b41e2f723ff7ad8c484731bc7648308920cde80f9734d31006f457efd87e1b6f7b2b5d0295459e8ace4cb0f720f82b7363f42cccedd27e22e
+
 Package: uuid-utils
 Architecture: x86_64
 Installed-Size: 228
@@ -3324,6 +3805,21 @@ MD5Sum: f5b57a661d58f9172c0426c1473ec43e
 SHA1: a334bbe88a60d1dcbfe4c1d2b61a97d3de5b8cc4
 SHA256: bf0e0bee4e1ad2449d765cab488ec4f2ccd34cf464512b821969ba8b6fb8e7e4
 SHA512: 3218c3d095ba7d0aeb01bc9274a7e149be18a8ae0dc906d228c22f723d9ab7e3602f82e32954502e730f5f58e225f612093cddd5bdcc2fc90e4505f35f4829de
+
+Package: uuid-utils
+Architecture: x86_64
+Installed-Size: 228
+Maintainer: @termux
+Version: 2.41.3
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Depends: libsmartcols, libuuid
+Description: Utilities for handling universally unique identifiers
+Filename: dists/stable/main/binary-x86_64/uuid-utils_2.41.3_x86_64.deb
+Size: 42048
+MD5Sum: f564c9170a9d7f531e399236a31e812f
+SHA1: 497ef89843f63f655f91bae787a434364c687555
+SHA256: 8afc6e7a143d75760503b2eed3f17a8337b0e3feb9dec68d255ca2b4a121967b
+SHA512: 89b4dfcb62371556d3761892d9dcd4e361bc8e1ff15f7815287a343e7cf56be44c08229b3ab3ada9484dafd52861247d8cb8726755c96d73ad7018b3c8317e3e
 
 Package: xsltproc
 Architecture: x86_64
@@ -3400,6 +3896,21 @@ SHA1: 8ada96af8b970ec42fc38de1d980b6a0f52d83b4
 SHA256: 8e8b49d50af425cb19ce9d39a0fde4dda1542ea3e0892cec1eb2dc59619f3890
 SHA512: 9ed86149b55a94175aea8e5142e39491438a1869204bafabc7aec64d00e226c4f6e6e49e179970c2753cb1ef5bcdbb60607c699b3e6a99f78e2080ab948bf6b2
 
+Package: zlib-static
+Architecture: x86_64
+Installed-Size: 144
+Maintainer: @termux
+Version: 1.3.2
+Homepage: https://www.zlib.net/
+Depends: zlib (= 1.3.2)
+Description: Static libraries for zlib
+Filename: dists/stable/main/binary-x86_64/zlib-static_1.3.2_x86_64.deb
+Size: 44680
+MD5Sum: 02a8fb1920c67ed18a690c071636bab4
+SHA1: 84ee7b6d2a1c15ad082514f8c5a9184c126d18da
+SHA256: 0127cbea09883323c5b1d51f65ecf1f62c7003ee0af2463b236128bdc8b0eea4
+SHA512: 8cff1470ab5b0d2ea2a0761fa3fe27e59511f3389990fd1303661cea2d3bb22ae48e7858407c44c6b045209c984901d96750cc82416ae5cd397985231c5d7ba1
+
 Package: zlib
 Architecture: x86_64
 Installed-Size: 264
@@ -3415,6 +3926,22 @@ MD5Sum: 3b53f70ff274106e4bb266cb73848593
 SHA1: 7a5c895b0c285274eab010b46931784e6a352688
 SHA256: 9aef33a14cb4948ab4167e445a84d1e51f1ec939bb0a51534840619ce4ccc796
 SHA512: 5d062156b7eda214b5de0b16fd87e5f8272a6687958eeb29db7464b7528065046688a75ec9a459558997cbc2765db3ac329477b2b9d9304288156698a23752e1
+
+Package: zlib
+Architecture: x86_64
+Installed-Size: 272
+Maintainer: @termux
+Version: 1.3.2
+Homepage: https://www.zlib.net/
+Breaks: ndk-sysroot (<< 19b-3), zlib-dev
+Replaces: ndk-sysroot (<< 19b-3), zlib-dev
+Description: Compression library implementing the deflate compression method found in gzip and PKZIP
+Filename: dists/stable/main/binary-x86_64/zlib_1.3.2_x86_64.deb
+Size: 73300
+MD5Sum: d879d924aba8c97b172cbe71be77240c
+SHA1: aedb964f1d08cc3e1e8ee3d38d71f8a833feaaa9
+SHA256: 806bc6a394cb9451a32b0e7d721c4e9313a6a92cae9b5d981decd5032003f70b
+SHA512: 895d93bd072f68c47e7069754d95aa9551f70dbe2ae9a30ef9fe96dc4abf6a0b8f939dcf31f63003bfd72cbe6aeee22da4ec2f0d387d1c379f2fd14fef47c6e6
 
 Package: zstd
 Architecture: x86_64
